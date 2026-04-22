@@ -4,8 +4,10 @@
   <meta charset="utf-8">
   <title>Chromix Challenge</title>
   <script>
-    // Universal Linkが機能しない場合のフォールバック
-    window.location.href = "https://apps.apple.com/jp/app/chromix/id6762201673";
+    // アプリが開いた場合はリダイレクト不要なので遅延させる
+    setTimeout(function() {
+      window.location.href = "https://apps.apple.com/jp/app/chromix/id6762201673";
+    }, 2500);
   </script>
 </head>
 <body>
