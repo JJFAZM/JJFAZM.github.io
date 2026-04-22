@@ -3,8 +3,33 @@
 <head>
   <meta charset="utf-8">
   <title>Chromix Challenge</title>
+  <script>
+    // URLのdパラメータを取得してchromix://スキームで開く
+    const params = new URLSearchParams(window.location.search);
+    const d = params.get('d');
+    function openApp() {
+      if (d) {
+        window.location.href = 'chromix://challenge?d=' + encodeURIComponent(d);
+      }
+    }
+  </script>
+  <style>
+    body { font-family: sans-serif; text-align: center; padding: 40px; }
+    button {
+      background: #007AFF; color: white;
+      border: none; border-radius: 12px;
+      padding: 16px 32px; font-size: 18px;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
-  <p>Chromixアプリで開いてください。</p>
+  <h2>Chromix 挑戦状</h2>
+  <p>アプリで挑戦状を受け取ります</p>
+  <button onclick="openApp()">アプリで開く</button>
+  <br><br>
+  <a href="https://apps.apple.com/jp/app/chromix/id6762201673">
+    アプリをダウンロード
+  </a>
 </body>
 </html>
