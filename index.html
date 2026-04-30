@@ -3,25 +3,142 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Chromix 色感パズル</title>
+<title>Chromix Developer Page</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #0f172a;
+  color: #fff;
+}
+
+/* ヒーロー */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #6366f1, #06b6d4);
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  opacity: 0.9;
+}
+
+/* コンテナ */
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+/* カード */
+.card {
+  background: #1e293b;
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 24px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* アイコン */
+.icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #f43f5e, #facc15);
+}
+
+/* テキスト */
+.info h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.info p {
+  margin: 8px 0;
+  opacity: 0.8;
+}
+
+/* ボタン */
+.btn {
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 10px;
+  background: #6366f1;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.btn:hover {
+  background: #4f46e5;
+}
+
+/* フッター */
+.footer {
+  text-align: center;
+  padding: 30px;
+  font-size: 12px;
+  opacity: 0.6;
+}
+</style>
 </head>
+
 <body>
 
-<h1>Chromix 色感パズル</h1>
-<p>色を混ぜてお題の色に近づける混色パズルゲーム</p>
+<!-- ヒーロー -->
+<div class="hero">
+  <h1>Chromix</h1>
+  <p>色で遊ぶ、新しいパズル体験</p>
+</div>
 
-<a href="https://apps.apple.com/jp/app/chromix/id6762201673">
-  App Storeでダウンロード（Chromix 色感パズル）
-</a>
+<!-- アプリ一覧 -->
+<div class="container">
 
-<hr>
+  <!-- アプリ1 -->
+  <div class="card">
+    <div class="icon"></div>
+    <div class="info">
+      <h2>Chromix 色感パズル</h2>
+      <p>色を混ぜて、お題の色に近づける混色パズル</p>
+      <a class="btn" href="https://apps.apple.com/jp/app/chromix/id6762201673">
+        App Store
+      </a>
+    </div>
+  </div>
 
-<h1>Chromix Pazzle</h1>
-<p>色を合わせて正解に導くカラーマッチパズルゲーム</p>
+  <!-- アプリ2 -->
+  <div class="card">
+    <div class="icon"></div>
+    <div class="info">
+      <h2>Chromix Pazzle</h2>
+      <p>色を揃えて正解を導くカラーマッチパズル</p>
+      <a class="btn" href="https://apps.apple.com/us/app/chromix-pazzle/id6763905601">
+        App Store
+      </a>
+    </div>
+  </div>
 
-<a href="https://apps.apple.com/us/app/chromix-pazzle/id6763905601">
-  App Storeでダウンロード（Chromix Pazzle）
-</a>
+</div>
+
+<!-- フッター -->
+<div class="footer">
+  © 2026 Chromix
+</div>
 
 </body>
 </html>
