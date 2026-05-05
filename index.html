@@ -3,8 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Chromix Developer Page</title>
-
+<title>Onaka Peco PeCorporation</title>
 <style>
 body {
   margin: 0;
@@ -12,31 +11,23 @@ body {
   background: #0f172a;
   color: #fff;
 }
-
-/* ヒーロー */
 .hero {
   text-align: center;
   padding: 80px 20px;
   background: linear-gradient(135deg, #6366f1, #06b6d4);
 }
-
 .hero h1 {
   font-size: 36px;
   margin-bottom: 10px;
 }
-
 .hero p {
   opacity: 0.9;
 }
-
-/* コンテナ */
 .container {
   max-width: 900px;
   margin: auto;
   padding: 40px 20px;
 }
-
-/* カード */
 .card {
   background: #1e293b;
   border-radius: 16px;
@@ -48,31 +39,26 @@ body {
   box-shadow: 0 10px 30px rgba(0,0,0,0.3);
   transition: transform 0.2s;
 }
-
 .card:hover {
   transform: translateY(-5px);
 }
-
-/* アイコン */
 .icon {
   width: 80px;
   height: 80px;
   border-radius: 20px;
-  background: linear-gradient(135deg, #f43f5e, #facc15);
+  flex-shrink: 0;
+  object-fit: cover;
 }
-
-/* テキスト */
 .info h2 {
   margin: 0;
   font-size: 20px;
 }
-
 .info p {
   margin: 8px 0;
   opacity: 0.8;
+  font-size: 14px;
+  line-height: 1.6;
 }
-
-/* ボタン */
 .btn {
   display: inline-block;
   padding: 10px 16px;
@@ -83,12 +69,9 @@ body {
   font-size: 14px;
   margin-top: 8px;
 }
-
 .btn:hover {
   background: #4f46e5;
 }
-
-/* フッター */
 .footer {
   text-align: center;
   padding: 30px;
@@ -97,47 +80,46 @@ body {
 }
 </style>
 </head>
-
 <body>
 
-<!-- ヒーロー -->
 <div class="hero">
-  <h1>Chromix</h1>
-  <p>色で遊ぶ、新しいパズル体験</p>
+  <h1>OPP Corp.</h1>
+  <p>シンプルで楽しい、毎日のアプリ</p>
 </div>
 
-<!-- アプリ一覧 -->
 <div class="container">
 
-  <!-- アプリ1 -->
   <div class="card">
-    <div class="icon"></div>
+    <img class="icon" src="images/chromix_icon_1024x1024.png" alt="Chromix 色感パズル">
     <div class="info">
       <h2>Chromix 色感パズル</h2>
       <p>色を混ぜて、お題の色に近づける混色パズル</p>
-      <a class="btn" href="https://apps.apple.com/jp/app/chromix/id6762201673">
-        App Store
-      </a>
+      <a class="btn" href="https://apps.apple.com/jp/app/chromix/id6762201673">App Store</a>
     </div>
   </div>
 
-  <!-- アプリ2 -->
   <div class="card">
-    <div class="icon"></div>
+    <img class="icon" src="images/chromix_pazzle_icon_1024x1024.png" alt="Chromix Pazzle">
     <div class="info">
       <h2>Chromix Pazzle</h2>
       <p>色を揃えて正解を導くカラーマッチパズル</p>
-      <a class="btn" href="https://apps.apple.com/us/app/chromix-pazzle/id6763905601">
-        App Store
-      </a>
+      <a class="btn" href="https://apps.apple.com/us/app/chromix-pazzle/id6763905601">App Store</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <img class="icon" src="images/kakeibo_icon_1024x1024.png" alt="ざっくり支出家計簿">
+    <div class="info">
+      <h2>ざっくり支出家計簿</h2>
+      <p>毎日の支出をざっくり記録するだけ。今日いくら使えるかが一目でわかる、続けやすい家計簿アプリ。</p>
+      <a class="btn" href="https://apps.apple.com/us/app/%E3%81%96%E3%81%A3%E3%81%8F%E3%82%8A%E6%94%AF%E5%87%BA%E5%AE%B6%E8%A8%88%E7%B0%BF/id6765697159">App Store</a>
     </div>
   </div>
 
 </div>
 
-<!-- フッター -->
 <div class="footer">
-  © 2026 Chromix
+  © 2026 OPP Corp.
 </div>
 
 </body>
