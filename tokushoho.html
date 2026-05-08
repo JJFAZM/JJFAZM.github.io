@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>特定商取引法に基づく表記 - Onaka Peco PeCorporation</title>
+<title>特定商取引法に基づく表記 - OPP Apps</title>
+
 <style>
 body {
   margin: 0;
@@ -11,37 +12,44 @@ body {
   background: #0f172a;
   color: #fff;
 }
+
 .hero {
   text-align: center;
-  padding: 60px 20px;
+  padding: 48px 20px;
   background: linear-gradient(135deg, #6366f1, #06b6d4);
 }
+
 .hero h1 {
   font-size: 28px;
   margin-bottom: 8px;
 }
+
 .hero p {
   opacity: 0.85;
   font-size: 14px;
 }
+
 .container {
   max-width: 760px;
   margin: auto;
   padding: 40px 20px 60px;
 }
+
 .back-link {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  color: rgba(255,255,255,0.5);
+  color: rgba(255,255,255,0.45);
   text-decoration: none;
   font-size: 13px;
   margin-bottom: 28px;
   transition: color 0.2s;
 }
+
 .back-link:hover {
   color: rgba(255,255,255,0.9);
 }
+
 .card {
   background: #1e293b;
   border-radius: 16px;
@@ -49,13 +57,16 @@ body {
   box-shadow: 0 10px 30px rgba(0,0,0,0.3);
   margin-bottom: 24px;
 }
+
 .card-row {
   display: flex;
   border-bottom: 1px solid rgba(255,255,255,0.06);
 }
+
 .card-row:last-child {
   border-bottom: none;
 }
+
 .card-label {
   width: 38%;
   flex-shrink: 0;
@@ -67,46 +78,68 @@ body {
   border-right: 1px solid rgba(255,255,255,0.06);
   line-height: 1.6;
 }
+
 .card-value {
   padding: 16px 20px;
   font-size: 14px;
-  line-height: 1.8;
-  color: rgba(255,255,255,0.85);
+  line-height: 1.9;
+  color: rgba(255,255,255,0.88);
 }
+
 .card-value a {
-  color: #06b6d4;
+  color: #22d3ee;
   text-decoration: none;
 }
+
 .card-value a:hover {
   text-decoration: underline;
 }
+
 .card-value .sub {
   font-size: 12px;
-  color: rgba(255,255,255,0.4);
-  margin-top: 4px;
+  color: rgba(255,255,255,0.45);
+  margin-top: 6px;
+  line-height: 1.7;
 }
+
 .note {
-  background: #1e293b;
-  border-radius: 12px;
-  padding: 16px 20px;
+  background: rgba(99,102,241,0.12);
+  border-radius: 14px;
+  padding: 18px 20px;
   font-size: 13px;
-  color: rgba(255,255,255,0.5);
-  line-height: 1.8;
+  color: rgba(255,255,255,0.72);
+  line-height: 1.9;
   border-left: 3px solid #6366f1;
 }
+
 .footer {
   text-align: center;
   padding: 30px;
   font-size: 12px;
   opacity: 0.4;
 }
+
+@media (max-width: 640px) {
+
+  .card-row {
+    flex-direction: column;
+  }
+
+  .card-label {
+    width: auto;
+    border-right: none;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+  }
+
+}
 </style>
 </head>
+
 <body>
 
 <div class="hero">
   <h1>特定商取引法に基づく表記</h1>
-  <p>Onaka Peco PeCorporation</p>
+  <p>OPP Apps</p>
 </div>
 
 <div class="container">
@@ -116,10 +149,14 @@ body {
   </a>
 
   <div class="card">
+
     <div class="card-row">
       <div class="card-label">販売業者</div>
-      <div class="card-value">YUKI HIGASHI</div>
+      <div class="card-value">
+        YUKI HIGASHI
+      </div>
     </div>
+
     <div class="card-row">
       <div class="card-label">所在地</div>
       <div class="card-value">
@@ -128,13 +165,21 @@ body {
         ウィンド恵比寿ビル8F
       </div>
     </div>
+
     <div class="card-row">
       <div class="card-label">お問い合わせ</div>
       <div class="card-value">
-        <a href="mailto:gisazm2017@gmail.com">gisazm2017@gmail.com</a>
-        <div class="sub">通常3営業日以内にご返信いたします。</div>
+        <a href="mailto:gisazm2017@gmail.com">
+          gisazm2017@gmail.com
+        </a>
+
+        <div class="sub">
+          通常3営業日以内にご返信いたします。<br>
+          内容によっては回答までお時間をいただく場合があります。
+        </div>
       </div>
     </div>
+
     <div class="card-row">
       <div class="card-label">支払方法</div>
       <div class="card-value">
@@ -142,32 +187,69 @@ body {
         （クレジットカード・キャリア決済・Apple Pay 等）
       </div>
     </div>
+
+    <div class="card-row">
+      <div class="card-label">販売価格</div>
+      <div class="card-value">
+        各商品購入ページに表示された価格に基づきます。<br>
+        販売価格はApp Store上に表示されます。
+      </div>
+    </div>
+
     <div class="card-row">
       <div class="card-label">商品の引渡し時期</div>
-      <div class="card-value">購入完了後、即時にアプリ内でご利用いただけます。</div>
+      <div class="card-value">
+        購入完了後、即時にアプリ内でご利用いただけます。<br>
+        通信環境等により反映まで時間がかかる場合があります。
+      </div>
     </div>
+
+    <div class="card-row">
+      <div class="card-label">商品について</div>
+      <div class="card-value">
+        本アプリでは、アプリ内で使用するデジタルアイテム
+        （ポイント・チケット等）を販売しています。<br>
+        一部アイテムには使用期限・利用回数制限が設定される場合があります。
+      </div>
+    </div>
+
     <div class="card-row">
       <div class="card-label">返品・キャンセルについて</div>
       <div class="card-value">
-        デジタルコンテンツの性質上、購入完了後の返品・キャンセル・払い戻しには応じられません。
+        デジタルコンテンツの性質上、購入完了後の返品・キャンセル・払い戻しには応じられません。<br>
+        消費型アイテムは、使用後の復元ができない場合があります。
+
         <div class="sub">
-          App Store の返金申請：
+          App Store の返金申請：<br>
           <a href="https://reportaproblem.apple.com" target="_blank">
             reportaproblem.apple.com
           </a>
         </div>
       </div>
     </div>
+
+    <div class="card-row">
+      <div class="card-label">注意事項</div>
+      <div class="card-value">
+        不正利用が確認された場合、利用停止等の措置を行う場合があります。<br>
+        本商品はデジタルコンテンツであり、通信環境・端末環境に依存します。<br>
+        未成年者は保護者の同意を得た上で購入してください。
+      </div>
+    </div>
+
   </div>
 
   <div class="note">
-    本アプリ内の有償アイテムはApple Inc. が提供するApp内課金（In-App Purchase）を通じて販売されます。販売価格はApp Store上に表示されます。
+    本アプリ内の有償アイテムはApple Inc. が提供する
+    App内課金（In-App Purchase）を通じて販売されます。<br>
+    決済・請求・返金処理はApple Inc. により管理されます。<br>
+    販売価格はApp Store上に表示されます。
   </div>
 
 </div>
 
 <div class="footer">
-  © 2026 OPP Corp.
+  © 2026 OPP Apps
 </div>
 
 </body>
