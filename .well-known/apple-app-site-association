@@ -5,6 +5,13 @@
       {
         "appID": "5WJ92PXT3P.com.higashi.chromix",
         "paths": ["/chromix/challenge*"]
+      },
+      {
+        "appID": "5WJ92PXT3P.com.example.stampCard",
+        "paths": [
+          "/mystamp/share/",
+          "/mystamp/share/*"
+        ]
       }
     ]
   }
