@@ -109,6 +109,7 @@
       <a href="https://apps.apple.com/jp/app/id_PLACEHOLDER" class="btn btn-secondary">
         🍎 App Store
       </a>
+
     </div>
   </div>
 
@@ -116,9 +117,12 @@
     // URLのパラメータを取得
     const params = new URLSearchParams(window.location.search);
     const data = params.get('data');
+    const share = params.get('share');
+    const payloadParam = data ? 'data' : 'share';
+    const payload = data || share;
 
     function openApp() {
-      if (!data) {
+      if (!payload) {
         document.getElementById('status').textContent = 'データが見つかりませんでした。';
         return;
       }
@@ -127,7 +131,8 @@
       const universalLink = window.location.href;
 
       // カスタムスキームでも試みる（フォールバック）
-      const customSchemeUrl = 'stampcard://receive?data=' + encodeURIComponent(data);
+      const customSchemeUrl =
+        'stampcard://receive?' + payloadParam + '=' + encodeURIComponent(payload);
 
       document.getElementById('status').textContent = 'アプリを起動中...';
 
@@ -144,12 +149,12 @@
 
     // ページ読み込み時にアプリを自動で開こうとする
     window.addEventListener('load', function() {
-      if (data) {
+      if (payload) {
         // iOS Universal Links は URL にアクセスするだけで自動的にアプリが開く
         // Androidも android:autoVerify=true で同様の動作をする
         // フォールバックとして手動ボタンを表示
         document.getElementById('open-app-btn').href =
-          'stampcard://receive?data=' + encodeURIComponent(data);
+          'stampcard://receive?' + payloadParam + '=' + encodeURIComponent(payload);
       } else {
         document.getElementById('open-app-btn').style.display = 'none';
         document.getElementById('status').textContent =
