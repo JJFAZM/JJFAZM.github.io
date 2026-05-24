@@ -7,10 +7,12 @@
         "paths": ["/chromix/challenge*"]
       },
       {
-        "appID": "5WJ92PXT3P.com.example.stampCard",
+        "appID": "5WJ92PXT3P.com.opp.stampcard",
         "paths": [
           "/mystamp/share/",
-          "/mystamp/share/*"
+          "/mystamp/share/*",
+          "/mystamp/stamp/",
+          "/mystamp/stamp/*"
         ]
       }
     ]
