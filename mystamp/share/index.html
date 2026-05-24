@@ -1,1 +1,161 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>スタンプカードを受け取る</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #5DCAA5 0%, #3BA88A 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 24px;
+      padding: 40px 32px;
+      max-width: 400px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+    }
+    .stamp-icon {
+      font-size: 64px;
+      margin-bottom: 16px;
+    }
+    h1 {
+      font-size: 22px;
+      color: #1a1a1a;
+      margin-bottom: 8px;
+    }
+    p {
+      color: #666;
+      font-size: 14px;
+      line-height: 1.6;
+      margin-bottom: 28px;
+    }
+    .btn {
+      display: block;
+      width: 100%;
+      padding: 16px;
+      border-radius: 50px;
+      font-size: 16px;
+      font-weight: bold;
+      text-decoration: none;
+      margin-bottom: 12px;
+      transition: opacity 0.2s;
+    }
+    .btn:active { opacity: 0.8; }
+    .btn-primary {
+      background: #5DCAA5;
+      color: white;
+    }
+    .btn-secondary {
+      border: 2px solid #5DCAA5;
+      color: #5DCAA5;
+      background: transparent;
+    }
+    .store-row {
+      display: flex;
+      gap: 12px;
+      margin-top: 8px;
+    }
+    .store-row .btn {
+      flex: 1;
+      font-size: 13px;
+      padding: 12px 8px;
+    }
+    .divider {
+      border: none;
+      border-top: 1px solid #eee;
+      margin: 24px 0;
+    }
+    .note {
+      font-size: 12px;
+      color: #999;
+    }
+    #status {
+      margin-top: 16px;
+      font-size: 13px;
+      color: #5DCAA5;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="stamp-icon">🎴</div>
+    <h1>スタンプカードが届きました！</h1>
+    <p>
+      スタンプカードアプリを開いてカードを受け取りましょう。
+      アプリがない場合はまずインストールしてください。
+    </p>
 
+    <!-- アプリを開くボタン -->
+    <a id="open-app-btn" href="#" class="btn btn-primary" onclick="openApp(); return false;">
+      📱 アプリで開く
+    </a>
+
+    <div id="status"></div>
+
+    <hr class="divider">
+
+    <p class="note">アプリをお持ちでない方はこちらからインストール</p>
+    <div class="store-row">
+      <a href="https://apps.apple.com/jp/app/id_PLACEHOLDER" class="btn btn-secondary">
+        🍎 App Store
+      </a>
+    </div>
+  </div>
+
+  <script>
+    // URLのパラメータを取得
+    const params = new URLSearchParams(window.location.search);
+    const data = params.get('data');
+
+    function openApp() {
+      if (!data) {
+        document.getElementById('status').textContent = 'データが見つかりませんでした。';
+        return;
+      }
+
+      // ユニバーサルリンクとして現在のURLをそのまま使う（iOS/Android がアプリにリダイレクト）
+      const universalLink = window.location.href;
+
+      // カスタムスキームでも試みる（フォールバック）
+      const customSchemeUrl = 'stampcard://receive?data=' + encodeURIComponent(data);
+
+      document.getElementById('status').textContent = 'アプリを起動中...';
+
+      // まずカスタムスキームを試みる
+      window.location.href = customSchemeUrl;
+
+      // 1秒後にアプリが開かなかった場合のフォールバック処理
+      setTimeout(function() {
+        // ページがまだ表示されている = アプリが開けなかった
+        document.getElementById('status').textContent =
+          'アプリが見つかりません。インストール後に再度お試しください。';
+      }, 1500);
+    }
+
+    // ページ読み込み時にアプリを自動で開こうとする
+    window.addEventListener('load', function() {
+      if (data) {
+        // iOS Universal Links は URL にアクセスするだけで自動的にアプリが開く
+        // Androidも android:autoVerify=true で同様の動作をする
+        // フォールバックとして手動ボタンを表示
+        document.getElementById('open-app-btn').href =
+          'stampcard://receive?data=' + encodeURIComponent(data);
+      } else {
+        document.getElementById('open-app-btn').style.display = 'none';
+        document.getElementById('status').textContent =
+          'URLが正しくありません。';
+      }
+    });
+  </script>
+</body>
+</html>
