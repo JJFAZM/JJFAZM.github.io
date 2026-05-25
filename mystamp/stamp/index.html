@@ -30,19 +30,18 @@
     .btn {
       display: block; width: 100%; padding: 16px;
       border-radius: 50px; font-size: 16px; font-weight: bold;
-      text-decoration: none; margin-bottom: 12px; transition: opacity 0.2s;
-      cursor: pointer; border: none;
+      text-decoration: none; margin-bottom: 12px;
+      cursor: pointer; border: none; text-align: center;
     }
-    .btn:active { opacity: 0.8; }
     .btn-primary { background: #5DCAA5; color: white; }
-    .divider { border: none; border-top: 1px solid #eee; margin: 24px 0; }
-    .note { font-size: 12px; color: #999; }
-    #status { margin-top: 16px; font-size: 13px; color: #5DCAA5; min-height: 20px; }
-    .expire-info {
-      background: #FFF8E1; border: 1px solid #FFE082;
-      border-radius: 10px; padding: 10px 14px;
-      font-size: 12px; color: #F57F17; margin-bottom: 16px;
+    .btn-store {
+      border: 2px solid #5DCAA5; color: #5DCAA5;
+      background: transparent; margin-top: 8px;
     }
+    .divider { border: none; border-top: 1px solid #eee; margin: 24px 0; }
+    .note { font-size: 12px; color: #999; margin-bottom: 0; }
+    #status { margin-top: 12px; font-size: 13px; color: #999; min-height: 18px; }
+    #invalid { color: #E74C3C; }
   </style>
 </head>
 <body>
@@ -51,20 +50,16 @@
     <h1>スタンプが届きました！</h1>
     <p>スタンプカードアプリでスタンプを受け取りましょう。</p>
 
-    <div class="expire-info" id="expire-info" style="display:none">
-      ⏰ <span id="expire-text"></span>
-    </div>
-
-    <button id="open-btn" class="btn btn-primary" onclick="openApp()">
+    <!-- アプリを開くボタン（<a href> でカスタムスキームを直接指定） -->
+    <a id="open-btn" href="#" class="btn btn-primary">
       📱 アプリで受け取る
-    </button>
+    </a>
 
     <div id="status"></div>
 
     <hr class="divider">
     <p class="note">アプリをお持ちでない方</p>
-    <a href="https://apps.apple.com/jp/app/id_PLACEHOLDER" class="btn"
-       style="border:2px solid #5DCAA5; color:#5DCAA5; background:transparent; margin-top:8px;">
+    <a href="https://apps.apple.com/jp/app/id6745189434" class="btn btn-store">
       🍎 App Store でインストール
     </a>
   </div>
@@ -72,27 +67,24 @@
   <script>
     const params = new URLSearchParams(window.location.search);
     const token = params.get('token');
+    const btn = document.getElementById('open-btn');
+    const status = document.getElementById('status');
 
-    function openApp() {
-      if (!token) {
-        document.getElementById('status').textContent = 'URLが正しくありません。';
-        return;
-      }
-      document.getElementById('status').textContent = 'アプリを起動中...';
-      // カスタムスキームでアプリを起動（Universal Linksが効かない場合のフォールバック）
-      window.location.href = 'stampcard://stamp?token=' + encodeURIComponent(token);
-      setTimeout(function() {
-        document.getElementById('status').textContent =
-          'アプリが開かない場合はインストールしてください。';
-      }, 1500);
+    if (token) {
+      // <a href> でカスタムスキームを直接開く（JSより信頼性が高い）
+      btn.href = 'stampcard://stamp?token=' + token;
+      btn.addEventListener('click', function() {
+        status.textContent = 'アプリを起動しています...';
+        setTimeout(function() {
+          status.textContent = 'アプリが開かない場合はインストールしてください。';
+        }, 1800);
+      });
+    } else {
+      btn.href = '#';
+      btn.style.opacity = '0.4';
+      btn.style.pointerEvents = 'none';
+      status.innerHTML = '<span id="invalid">URLが正しくありません。</span>';
     }
-
-    window.addEventListener('load', function() {
-      if (!token) {
-        document.getElementById('open-btn').disabled = true;
-        document.getElementById('status').textContent = 'URLが正しくありません。';
-      }
-    });
   </script>
 </body>
 </html>
