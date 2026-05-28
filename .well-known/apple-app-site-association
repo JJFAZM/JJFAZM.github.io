@@ -7,12 +7,10 @@
         "paths": ["/chromix/challenge*"]
       },
       {
-        "appID": "5WJ92PXT3P.com.opp.stampcard",
-        "paths": [
-          "/mystamp/share/",
-          "/mystamp/share/*",
-          "/mystamp/stamp/",
-          "/mystamp/stamp/*"
+        "appIDs": ["5WJ92PXT3P.com.opp.mystampcard"],
+        "components": [
+          { "/": "/mystamp/card/*", "comment": "カード配布" },
+          { "/": "/mystamp/stamp/*", "comment": "スタンプトークン" }
         ]
       }
     ]
