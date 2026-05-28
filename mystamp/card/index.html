@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>スタンプカード</title>
+</head>
+<body>
+  <script>
+    // パスからIDを取得: /mystamp/card/<id>
+    const segments = window.location.pathname.split('/').filter(Boolean);
+    const id = segments[segments.length - 1];
+    if (id && id !== 'card') {
+      window.location.href = 'stampcard://receive?id=' + id;
+    }
+  </script>
+  <p>アプリを起動中...</p>
+</body>
+</html>
