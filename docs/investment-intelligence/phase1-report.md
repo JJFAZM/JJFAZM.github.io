@@ -1,301 +1,139 @@
-# Investment Intelligence — Phase 1 調査レポート & 設計提案
+# Investment Intelligence — 設計方針 v2
 
-作成日: 2026-10-02 / ステータス: **設計レビュー待ち（コード未着手）**
+更新日: 2026-10-02 / ステータス: **構成案レビュー待ち（コード未着手）**
 
-> 依頼書 §40「いきなり大量のコードを書かない」に従い、本書は Phase 1（既存コード調査）と
-> Phase 2〜3（データモデル・情報アーキテクチャ）の **提案** までをまとめたもの。
-> 実装は本書のレビュー後、§9 の「要判断事項」が決まってから着手する。
+## v2 での前提変更（ユーザー決定事項）
 
----
-
-## 0. 結論（先に要点）
-
-| # | 結論 |
-|---|------|
-| 1 | **Longbridge 連携はどのリポジトリにも存在しない。** 現行ダッシュボードの数値は、週次スキャン時に Claude が手入力した JSON。 |
-| 2 | 現行データには **実データ原則（§1-1）に反する可能性が高い値** が含まれる（後述 §2-3）。新アプリへは移行しない。 |
-| 3 | GitHub Pages は静的ホスティングなので、**Longbridge の認証情報をブラウザに置けない**。データ取得は GitHub Actions（サーバ側）で行い、JSON スナップショットを配信する構成が最も既存資産を活かせる。 |
-| 4 | 証券口座は SBI 証券のため、**Longbridge の Trade/Portfolio API ではポートフォリオを取得できない**。保有は手入力（ブラウザ内保存）とする。 |
-| 5 | 依頼内容と既存の投資ルール（`Stock/CLAUDE.md`）の間に **目的の矛盾** がある（「中長期の資産形成」vs「半年〜1年・回転数重視・スイング優先」）。§7 で修正案を提示。 |
-
----
-
-## 1. 調査対象
-
-| リポジトリ | 公開 | 中身 |
-|---|---|---|
-| `JJFAZM/JJFAZM.github.io`（本リポジトリ） | Public | iPhone アプリのスタジオサイト。HTML のみ。投資関連コードなし。 |
-| `JJFAZM/Stock` | Private | 投資ルール（CLAUDE.md）、週次レポート（`reports/`）、`Dashboards/dashboard.html` + `dashboard_data.json`、同期用 GitHub Actions |
-| `JJFAZM/Stock-dash` | **Public** | `Stock` から自動同期される公開版ダッシュボード（GitHub Pages） |
-
----
-
-## 2. 現状
-
-### 2-1. 技術構成
-
-| 項目 | 現状 |
+| 項目 | 決定 |
 |---|---|
-| フロントエンド | 単一 HTML（約 20KB）。素の JavaScript + インライン CSS。フレームワーク・ビルドなし |
-| データ取得 | `fetch('./dashboard_data.json')` のみ |
-| バックエンド | なし（Firebase 等も未使用） |
-| API / MCP / SDK | **なし**。Longbridge・Yahoo・FRED 等いずれも未接続 |
-| チャートライブラリ | **なし**（セクターは CSS の横棒） |
-| キャッシュ | なし（静的 JSON そのもの） |
-| エラーハンドリング | JSON 読み込み失敗時のメッセージ表示のみ |
-| 型定義 / テスト | なし |
-| デザイン | GitHub 風ダークテーマの CSS 変数（`--bg`, `--green`, `--red` …）、カード UI、最大幅 640px（モバイル想定） |
-| CI | `Stock` の `dashboard_data.json` 更新時に `Stock-dash` へコピーする Actions |
-
-### 2-2. 現在の画面
-
-シグナル（赤/黄/緑）、保有銘柄・損益、スイング枠、市場（主要指数の週間騰落・VIX・コアPCE・10年債）、セクター YTD 棒グラフ、ウォッチリスト、スクリーニング結果。
-
-### 2-3. 現在のデータの信頼性（重要）
-
-| 問題 | 根拠 | 影響 |
-|---|---|---|
-| スクリーニングが実データでない可能性 | 週次スキャンのプロンプトに「Finviz 条件を **適用したと仮定して**」とある | RSI・騰落率・PER などがモデルの推定値である可能性。§1-1 に抵触 |
-| セクター履歴が合成値に見える | `history` 配列が `[1,2,2,3,3,3,3,3]` のように単調で整数のみ。出典・取得日時の記録なし | 時系列として信用できない |
-| VIX と Fear & Greed の混同 | `vix` と `fear_greed` に同じ値。`vix_ok` の判定基準が「Fear & Greed < 20」 | F&G は **低いほど恐怖**なので、判定方向が逆になっている |
-| 出典・更新時刻・調整有無のメタデータなし | JSON に `updated` 日付のみ | §29 のデータ透明性を満たせない |
-| 個人の保有情報が公開リポジトリに出ている | `Stock-dash` は Public | 保有銘柄・取得単価・損益・資金状況が誰でも閲覧可能 |
-
-→ 新アプリでは **既存 JSON をデータとして再利用しない**。再利用するのは「考え方」（テーゼ記録必須、決算前エントリー回避、セクター集中上限、為替を含めた実質リターン）とデザイントークン。
-
-### 2-4. 再利用できるもの
-
-- 投資ルールの思想：テーゼ／損切り条件の記録必須、セクター集中 25% 上限、為替込みリターン、Critic による反論 → **Investment Journal と Checklist にそのまま移植**
-- `trades.md` のテンプレート（テーゼ・カタリスト・崩壊条件・結果の振り返り）→ Journal のデータモデルの原型
-- CSS 変数・カード UI → デザイントークンの出発点（ライトテーマを追加）
-- GitHub Actions による JSON 配信 → データパイプラインの土台
+| 過去のファイル（旧 Stock / Stock-dash） | **引き継がない・参照しない**。ゼロから作る |
+| ホスティング | GitHub Pages に限定しない。ダッシュボードとして閲覧できる最適な形を選ぶ |
+| データソース | Longbridge 必須ではない。**無料サービス**で取得する |
+| ポートフォリオ | 手入力、またはスクリーンショットを AI が読み取って登録 |
+| 投資ルール | **白紙**。目的は中長期の資産形成、まず 1 年で成果を確認。インデックスが有効ならそれでよい |
 
 ---
 
-## 3. Longbridge 接続状況とデータ可用性
+## 1. 推奨構成
 
-### 3-1. 接続状況
+```
+┌──────────────── 新しい Private リポジトリ ────────────────┐
+│  config/      バスケット定義・ウォッチリスト              │
+│  portfolio/   holdings.json（手入力 or スクショから AI 登録）│
+│  journal/     投資仮説ノート（Markdown/JSON）              │
+│  pipeline/    Python: 無料 API → 計算 → data/*.json        │
+│  web/         静的 Web アプリ（TypeScript + チャート）     │
+└──────────────────────────────────────────────────────────┘
+        │ GitHub Actions（毎営業日 米国引け後に 1 回・cron）
+        ▼
+   data/*.json をコミット ──▶ Cloudflare Pages が自動デプロイ
+                                   │
+                          Cloudflare Access（Google ログイン）
+                                   ▼
+                       自分だけが見られるダッシュボード（PC/スマホ）
+```
 
-- コード上の接続：**なし**
-- この作業環境：Longbridge の認証情報なし。OpenAPI ホストと PyPI（`longport` SDK）には到達可能 → **認証情報があれば Actions から取得できる見込み**
-- Longbridge MCP（`mcp.longbridge.com`、OAuth）は Claude セッションでの分析には使えるが、ダッシュボードの定期更新には OpenAPI SDK（App Key / Secret / Access Token）を使う
+### なぜこの構成か
 
-### 3-2. 取得可否マトリクス（**実機での検証前**。Phase 5/6 で確定させる）
+| 候補 | 費用 | 非公開にできるか | 速さ・自由度 | 評価 |
+|---|---|---|---|---|
+| **Cloudflare Pages + Access** | 無料 | ✅ ログイン必須にできる（50 ユーザーまで無料） | 静的配信で高速、UI 自由 | **推奨** |
+| GitHub Pages | 無料 | ❌ 無料プランでは公開のみ | 高速 | ポートフォリオを載せられない |
+| Streamlit Community Cloud | 無料 | △ | Python だけで作れるが、休止からの起動が遅く UI の自由度が低い | 試作向き |
+| Vercel / Next.js | 無料枠 | ✅（工夫が必要） | 高機能だが複雑 | 過剰 |
+| ローカル実行のみ | 無料 | ✅ | スマホで見られない | 不採用 |
 
-凡例: ✅ 公式ドキュメント／ツール一覧で確認 / 🟡 存在するが範囲・権限が未確認 / ❌ 見当たらない → N/A 表示
+- API キーは GitHub Actions の Secrets にのみ置く（ブラウザには出さない）
+- データは「日次の終値ベース」。リアルタイムではないことを画面に明示し、各値に取得時刻を表示
+- ポートフォリオ・ジャーナルは Private リポジトリ内にあり、Access で保護された画面でのみ表示
 
-| データ | Longbridge | 備考 |
-|---|---|---|
-| 個別株・ETF の現在値・日次 OHLCV | ✅ | `quote`, `candlesticks`（前方調整あり） |
-| PER・PBR・時価総額・騰落率など | ✅ | calc indexes / `valuation` |
-| 指数（S&P500, Nasdaq, Dow, Russell, VIX） | 🟡 | 指数の相場は権限が必要な可能性。不可なら **ETF（SPY/QQQ/DIA/IWM）で代替し「ETF 代替」と明示**。VIX は不可なら N/A |
-| セクター ETF（XLK, XLF …） | ✅ | 通常の米国株と同様 |
-| 財務諸表（売上・営業利益・純利益・CF・BS） | 🟡 | MCP に `financials` あり。取得可能年数は要検証 |
-| 事業セグメント | 🟡 | `business_segments` |
-| アナリスト EPS 予想（コンセンサス） | 🟡 | `eps_forecast` |
-| 決算カレンダー・マクロ指標発表 | 🟡 | Calendar / Macrodata（CPI, GDP, 雇用統計） |
-| ニュース | 🟡 | Content / Search |
-| 指数構成銘柄 | 🟡 | `index_constituents` |
-| 為替 USD/JPY | 🟡 | Portfolio カテゴリに為替レートあり。ヒストリカルは未確認 |
-| 米国債利回り・FF 金利 | ❌ | N/A（または §9 の判断で FRED を補助ソースとして明示利用） |
-| 金・原油・銅 | ❌ | 先物は未確認。ETF（GLD/USO/CPER）で代替する場合は「ETF 代替」と明示 |
-| ポートフォリオ | ❌（SBI 口座のため） | 手入力 |
+### ポートフォリオ登録の流れ
+
+1. SBI 証券の保有画面をスクリーンショット → Claude Code セッションに貼る
+2. Claude が読み取り、`portfolio/holdings.json` の更新差分を提示
+3. ユーザーが内容を確認してから反映（**読み取り結果は必ず人が確認**。誤読の可能性があるため）
+4. 手入力用のフォームも用意（ブラウザで編集 → JSON を書き出し）
 
 ---
 
-## 4. 実装上の制約
+## 2. 無料データソース（2026-10-02 に接続を実地確認）
 
-1. **シークレット**：GitHub Pages はブラウザで動くため、API キーを置けない → 取得は Actions、配信は JSON。
-2. **鮮度**：Actions の定期実行（例：米国市場引け後に 1 日 1 回）。「リアルタイム」ではなく **終値ベースの日次ダッシュボード** として設計し、更新時刻を常時表示する。
-3. **公開範囲**：Pages は公開される。市場データは公開してよいが、**ポートフォリオと Journal は公開 JSON に含めない**（ブラウザ内保存＋JSON エクスポート/インポート）。
-4. **ライセンス**：取得した相場データの再配布が Longbridge の利用規約で許されるか要確認。不可なら公開ではなく Private 運用（ローカル表示）に切り替える。
-5. **サバイバーシップ・バイアス**：MVP は「現在の構成銘柄」を過去に適用する。画面上で明示する。
-6. **小標本**：10 銘柄の P10/P90 は実質「下から1〜2番目／上から1〜2番目」。銘柄数と分位点の計算方式を必ず表示する。
+| 用途 | ソース | キー | 確認結果 | 備考 |
+|---|---|---|---|---|
+| S&P500・Nasdaq・Dow 指数 | FRED（`SP500`, `NASDAQCOM`, `DJIA`） | 不要 | ✅ 10/1 まで取得 | 公式・日次 |
+| VIX | FRED `VIXCLS` | 不要 | ✅ 10/1 | |
+| 米国債 2年/10年・長短金利差 | FRED `DGS2`, `DGS10`, `T10Y2Y` | 不要 | ✅ 9/30 | |
+| 政策金利（実効 FF） | FRED `DFF` | 不要 | ✅ 9/30 | |
+| USD/JPY | FRED `DEXJPUS` | 不要 | ✅ ただし **約 1 週間遅れ** | 遅れを画面に表示 |
+| 原油 WTI | FRED `DCOILWTICO` | 不要 | ✅ 9/29 | |
+| 銅 | FRED `PCOPPUSDM` | 不要 | ✅ **月次のみ** | |
+| ハイイールド債スプレッド | FRED `BAMLH0A0HYM2` | 不要 | ✅ 10/1 | 信用リスクの体温計（追加提案） |
+| CPI・コア PCE・失業率 | FRED `CPIAUCSL`, `PCEPILFE`, `UNRATE` | 不要 | ✅ | 経済テーマ用 |
+| 金・Russell 2000 | FRED に無し | — | ❌ | **ETF（GLD / IWM）で代替し「ETF 代替」と明示** |
+| 個別株・ETF の日足（調整済み） | Tiingo 無料枠（第一候補）/ Stooq（予備） | Tiingo は要登録 | Tiingo は未登録のため未確認、Stooq はこの環境から到達不可 | Actions 上で再確認する |
+| 財務諸表（売上・営業利益・純利益・営業 CF・現金・負債 …） | SEC EDGAR XBRL API | 不要（連絡先入りの User-Agent が必要） | ✅ NVDA で 10 年超を取得 | 会社ごとに項目名が変わるため対応表が必要 |
+| 決算日・EPS 予想と実績 | Finnhub 無料枠 | 要登録 | 未確認 | 取れなければ N/A |
+| 企業ニュース | Finnhub 無料枠 / SEC 8-K | 要登録 / 不要 | 未確認 | |
+| セクター構成銘柄・ウェイト | SPDR（SSGA）ETF 保有銘柄ファイル | 不要 | リダイレクトあり、要確認 | 時価総額加重との比較に使用 |
 
----
+**取れないもの（N/A にするもの）**：アナリストの売上予想・目標株価・Forward PER の多く、Fear & Greed 指数、時点ごとの構成銘柄履歴。
 
-## 5. データモデル（Phase 2 提案）
-
-全データに **出典メタデータ** を付ける。値が取れない場合は `value: null` + 理由。推測で埋めない。
-
-```ts
-type Provenance = {
-  source: 'longbridge' | 'fred' | 'manual' | 'derived';
-  endpoint?: string;            // 例: 'quote.candlesticks'
-  fetchedAt: string;            // ISO8601（取得時刻）
-  asOf: string | null;          // データ自体の基準日（不明なら null →「更新日時不明」表示）
-  period?: { from: string; to: string };
-  adjustment?: 'forward' | 'none' | 'unknown';
-  kind: 'actual' | 'estimate' | 'derived';   // 実績 / 予想 / 計算値
-};
-
-type DataPoint<T> =
-  | { value: T; meta: Provenance }
-  | { value: null; meta: Provenance; missingReason: 'not_supported' | 'no_permission' | 'fetch_error' | 'not_connected' };
-```
-
-主なエンティティ：
-
-- `PriceSeries`（symbol, 日次の調整済み終値, メタ）
-- `Basket`（id, 名称, 種別 `sector_etf | custom`, 構成銘柄, 構成の基準 `current` / `point_in_time`, 定義日）
-- `DispersionSnapshot`（後述の計算結果 + 計算パラメータ）
-- `Fundamentals`（期間ごとの売上・粗利・営業利益・純利益・FCF・現金・負債…、各項目に `kind` と期間）
-- `JournalEntry`（Thesis, Evidence, Catalyst, Risk, **Invalidation Point**, Review Date, 作成時点の価格・指標スナップショット, 振り返り）— ブラウザ内保存
-- `Holding`（手入力。ticker, 株数, 取得単価, 口座種別, 為替）— ブラウザ内保存
-
-### 「正規化」と「リターン計算」を分ける（§10）
-
-```
-returns/   … 純粋関数。価格系列 → リターン
-  periodReturn(P, t0, t)      = P_t / P_t0 - 1
-  rollingReturn(P, n)(t)      = P_t / P_{t-n} - 1          （n = 20/60/120 営業日）
-normalize/ … 表示用の変換。リターン → 描画値
-  indexTo100(P, t0)(t)        = 100 * P_t / P_t0           （Mode A）
-  relativeTo(r_i, r_ref)      = r_i - r_ref                 （Mode C、単位は pt）
-stats/     … 横断面（同一日の銘柄集合）の統計
-  quantile(xs, p)             線形補間（Hyndman–Fan type 7 = numpy 既定）。方式を UI に表示
-  dispersion                  = P90 - P10
-  breadthPositive             = #(r_i > 0) / N
-  equalWeight(r)              = mean(r_i)
-  capWeight(r, w)             = Σ w_i r_i（w = 期首時点の時価総額比。期首が取れない場合は現在値で代用し「近似」と明示）
-```
-
-計算は Actions 側（Python）で行い、ブラウザ側でも同じ関数で再計算できるようにする（モード切替を速くするため）。**両実装に同じテストケース**（手計算できる 5 銘柄の例）を用意する。
+> Yahoo Finance の非公式 API は到達できたが、利用規約上の位置づけが不明確で、予告なく使えなくなることがあるため採用しない。
 
 ---
 
-## 6. 情報アーキテクチャ（Phase 3 提案）
+## 3. 投資の考え方（白紙からの提案）
 
-### 6-1. ページ構成
+ルールは白紙に戻したので、**ダッシュボードが前提とする考え方**だけを置き、具体的なルールは使いながら決める。
 
-```
-/ (Home: Today)
-  ① Today's Investment Checklist（7 問。各問に「答えるためのパネル」へのリンク）
-  ② MARKET         主要指数 / VIX / 金利 / 為替 / 商品（N/A は N/A のまま表示）
-  ③ MACRO          今日の経済テーマ（事実・分析・市場の見方を分けた 3 段構造）
-  ④ SECTOR         11 セクターの 1D〜1Y、相対パフォーマンス
-  ⑤ ★ SECTOR INTERNAL DISPERSION（看板機能）
-  ⑥ SCREENER（入口のみ）
-  ⑦ WATCHLIST / PORTFOLIO（ブラウザ内データ）
-  ⑧ NEWS
-/sector/:id     セクター詳細（Dispersion パネルのフル版）
-/stock/:ticker  個別銘柄（Business → Growth → Quality → Financial Strength → Valuation → Catalyst → Risk）
-/journal        投資仮説ノート
-/learn          用語集・学習カード
-```
+### 3-1. 「1 年で結果」の測り方
 
-### 6-2. 全ページ共通の UX ルール
+- 株価の 1 年リターンは、市場全体の動きに大きく左右される。個別株で +20% でも、S&P500 が +25% なら「指数を買っていた方がよかった」ことになる。
+- そこで、1 年後の評価は次の **2 つ** で行う。
+  1. **指数との比較**：自分のポートフォリオ（円換算）と、同じ日に同じ金額で S&P500 ETF を買っていた場合の比較
+  2. **仮説の当たり外れ**：Journal に書いた仮説のうち、根拠が実際にその通りになったか（株価とは別に評価）
+- 指数に勝てない状態が続くなら、インデックス中心が合理的、という判断をデータで下せるようにする。
 
-- **数字 → 意味 → 考えるポイント** の 3 段表示（§27）。例：`PER 38x` → 「市場は高成長を期待している可能性」→「EPS 成長率がそれを正当化できるか確認」
-- **Beginner / Standard / Advanced** モード：指標の数を絞るのではなく **説明の量** を変える（Beginner は全用語に「？」、Advanced は計算式と出典を常時表示）
-- 各数値の横に **出典バッジ**（ソース・基準日・実績/予想/計算値）。欠損は灰色の `N/A — 理由`
-- 総合スコアは作らない。8 軸（Growth / Profitability / Cash Flow / Balance Sheet / Valuation / Momentum / Catalyst / Risk）を **並べて** 根拠の数値を表示
-- AI コメントを入れる場合は **Observation / Interpretation / Counterpoint / What to check next** の 4 区分固定。断定語（「買い」「最強」等）は出力側でチェックしてブロック
-
-### 6-3. 看板機能：Sector Internal Dispersion パネル
+### 3-2. 構成の考え方（コア・サテライト）
 
 ```
-[セクター選択 ▼ Semiconductors (custom basket, 10 銘柄, 現在構成)]
-[表示: Mode A 期首=100 | Mode B Rolling 20/60/120D | Mode C セクター中央値比]
-[期間: 3M 6M 1Y]
-
-KPI:  ETF  | Cap-Wtd | Equal-Wtd | Median | Breadth(>0) | Dispersion(P90-P10) | 上位/下位
-      +18% | +17%    | +9%       | +7%    | 60% (6/10)  | 42pt                 | NVDA / MRVL
-
-チャート（Time Series）: 各銘柄は細い灰色線、上位 3・下位 3 のみ色付き＋右端ラベル
-                         P10–P90 帯 / P25–P75 帯 / Median 太線 / ETF 破線
-断面（Cross Section）:  銘柄 × 期間（1M 3M 6M 1Y）ヒートマップ / ランキング
-
-読み方ガイド（Beginner）:
-  ETF ≫ Median かつ Dispersion 大 → 上昇が一部の大型株に集中している可能性
-  Median ≈ ETF かつ Breadth 高   → 上昇がセクター全体に広がっている可能性
-  ※ どちらも「可能性」。理由はニュース・決算で確認する
+コア       ：インデックス（例：S&P500 や全世界株）── 資産形成の土台
+サテライト ：個別株 ── ダッシュボードで学びながら、少額で仮説を試す
+現金       ：生活防衛資金とは別に、買い増し余力として持つ
 ```
 
-銘柄数による表示切替：〜10 は全線、10〜30 は全線（淡色）＋帯、30 超は帯＋外れ値＋ヒートマップ中心。
+比率はユーザーが決める。ダッシュボードには現在の比率と、指数との成績比較を常に表示する。
 
-### 6-4. 初期バスケット（MVP、すべて「現在構成・Custom Basket」と明示）
+### 3-3. 初心者向けに必須と考える観点
 
-セクター ETF 11 本（XLK, XLF, XLV, XLI, XLE, XLY, XLP, XLB, XLU, XLRE, XLC）＋ 内部分析用の custom basket 3〜4 個（例：半導体、大手銀行、ソフトウェア、エネルギー）。構成銘柄は設定ファイルで管理し、画面に一覧表示する。
-
----
-
-## 7. あなたの考え方への指摘（§38）
-
-### 7-1. 目的と既存ルールの矛盾 ★最重要
-
-1. **何が問題か**：今回の目的は「米国株中心の中長期の資産形成」と「判断力を身につけること」。一方、既存の `CLAUDE.md` は「半年〜1年で結果、回転数重視、スイング優先、+10〜15% で利確、-8% で損切り」。
-2. **なぜ問題か**：短期の値動きを狙うルールと、事業・業績・バリュエーションで判断する長期の考え方では、見るべき指標も売る理由も違う。混在させると「テーゼは生きているのに -8% で売る」「RSI で買いを見送る」といった、依頼書 §21 が避けたい判断になりやすい。少額（数十万円規模）では、為替手数料・売買コスト・税金が回転のたびに効く点も重い。
-3. **修正案**：保有ごとに **「Core（長期・テーゼで判断）」「Learning / Swing（小額・ルールの練習）」を明確に分け**、資金の大半は Core（あるいはインデックス）に置く。
-4. **ダッシュボードへの反映**：Journal で区分を必須入力にし、Core はテクニカル指標を補助表示に下げ、Swing は価格ルールを表示する。
-
-### 7-2. 比較の基準（ベンチマーク）がない
-
-- 個別株を選ぶ意味は「インデックス（例：S&P500 ETF）を持つより良いか」で測るもの。現状はこの比較がない。
-- → **Must Have**：Portfolio と Journal に「同じ日に S&P500 ETF を買っていたら」の比較を表示（円換算も）。
-
-### 7-3. 「上がっているから強い」と「良い投資」の混同リスク
-
-- 既存のスクリーニングはモメンタム条件が中心。モメンタム自体は悪くないが、それだけで選ぶと「良い企業か」「割高ではないか」の確認が後回しになる。
-- → スクリーナーの結果画面で **「どの条件で引っかかったか」＋「まだ確認していない軸」** を必ず表示する。
-
-### 7-4. VIX と Fear & Greed は別の指標
-
-- VIX は S&P500 オプションから計算される **予想変動率**（高いほど不安）。Fear & Greed は CNN の **合成センチメント指数**（低いほど恐怖）。方向が逆なので、混同すると判定が反転する。
-- → 用語集の最初の学習カードに入れる。F&G は Longbridge で取れないため、MVP では N/A とする。
-
-### 7-5. 小さなバスケットの統計は不安定
-
-- 10 銘柄の P10/P90・Breadth は 1 銘柄で大きく動く（Breadth は 10% 刻み）。→ 銘柄数（N）を KPI の横に常時表示し、N < 8 では分位点の代わりに min/max を表示する。
-
----
-
-## 8. 機能の優先順位（§33・§38）
-
-### Must Have（MVP に含める）
-
-| 機能 | 理由 |
+| 優先度 | 観点 |
 |---|---|
-| データパイプライン（Actions → 出典メタ付き JSON） | すべての前提。実データ原則を仕組みで担保 |
-| Market Overview（取れる指標のみ、N/A 明示） | 毎日の入口 |
-| Sector Overview（11 ETF、1D〜1Y） | セクター循環の把握 |
-| ★ Sector Internal Dispersion（§19 の MVP ①〜⑧ ＋ Equal vs Cap Weight） | 本アプリの看板 |
-| 個別銘柄ページ（株価・財務 5 年推移・バリュエーション。取れない項目は N/A） | Layer 4〜6 |
-| Investment Journal（Invalidation Point・Review Date 必須） | 結果論ではなく仮説を検証する習慣 |
-| Beginner モードの「？」用語説明（初期 30 語程度）＋ Today's Checklist | 学習目的の中核 |
-| ベンチマーク比較（S&P500 ETF 比） | 個別株を選ぶ意味の確認 |
-| 円換算リターン | 実際の資産の増減は円で決まる |
-
-### Should Have（MVP の次）
-
-Rolling 20/60/120D 切替・ヒートマップ・外れ値検出 / Earnings ページ（実績 vs 予想 vs 株価反応）/ スクリーナー（条件＋「なぜ通ったか」）/ ポートフォリオの集中度・最大ドローダウン・ボラティリティ・銘柄間相関 / ニュースの分類（事実と解釈を分離）/ Macro テーマカード
-
-### Future
-
-DCF（Bull/Base/Bear・感度表）/ Point-in-time 構成銘柄 / 金利感応度・ファクター分析 / AI コメント（4 区分形式）/ Z スコア・ボラティリティ調整リターン / 売却判断レビュー（Journal の振り返り集計）
+| Must | 指数との比較 / 円換算リターン（為替の影響を分解）/ 1 銘柄・1 セクターへの集中度 / 最大ドローダウン（過去最大の下落率）/ 仮説と崩壊条件の記録 |
+| Should | 銘柄間の相関 / 金利感応度 / 決算サプライズ（実績と予想の差）/ 売却理由の振り返り |
+| Future | DCF / ファクター分析 / 時点ごとの構成銘柄 |
 
 ---
 
-## 9. 要判断事項（実装前に決めていただきたいこと）
+## 4. MVP の範囲（変更なし・データソースのみ差し替え）
 
-1. **ホスティング場所**：本リポジトリ（スタジオサイト、Public）に置くか、`Stock`（Private）にパイプラインを置き、公開は市場データのみにするか。
-   → **推奨**：パイプラインとアプリ本体は `Stock`（Private）または新しい専用リポジトリ。公開する場合も市場データのみ。
-2. **Longbridge OpenAPI の認証情報**（App Key / App Secret / Access Token）はお持ちか。お持ちなら、リポジトリの Secrets に登録していただく（値をチャットに貼らないでください）。
-3. **補助データソースの可否**：米国債利回り・FF 金利は Longbridge にない見込み。FRED（米セントルイス連銀、無料 API キー）を「出典: FRED」と明示して使うか、N/A のままにするか。
-4. **`Stock-dash` の個人情報の扱い**：現在公開されている保有・損益データを非公開化するか。
+1. **Market Overview**：FRED の指数・VIX・金利・為替・原油（ETF 代替と遅延を明示）
+2. **Sector Overview**：セクター ETF 11 本の 1D〜1Y
+3. **★ Sector Internal Dispersion**：Median / P10 / P90 / Dispersion / Breadth / 上位・下位 / 等加重と時価総額加重の比較
+4. **個別銘柄ページ**：株価 ＋ SEC 財務の 5〜10 年推移 ＋ 計算可能なバリュエーション（PER・PSR・P/FCF・FCF 利回り）
+5. **Portfolio**：保有・損益（円換算）・集中度・**S&P500 との比較**
+6. **Journal**：仮説 / 根拠 / カタリスト / リスク / 崩壊条件 / 見直し日
+7. **学習**：用語の「？」説明、Today's Checklist
 
----
-
-## 10. 次のステップ
-
-1. §9 の回答を受けて、リポジトリ構成を確定
-2. Phase 2：`Provenance` 付きスキーマと、returns / normalize / stats の純粋関数＋テストを先に実装（データ無しでも検証できる部分）
-3. Phase 4〜5：Actions で Longbridge から 11 ETF ＋ 1 バスケットの日足を取得し、Dispersion パネルを 1 枚目として表示
-4. Phase 6：取得した値を Longbridge アプリ等の表示と数点突き合わせ、取得可否マトリクス（§3-2）を確定版に更新
+データモデル（出典・取得時刻・実績/予想/計算値・欠損理由を全値に付与）と、「正規化」と「リターン計算」を分けた計算設計は v1 の方針を維持する。
 
 ---
 
-### 参考（調査に使った外部情報）
+## 5. 次に必要なこと
 
-- LongPort OpenAPI Quote overview: https://open.longportapp.com/en/docs/quote/overview
-- Longbridge MCP ツール一覧（第三者まとめ、要実機確認）: https://glama.ai/mcp/servers/gqt0wq0jqs
+| # | 誰が | 内容 |
+|---|---|---|
+| 1 | ユーザー | 旧リポジトリ `Stock` / `Stock-dash` の削除（GitHub の Settings → General → Danger Zone → Delete this repository）。リポジトリの削除は本人のみ可能 |
+| 2 | ユーザー | 新しい **Private** リポジトリの作成（例：`investment-intelligence`、空で可） |
+| 3 | ユーザー | 無料登録：Tiingo（株価）、Finnhub（決算・ニュース）。キーはリポジトリの Secrets に登録 |
+| 4 | ユーザー | Cloudflare の無料アカウント作成（デプロイと Access の設定手順は実装時に用意） |
+| 5 | Claude | 新リポジトリで、計算部分（リターン・分位点・Breadth）とテストから実装開始 → FRED と SEC の取得 → Dispersion パネル |
