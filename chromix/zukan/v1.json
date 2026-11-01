@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "revision": 202611011403,
+ "revision": 202611011455,
  "themes": [
   {
    "id": "enogu",
@@ -2069,6 +2069,126 @@
        "hex": "#DA121A",
        "name": "(パナマ)ロスカナレホスレッド",
        "nameEn": "(Panama)Los Canaleros Red"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bird",
+   "name": "世界の鳥",
+   "nameEn": "World Bird Colors",
+   "icon": "🐦",
+   "chunks": [
+    {
+     "no": 1,
+     "name": "カラフル鳥",
+     "nameEn": "Colorful Birds",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#FF5500",
+       "name": "オウム",
+       "nameEn": "Parrot"
+      },
+      {
+       "hex": "#FFD200",
+       "name": "カナリア",
+       "nameEn": "Canary"
+      },
+      {
+       "hex": "#0080E0",
+       "name": "カワセミ",
+       "nameEn": "Kingfisher"
+      },
+      {
+       "hex": "#35D435",
+       "name": "インコ",
+       "nameEn": "Parakeet"
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "name": "熱帯鳥",
+     "nameEn": "Tropical Birds",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#FF1493",
+       "name": "フラミンゴ",
+       "nameEn": "Flamingo"
+      },
+      {
+       "hex": "#00B4C8",
+       "name": "ターコイズ鳥",
+       "nameEn": "Turquoise Bird"
+      },
+      {
+       "hex": "#ADFF2F",
+       "name": "オウム緑",
+       "nameEn": "Parrot Green"
+      },
+      {
+       "hex": "#FF8800",
+       "name": "トロピカル",
+       "nameEn": "Tropical Orange"
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "name": "自然系",
+     "nameEn": "Natural Birds",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#926018",
+       "name": "スズメ",
+       "nameEn": "Brown Sparrow"
+      },
+      {
+       "hex": "#4E6128",
+       "name": "ウグイス",
+       "nameEn": "Warbler"
+      },
+      {
+       "hex": "#222222",
+       "name": "カラス",
+       "nameEn": "Crow"
+      },
+      {
+       "hex": "#956028",
+       "name": "ワシ",
+       "nameEn": "Eagle"
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "name": "地味系",
+     "nameEn": "Dull-Toned Birds",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#696969",
+       "name": "グレー鳥",
+       "nameEn": "Gray Bird"
+      },
+      {
+       "hex": "#6A7E8E",
+       "name": "くすみ青",
+       "nameEn": "Dull Blue"
+      },
+      {
+       "hex": "#374F3A",
+       "name": "暗緑",
+       "nameEn": "Dark Green"
+      },
+      {
+       "hex": "#3A3A3A",
+       "name": "濃灰",
+       "nameEn": "Deep Gray"
       }
      ]
     }
