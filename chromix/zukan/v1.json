@@ -1,0 +1,2078 @@
+{
+ "schema": 1,
+ "revision": 202611010000,
+ "themes": [
+  {
+   "id": "enogu",
+   "name": "絵の具セット",
+   "nameEn": "Paint Set",
+   "icon": "🎨",
+   "chunks": [
+    {
+     "no": 1,
+     "name": "基本の三原色＋白",
+     "nameEn": "Primary Colors & White",
+     "free": true,
+     "colors": [
+      {
+       "hex": "#F5F5F0",
+       "name": "チタニウムホワイト",
+       "nameEn": "Titanium White"
+      },
+      {
+       "hex": "#E2341D",
+       "name": "カドミウムレッド",
+       "nameEn": "Cadmium Red"
+      },
+      {
+       "hex": "#4169E1",
+       "name": "ウルトラマリン",
+       "nameEn": "Ultramarine"
+      },
+      {
+       "hex": "#FFD700",
+       "name": "カドミウムイエロー",
+       "nameEn": "Cadmium Yellow"
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "name": "自然・アースカラー",
+     "nameEn": "Natural Earth Colors",
+     "free": true,
+     "colors": [
+      {
+       "hex": "#8B4513",
+       "name": "バーントシエナ",
+       "nameEn": "Burnt Sienna"
+      },
+      {
+       "hex": "#6B4226",
+       "name": "ローアンバー",
+       "nameEn": "Raw Umber"
+      },
+      {
+       "hex": "#E8A830",
+       "name": "ゴールデンオーカー",
+       "nameEn": "Golden Ochre"
+      },
+      {
+       "hex": "#507D2A",
+       "name": "サップグリーン",
+       "nameEn": "Sap Green"
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "name": "鮮やかアクセント",
+     "nameEn": "Vivid Accents",
+     "free": true,
+     "colors": [
+      {
+       "hex": "#FF00AA",
+       "name": "マゼンタ",
+       "nameEn": "Magenta"
+      },
+      {
+       "hex": "#40826D",
+       "name": "ビリジアン",
+       "nameEn": "Viridian"
+      },
+      {
+       "hex": "#FADA5E",
+       "name": "ネープルスイエロー",
+       "nameEn": "Naples Yellow"
+      },
+      {
+       "hex": "#1C3F6E",
+       "name": "インディゴブルー",
+       "nameEn": "Indigo Blue"
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "name": "影・仕上げカラー",
+     "nameEn": "Shadow & Finish",
+     "free": true,
+     "colors": [
+      {
+       "hex": "#231F20",
+       "name": "アイボリーブラック",
+       "nameEn": "Ivory Black"
+      },
+      {
+       "hex": "#C03060",
+       "name": "ローズマダー",
+       "nameEn": "Rose Madder"
+      },
+      {
+       "hex": "#5B92D4",
+       "name": "セルリアンライト",
+       "nameEn": "Cerulean Light"
+      },
+      {
+       "hex": "#2A52BE",
+       "name": "セルリアンブルー",
+       "nameEn": "Cerulean Blue"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "dentou",
+   "name": "日本の伝統色",
+   "nameEn": "Traditional Japanese Colors",
+   "icon": "🏯",
+   "chunks": [
+    {
+     "no": 1,
+     "name": "基本色",
+     "nameEn": "Basic Colors",
+     "free": true,
+     "colors": [
+      {
+       "hex": "#E03C31",
+       "name": "朱色",
+       "nameEn": "Vermilion"
+      },
+      {
+       "hex": "#0099CC",
+       "name": "空色",
+       "nameEn": "Sky Blue"
+      },
+      {
+       "hex": "#90B44B",
+       "name": "萌黄色",
+       "nameEn": "Spring Green"
+      },
+      {
+       "hex": "#E6B422",
+       "name": "黄金色",
+       "nameEn": "Gold"
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "name": "落ち着き基本色",
+     "nameEn": "Calm Basics",
+     "free": true,
+     "colors": [
+      {
+       "hex": "#FA8072",
+       "name": "鮭色",
+       "nameEn": "Salmon"
+      },
+      {
+       "hex": "#8B7EC8",
+       "name": "藤色",
+       "nameEn": "Wisteria"
+      },
+      {
+       "hex": "#87AE73",
+       "name": "鼠緑",
+       "nameEn": "Gray Green"
+      },
+      {
+       "hex": "#FFBF00",
+       "name": "琥珀色",
+       "nameEn": "Amber"
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "name": "暖色ミックス",
+     "nameEn": "Warm Mix",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#FF7F50",
+       "name": "珊瑚色",
+       "nameEn": "Coral"
+      },
+      {
+       "hex": "#C68642",
+       "name": "黄褐色",
+       "nameEn": "Ochre"
+      },
+      {
+       "hex": "#E34234",
+       "name": "丹色",
+       "nameEn": "Red Ochre"
+      },
+      {
+       "hex": "#F4A7B9",
+       "name": "鴇色",
+       "nameEn": "Peach Pink"
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "name": "寒色ミックス",
+     "nameEn": "Cool Mix",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#1E50A2",
+       "name": "瑠璃色",
+       "nameEn": "Lapis Blue"
+      },
+      {
+       "hex": "#0047AB",
+       "name": "群青",
+       "nameEn": "Ultramarine"
+      },
+      {
+       "hex": "#01579B",
+       "name": "海碧",
+       "nameEn": "Ocean Blue"
+      },
+      {
+       "hex": "#003153",
+       "name": "紺青",
+       "nameEn": "Deep Navy"
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "name": "赤系グラデーション",
+     "nameEn": "Red Gradient",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#E87472",
+       "name": "紅梅色",
+       "nameEn": "Plum Red"
+      },
+      {
+       "hex": "#C0392B",
+       "name": "茜色",
+       "nameEn": "Madder Red"
+      },
+      {
+       "hex": "#D83A2C",
+       "name": "朱砂色",
+       "nameEn": "Cinnabar"
+      },
+      {
+       "hex": "#9F3928",
+       "name": "弁柄色",
+       "nameEn": "Bengara"
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "name": "青系グラデーション",
+     "nameEn": "Blue Gradient",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#2E86C1",
+       "name": "露草色",
+       "nameEn": "Tsuyukusa Blue"
+      },
+      {
+       "hex": "#1A6FA8",
+       "name": "縹色",
+       "nameEn": "Hanada Blue"
+      },
+      {
+       "hex": "#1A4F8A",
+       "name": "藍色",
+       "nameEn": "Indigo Blue"
+      },
+      {
+       "hex": "#0A3060",
+       "name": "紺碧",
+       "nameEn": "Azure"
+      }
+     ]
+    },
+    {
+     "no": 7,
+     "name": "暗色",
+     "nameEn": "Dark Shades",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#800000",
+       "name": "栗色",
+       "nameEn": "Maroon"
+      },
+      {
+       "hex": "#36454F",
+       "name": "炭色",
+       "nameEn": "Charcoal"
+      },
+      {
+       "hex": "#704214",
+       "name": "烏賊墨色",
+       "nameEn": "Ink Black"
+      },
+      {
+       "hex": "#24437E",
+       "name": "藍鼠",
+       "nameEn": "Indigo Gray"
+      }
+     ]
+    },
+    {
+     "no": 8,
+     "name": "くすみ色",
+     "nameEn": "Muted Tones",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#9E9087",
+       "name": "薄墨色",
+       "nameEn": "Pale Gray"
+      },
+      {
+       "hex": "#808000",
+       "name": "鶯色",
+       "nameEn": "Olive"
+      },
+      {
+       "hex": "#8AA654",
+       "name": "抹茶色",
+       "nameEn": "Matcha"
+      },
+      {
+       "hex": "#664228",
+       "name": "煤竹色",
+       "nameEn": "Bamboo Brown"
+      }
+     ]
+    },
+    {
+     "no": 9,
+     "name": "識別困難",
+     "nameEn": "Hard to Tell",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#800020",
+       "name": "葡萄酒色",
+       "nameEn": "Wine Red"
+      },
+      {
+       "hex": "#4B0082",
+       "name": "江戸紫",
+       "nameEn": "Edo Purple"
+      },
+      {
+       "hex": "#C47495",
+       "name": "萩色",
+       "nameEn": "Bush Clover"
+      },
+      {
+       "hex": "#703030",
+       "name": "焦茶",
+       "nameEn": "Dark Brown"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "hana",
+   "name": "花の色",
+   "nameEn": "Flower Colors",
+   "icon": "🌺",
+   "chunks": [
+    {
+     "no": 1,
+     "name": "カラフル基本",
+     "nameEn": "Colorful Basics",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#F9C0C8",
+       "name": "乙女桜",
+       "nameEn": "Cherry Blossom Pink"
+      },
+      {
+       "hex": "#FFD900",
+       "name": "向日葵色",
+       "nameEn": "Sunflower Yellow"
+      },
+      {
+       "hex": "#FFF5A0",
+       "name": "水仙色",
+       "nameEn": "Narcissus"
+      },
+      {
+       "hex": "#F5E642",
+       "name": "菊色",
+       "nameEn": "Chrysanthemum"
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "name": "パステル系",
+     "nameEn": "Pastel Blooms",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#E7A2C0",
+       "name": "撫子色",
+       "nameEn": "Dianthus Pink"
+      },
+      {
+       "hex": "#7B9EC8",
+       "name": "紫陽花色",
+       "nameEn": "Hydrangea Blue"
+      },
+      {
+       "hex": "#F2A0B0",
+       "name": "蓮色",
+       "nameEn": "Lotus Pink"
+      },
+      {
+       "hex": "#C8A84B",
+       "name": "芥子色",
+       "nameEn": "Poppy Yellow"
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "name": "暖色寄り",
+     "nameEn": "Warm Tones",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#F3A0A0",
+       "name": "牡丹色",
+       "nameEn": "Peony"
+      },
+      {
+       "hex": "#CF6D8C",
+       "name": "梅色",
+       "nameEn": "Plum"
+      },
+      {
+       "hex": "#F0E040",
+       "name": "菜の花色",
+       "nameEn": "Rapeseed Yellow"
+      },
+      {
+       "hex": "#E83060",
+       "name": "薔薇色",
+       "nameEn": "Rose"
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "name": "寒色＋紫",
+     "nameEn": "Cool & Purple",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#7B5EA7",
+       "name": "菫色",
+       "nameEn": "Violet"
+      },
+      {
+       "hex": "#4A6FA5",
+       "name": "朝顔色",
+       "nameEn": "Morning Glory"
+      },
+      {
+       "hex": "#9B6B9E",
+       "name": "紫苑色",
+       "nameEn": "Aster Purple"
+      },
+      {
+       "hex": "#7A9EC0",
+       "name": "紫陽花青",
+       "nameEn": "Hydrangea Deep"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "houseki",
+   "name": "宝石の色",
+   "nameEn": "Gemstone Colors",
+   "icon": "💎",
+   "chunks": [
+    {
+     "no": 1,
+     "name": "鮮やか基本",
+     "nameEn": "Vivid Basics",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#FFC200",
+       "name": "トパーズ",
+       "nameEn": "Topaz"
+      },
+      {
+       "hex": "#7FFFD4",
+       "name": "アクアマリン",
+       "nameEn": "Aquamarine"
+      },
+      {
+       "hex": "#E6A817",
+       "name": "アンバー",
+       "nameEn": "Amber"
+      },
+      {
+       "hex": "#D4D4E8",
+       "name": "ムーンストーン",
+       "nameEn": "Moonstone"
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "name": "中間色",
+     "nameEn": "Mid Tones",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#FF6B6B",
+       "name": "コーラル",
+       "nameEn": "Coral"
+      },
+      {
+       "hex": "#3CB371",
+       "name": "ジェイド",
+       "nameEn": "Jade"
+      },
+      {
+       "hex": "#7B4FA0",
+       "name": "アメジスト",
+       "nameEn": "Amethyst"
+      },
+      {
+       "hex": "#9AB648",
+       "name": "ペリドット",
+       "nameEn": "Peridot"
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "name": "高級感",
+     "nameEn": "Luxury",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#046307",
+       "name": "エメラルド",
+       "nameEn": "Emerald"
+      },
+      {
+       "hex": "#E8D5C0",
+       "name": "オパール",
+       "nameEn": "Opal"
+      },
+      {
+       "hex": "#D0E8F5",
+       "name": "ダイヤモンド",
+       "nameEn": "Diamond"
+      },
+      {
+       "hex": "#6B0F1A",
+       "name": "ガーネット",
+       "nameEn": "Garnet"
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "name": "ダーク宝石",
+     "nameEn": "Dark Gems",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#9B1B30",
+       "name": "ルビー",
+       "nameEn": "Ruby"
+      },
+      {
+       "hex": "#1F3A9A",
+       "name": "サファイア",
+       "nameEn": "Sapphire"
+      },
+      {
+       "hex": "#1A1A2E",
+       "name": "オブシディアン",
+       "nameEn": "Obsidian"
+      },
+      {
+       "hex": "#4B5E9E",
+       "name": "タンザナイト",
+       "nameEn": "Tanzanite"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "kokki",
+   "name": "世界の国旗色",
+   "nameEn": "World Flag Colors",
+   "icon": "🌍",
+   "chunks": [
+    {
+     "no": 1,
+     "name": "東アジアの象徴",
+     "nameEn": "East Asian Icons",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#BC002D",
+       "name": "日本レッド",
+       "nameEn": "Hinomaru Red"
+      },
+      {
+       "hex": "#DE2910",
+       "name": "チャイナレッド",
+       "nameEn": "China Red"
+      },
+      {
+       "hex": "#003478",
+       "name": "コリアブルー",
+       "nameEn": "Korea Blue"
+      },
+      {
+       "hex": "#0066B3",
+       "name": "モンゴルブルー",
+       "nameEn": "Mongolia Blue"
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "name": "東南アジアの活気",
+     "nameEn": "Southeast Asian Vibrancy",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#A51931",
+       "name": "タイレッド",
+       "nameEn": "Thailand Red"
+      },
+      {
+       "hex": "#FFDD00",
+       "name": "ベトナムイエロー",
+       "nameEn": "Vietnam Yellow"
+      },
+      {
+       "hex": "#FF0000",
+       "name": "インドネシアレッド",
+       "nameEn": "Indonesia Red"
+      },
+      {
+       "hex": "#0038A8",
+       "name": "フィリピンブルー",
+       "nameEn": "Philippines Blue"
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "name": "南アジアの伝統",
+     "nameEn": "South Asian Tradition",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#FF9933",
+       "name": "インドサフラン",
+       "nameEn": "India Saffron"
+      },
+      {
+       "hex": "#01411C",
+       "name": "パキスタングリーン",
+       "nameEn": "Pakistan Green"
+      },
+      {
+       "hex": "#006A4E",
+       "name": "バングラデシュグリーン",
+       "nameEn": "Bangladesh Green"
+      },
+      {
+       "hex": "#8D153A",
+       "name": "スリランカマルーン",
+       "nameEn": "Sri Lanka Maroon"
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "name": "中東の力強さ",
+     "nameEn": "Middle Eastern Strength",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#CE1126",
+       "name": "パンアラブレッド",
+       "nameEn": "Pan Arab Red"
+      },
+      {
+       "hex": "#007A3D",
+       "name": "パンアラブグリーン",
+       "nameEn": "Pan Arab Green"
+      },
+      {
+       "hex": "#0A0A0A",
+       "name": "ブラックスタンダード",
+       "nameEn": "Arab Black"
+      },
+      {
+       "hex": "#F8F8F8",
+       "name": "ホワイトスタンダード",
+       "nameEn": "Arab White"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tabemono",
+   "name": "食べ物の色",
+   "nameEn": "Food Colors",
+   "icon": "🍽️",
+   "chunks": [
+    {
+     "no": 1,
+     "name": "定番食材",
+     "nameEn": "Staple Ingredients",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#CE2939",
+       "name": "トマトレッド",
+       "nameEn": "Tomato Red"
+      },
+      {
+       "hex": "#FFE135",
+       "name": "バナナイエロー",
+       "nameEn": "Banana Yellow"
+      },
+      {
+       "hex": "#779E3C",
+       "name": "抹茶グリーン",
+       "nameEn": "Matcha Green"
+      },
+      {
+       "hex": "#FFFDE7",
+       "name": "バニラホワイト",
+       "nameEn": "Vanilla White"
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "name": "スイーツ系",
+     "nameEn": "Sweets & Fruits",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#7B3F00",
+       "name": "チョコレート",
+       "nameEn": "Chocolate"
+      },
+      {
+       "hex": "#4F2398",
+       "name": "ブルーベリー",
+       "nameEn": "Blueberry"
+      },
+      {
+       "hex": "#FF6F61",
+       "name": "トマトサーモン",
+       "nameEn": "Tomato Salmon"
+      },
+      {
+       "hex": "#FF8C00",
+       "name": "マンゴーオレンジ",
+       "nameEn": "Mango Orange"
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "name": "自然素材",
+     "nameEn": "Natural Produce",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#F5B800",
+       "name": "黄身イエロー",
+       "nameEn": "Egg Yolk"
+      },
+      {
+       "hex": "#6B9E2A",
+       "name": "抹茶グリーン濃",
+       "nameEn": "Deep Matcha Green"
+      },
+      {
+       "hex": "#9E1B32",
+       "name": "ビーツレッド",
+       "nameEn": "Beet Red"
+      },
+      {
+       "hex": "#568203",
+       "name": "アボカドグリーン",
+       "nameEn": "Avocado Green"
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "name": "スパイス系",
+     "nameEn": "Spice Tones",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#4A2010",
+       "name": "ダークロースト",
+       "nameEn": "Dark Roast"
+      },
+      {
+       "hex": "#C8A2C8",
+       "name": "ラベンダーはちみつ",
+       "nameEn": "Lavender Honey"
+      },
+      {
+       "hex": "#FC4C4E",
+       "name": "スイカレッド",
+       "nameEn": "Watermelon Red"
+      },
+      {
+       "hex": "#E3A020",
+       "name": "ターメリック",
+       "nameEn": "Turmeric"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "soraumi",
+   "name": "空と海の色",
+   "nameEn": "Sky & Sea Colors",
+   "icon": "🌅",
+   "chunks": [
+    {
+     "no": 1,
+     "name": "昼の空",
+     "nameEn": "Daytime Sky",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#FFB7C5",
+       "name": "夜明けピンク",
+       "nameEn": "Dawn Pink"
+      },
+      {
+       "hex": "#FF6B35",
+       "name": "夕焼けオレンジ",
+       "nameEn": "Sunset Orange"
+      },
+      {
+       "hex": "#F0F8FF",
+       "name": "真昼の白",
+       "nameEn": "Midday White"
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "name": "夕暮れと海",
+     "nameEn": "Dusk & Sea",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#87CEEB",
+       "name": "昼空ブルー",
+       "nameEn": "Daytime Sky Blue"
+      },
+      {
+       "hex": "#FF4500",
+       "name": "朝焼けレッド",
+       "nameEn": "Morning Glow Red"
+      },
+      {
+       "hex": "#663399",
+       "name": "黄昏パープル",
+       "nameEn": "Twilight Purple"
+      },
+      {
+       "hex": "#40E0D0",
+       "name": "浅瀬ターコイズ",
+       "nameEn": "Shallow Sea Turquoise"
+      },
+      {
+       "hex": "#002366",
+       "name": "深海ネイビー",
+       "nameEn": "Deep Sea Navy"
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "name": "深海と嵐",
+     "nameEn": "Deep Sea & Storm",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#DAA520",
+       "name": "夕暮れゴールド",
+       "nameEn": "Dusk Gold"
+      },
+      {
+       "hex": "#708090",
+       "name": "嵐のグレー",
+       "nameEn": "Storm Gray"
+      },
+      {
+       "hex": "#006994",
+       "name": "熱帯海ブルー",
+       "nameEn": "Tropical Sea Blue"
+      },
+      {
+       "hex": "#1A1033",
+       "name": "夜空インディゴ",
+       "nameEn": "Night Sky Indigo"
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "name": "夜と神秘",
+     "nameEn": "Night & Mystery",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#4CBB88",
+       "name": "オーロラグリーン",
+       "nameEn": "Aurora Green"
+      },
+      {
+       "hex": "#E8E8FF",
+       "name": "星明かりホワイト",
+       "nameEn": "Starlight White"
+      },
+      {
+       "hex": "#0D0D1A",
+       "name": "深夜ブラック",
+       "nameEn": "Midnight Black"
+      },
+      {
+       "hex": "#FF7F7F",
+       "name": "珊瑚礁コーラル",
+       "nameEn": "Coral Reef"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "europe",
+   "name": "ヨーロッパ建築の色",
+   "nameEn": "European Architecture",
+   "icon": "🏛️",
+   "chunks": [
+    {
+     "no": 1,
+     "name": "地中海の陽光",
+     "nameEn": "Mediterranean Sun",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#C66733",
+       "name": "テラコッタ",
+       "nameEn": "Terracotta"
+      },
+      {
+       "hex": "#F2EFE4",
+       "name": "石灰ホワイト",
+       "nameEn": "Lime White"
+      },
+      {
+       "hex": "#1F4E9A",
+       "name": "コバルトドア",
+       "nameEn": "Cobalt Door"
+      },
+      {
+       "hex": "#F5DEB3",
+       "name": "麦わらイエロー",
+       "nameEn": "Straw Yellow"
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "name": "石畳と扉",
+     "nameEn": "Cobblestone & Doors",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#4E9F7A",
+       "name": "錆び銅グリーン",
+       "nameEn": "Verdigris Green"
+      },
+      {
+       "hex": "#9E9E8E",
+       "name": "パリのグレー",
+       "nameEn": "Paris Gray"
+      },
+      {
+       "hex": "#8B2500",
+       "name": "ブリックレッド",
+       "nameEn": "Brick Red"
+      },
+      {
+       "hex": "#556B2F",
+       "name": "オリーブドア",
+       "nameEn": "Olive Door"
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "name": "歴史的建築",
+     "nameEn": "Historic Architecture",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#C9A84C",
+       "name": "ヴェネツィアゴールド",
+       "nameEn": "Venetian Gold"
+      },
+      {
+       "hex": "#A89F91",
+       "name": "ロンドンフォグ",
+       "nameEn": "London Fog"
+      },
+      {
+       "hex": "#C57B8C",
+       "name": "プラハローズ",
+       "nameEn": "Prague Rose"
+      },
+      {
+       "hex": "#DCDCDC",
+       "name": "大理石グレー",
+       "nameEn": "Marble Gray"
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "name": "重厚な城壁",
+     "nameEn": "Fortress Walls",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#1A4FA0",
+       "name": "ポルトガルタイル",
+       "nameEn": "Portugal Tile"
+      },
+      {
+       "hex": "#1B4FBB",
+       "name": "サントリーニブルー",
+       "nameEn": "Santorini Blue"
+      },
+      {
+       "hex": "#3B6B4F",
+       "name": "ブダペストグリーン",
+       "nameEn": "Budapest Green"
+      },
+      {
+       "hex": "#8B1A1A",
+       "name": "フィレンツェレッド",
+       "nameEn": "Florence Red"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "dobutsu",
+   "name": "昆虫・動物の色",
+   "nameEn": "Animal & Insect Colors",
+   "icon": "🦋",
+   "chunks": [
+    {
+     "no": 1,
+     "name": "鮮やか動物",
+     "nameEn": "Vivid Animals",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#00BFFF",
+       "name": "モルフォ蝶ブルー",
+       "nameEn": "Morpho Blue"
+      },
+      {
+       "hex": "#FC8EAC",
+       "name": "フラミンゴピンク",
+       "nameEn": "Flamingo Pink"
+      },
+      {
+       "hex": "#C8960C",
+       "name": "チーター柄ゴールド",
+       "nameEn": "Cheetah Gold"
+      },
+      {
+       "hex": "#F5F5F5",
+       "name": "パンダホワイト",
+       "nameEn": "Panda White"
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "name": "猛獣の色",
+     "nameEn": "Predator Colors",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#FF6600",
+       "name": "トラオレンジ",
+       "nameEn": "Tiger Orange"
+      },
+      {
+       "hex": "#00827F",
+       "name": "クジャクグリーン",
+       "nameEn": "Peacock Green"
+      },
+      {
+       "hex": "#CC1100",
+       "name": "テントウムシレッド",
+       "nameEn": "Ladybug Red"
+      },
+      {
+       "hex": "#2C2C2C",
+       "name": "シマウマブラック",
+       "nameEn": "Zebra Black"
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "name": "昆虫と海洋",
+     "nameEn": "Insects & Ocean",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#5C8A00",
+       "name": "カメレオングリーン",
+       "nameEn": "Chameleon Green"
+      },
+      {
+       "hex": "#7B2D8B",
+       "name": "タコパープル",
+       "nameEn": "Octopus Purple"
+      },
+      {
+       "hex": "#FF6F00",
+       "name": "サンゴオレンジ",
+       "nameEn": "Coral Orange"
+      },
+      {
+       "hex": "#E8E840",
+       "name": "ホタルイエロー",
+       "nameEn": "Firefly Yellow"
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "name": "夜行性の色",
+     "nameEn": "Nocturnal Colors",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#EEF0F0",
+       "name": "ホッキョクグマ",
+       "nameEn": "Polar Bear White"
+      },
+      {
+       "hex": "#2D1B3D",
+       "name": "コウモリパープル",
+       "nameEn": "Bat Purple"
+      },
+      {
+       "hex": "#8B5A2B",
+       "name": "カブトムシブラウン",
+       "nameEn": "Beetle Brown"
+      },
+      {
+       "hex": "#5D3A6A",
+       "name": "アメフラシパープル",
+       "nameEn": "Sea Hare Purple"
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "name": "熱帯と深海",
+     "nameEn": "Tropical & Deep Sea",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#5CA04E",
+       "name": "オウムグリーン",
+       "nameEn": "Parrot Green"
+      },
+      {
+       "hex": "#1C1C28",
+       "name": "イカスミブラック",
+       "nameEn": "Squid Ink Black"
+      },
+      {
+       "hex": "#C8A96E",
+       "name": "ヒョウ柄ベージュ",
+       "nameEn": "Leopard Beige"
+      },
+      {
+       "hex": "#E8C840",
+       "name": "ミツバチイエロー",
+       "nameEn": "Honeybee Yellow"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cafe",
+   "name": "カフェの色",
+   "nameEn": "Café Colors",
+   "icon": "☕",
+   "chunks": [
+    {
+     "no": 1,
+     "name": "定番ドリンク",
+     "nameEn": "Classic Drinks",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#C8A882",
+       "name": "カフェラテ",
+       "nameEn": "Cafe Latte"
+      },
+      {
+       "hex": "#F3E5AB",
+       "name": "バニラクリーム",
+       "nameEn": "Vanilla Cream"
+      },
+      {
+       "hex": "#FFF8F0",
+       "name": "ミルクホワイト",
+       "nameEn": "Milk White"
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "name": "和カフェ",
+     "nameEn": "Japanese Café",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#B0E0E6",
+       "name": "アイスブルー",
+       "nameEn": "Ice Blue"
+      },
+      {
+       "hex": "#8FAF5A",
+       "name": "抹茶ラテ",
+       "nameEn": "Matcha Latte"
+      },
+      {
+       "hex": "#8B6347",
+       "name": "ほうじ茶",
+       "nameEn": "Hojicha"
+      },
+      {
+       "hex": "#A0785A",
+       "name": "カプチーノ",
+       "nameEn": "Cappuccino"
+      },
+      {
+       "hex": "#FC7999",
+       "name": "ストロベリーピンク",
+       "nameEn": "Strawberry Pink"
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "name": "スパイスと香り",
+     "nameEn": "Spice & Aroma",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#5C3317",
+       "name": "ダークモカ",
+       "nameEn": "Dark Mocha"
+      },
+      {
+       "hex": "#D2691E",
+       "name": "シナモン",
+       "nameEn": "Cinnamon"
+      },
+      {
+       "hex": "#C47C3E",
+       "name": "チャイスパイス",
+       "nameEn": "Chai Spice"
+      },
+      {
+       "hex": "#9B8EC4",
+       "name": "ラベンダーラテ",
+       "nameEn": "Lavender Latte"
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "name": "深煎りの闇",
+     "nameEn": "Dark Roast",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#3B1A08",
+       "name": "エスプレッソ",
+       "nameEn": "Espresso"
+      },
+      {
+       "hex": "#2C1A0E",
+       "name": "コールドブリュー",
+       "nameEn": "Cold Brew"
+      },
+      {
+       "hex": "#3E7B5E",
+       "name": "チョコミント",
+       "nameEn": "Choco Mint"
+      },
+      {
+       "hex": "#1A0A00",
+       "name": "ブラックコーヒー",
+       "nameEn": "Black Coffee"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "kyoto",
+   "name": "京都の四季",
+   "nameEn": "Kyoto Seasons",
+   "icon": "🌸",
+   "chunks": [
+    {
+     "no": 1,
+     "name": "春と新緑",
+     "nameEn": "Spring & Fresh Leaves",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#F2A5B5",
+       "name": "春の霞",
+       "nameEn": "Spring Haze"
+      },
+      {
+       "hex": "#8DBB6B",
+       "name": "若葉グリーン",
+       "nameEn": "Fresh Leaf Green"
+      },
+      {
+       "hex": "#5B9BD5",
+       "name": "夏空ブルー",
+       "nameEn": "Summer Sky Blue"
+      },
+      {
+       "hex": "#E8DCC8",
+       "name": "白砂ベージュ",
+       "nameEn": "White Sand Beige"
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "name": "夏秋の彩り",
+     "nameEn": "Summer & Autumn Hues",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#C8516B",
+       "name": "牡丹ローズ",
+       "nameEn": "Peony Rose"
+      },
+      {
+       "hex": "#4A7C59",
+       "name": "青もみじ",
+       "nameEn": "Green Maple"
+      },
+      {
+       "hex": "#C84B2F",
+       "name": "燃える紅葉",
+       "nameEn": "Burning Autumn Red"
+      },
+      {
+       "hex": "#E8722A",
+       "name": "柿オレンジ",
+       "nameEn": "Persimmon Orange"
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "name": "金箔と苔と朱",
+     "nameEn": "Gold, Moss & Vermilion",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#B8962E",
+       "name": "金箔色",
+       "nameEn": "Gold Leaf"
+      },
+      {
+       "hex": "#5C7A3E",
+       "name": "苔グリーン",
+       "nameEn": "Moss Green"
+      },
+      {
+       "hex": "#BB3B0E",
+       "name": "朱塗りレッド",
+       "nameEn": "Vermilion Lacquer"
+      },
+      {
+       "hex": "#6B8E4E",
+       "name": "竹の緑",
+       "nameEn": "Bamboo Green"
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "name": "冬と夜の京都",
+     "nameEn": "Kyoto Winter & Night",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#F0EFEB",
+       "name": "冬の雪白",
+       "nameEn": "Winter Snow White"
+      },
+      {
+       "hex": "#A8294A",
+       "name": "深紅の椿",
+       "nameEn": "Deep Camellia Red"
+      },
+      {
+       "hex": "#1A2352",
+       "name": "夜の藍",
+       "nameEn": "Night Indigo"
+      },
+      {
+       "hex": "#7B8D9E",
+       "name": "灰青（鈍色）",
+       "nameEn": "Ash Blue"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "kodomo",
+   "name": "こどもの日の色",
+   "nameEn": "Children's Day Colors",
+   "icon": "🎏",
+   "chunks": [
+    {
+     "no": 1,
+     "name": "こいのぼり",
+     "nameEn": "Koinobori",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#1A84F0",
+       "name": "こいのぼりブルー",
+       "nameEn": "Koinobori Blue"
+      },
+      {
+       "hex": "#FF2E2E",
+       "name": "こいのぼりレッド",
+       "nameEn": "Koinobori Red"
+      },
+      {
+       "hex": "#2EC82E",
+       "name": "こいのぼりグリーン",
+       "nameEn": "Koinobori Green"
+      },
+      {
+       "hex": "#D4AF37",
+       "name": "兜ゴールド",
+       "nameEn": "Helmet Gold"
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "name": "五月の空と緑",
+     "nameEn": "May Sky & Green",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#6B8E23",
+       "name": "柏餅グリーン",
+       "nameEn": "Kashiwa Green"
+      },
+      {
+       "hex": "#7CFC00",
+       "name": "芝生グリーン",
+       "nameEn": "Lawn Green"
+      },
+      {
+       "hex": "#A8D8E0",
+       "name": "空気ブルー",
+       "nameEn": "Air Blue"
+      },
+      {
+       "hex": "#4682B4",
+       "name": "五月晴れブルー",
+       "nameEn": "Clear May Blue"
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "name": "和菓子と飾り",
+     "nameEn": "Wagashi & Decorations",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#FFB0C0",
+       "name": "和菓子ピンク",
+       "nameEn": "Japanese Sweet Pink"
+      },
+      {
+       "hex": "#8FD2F0",
+       "name": "青空ブルー",
+       "nameEn": "May Sky Blue"
+      },
+      {
+       "hex": "#FFCF00",
+       "name": "紙吹雪カラフル",
+       "nameEn": "Confetti Color"
+      },
+      {
+       "hex": "#FFF176",
+       "name": "日差しイエロー",
+       "nameEn": "Sunlight Yellow"
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "name": "鯉と旗",
+     "nameEn": "Carp & Flags",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#F8F8F5",
+       "name": "風オフホワイト",
+       "nameEn": "Wind White"
+      },
+      {
+       "hex": "#1C1C1C",
+       "name": "鯉ブラック",
+       "nameEn": "Koi Black"
+      },
+      {
+       "hex": "#FEFEFE",
+       "name": "旗ホワイト",
+       "nameEn": "Flag White"
+      },
+      {
+       "hex": "#7A3C10",
+       "name": "木柱ブラウン",
+       "nameEn": "Pole Brown"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sushi",
+   "name": "寿司ネタ",
+   "nameEn": "Sushi Colors",
+   "icon": "🍣",
+   "chunks": [
+    {
+     "no": 1,
+     "name": "定番ネタ",
+     "nameEn": "Classic Toppings",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#FF7060",
+       "name": "サーモン",
+       "nameEn": "Salmon"
+      },
+      {
+       "hex": "#FFA07A",
+       "name": "エビ",
+       "nameEn": "Shrimp"
+      },
+      {
+       "hex": "#FFF8DC",
+       "name": "シャリ",
+       "nameEn": "Rice"
+      },
+      {
+       "hex": "#2D9E50",
+       "name": "大葉",
+       "nameEn": "Shiso"
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "name": "赤身白身",
+     "nameEn": "Red & White Fish",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#C01530",
+       "name": "マグロ",
+       "nameEn": "Tuna"
+      },
+      {
+       "hex": "#F08080",
+       "name": "中トロ",
+       "nameEn": "Fatty Tuna"
+      },
+      {
+       "hex": "#FAF0E6",
+       "name": "ヒラメ",
+       "nameEn": "Flounder"
+      },
+      {
+       "hex": "#E9967A",
+       "name": "サーモン脂",
+       "nameEn": "Fat Salmon"
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "name": "軍艦・巻物",
+     "nameEn": "Gunkan & Rolls",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#FF6200",
+       "name": "イクラ",
+       "nameEn": "Salmon Roe"
+      },
+      {
+       "hex": "#FFB300",
+       "name": "ウニ",
+       "nameEn": "Sea Urchin"
+      },
+      {
+       "hex": "#4A7A00",
+       "name": "アボカド",
+       "nameEn": "Avocado"
+      },
+      {
+       "hex": "#1A1A0A",
+       "name": "海苔",
+       "nameEn": "Nori"
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "name": "薬味・仕上げ",
+     "nameEn": "Condiments & Finish",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#FFD54F",
+       "name": "玉子",
+       "nameEn": "Tamagoyaki"
+      },
+      {
+       "hex": "#FFB6A3",
+       "name": "ガリ",
+       "nameEn": "Pickled Ginger"
+      },
+      {
+       "hex": "#7CBB5A",
+       "name": "わさび",
+       "nameEn": "Wasabi"
+      },
+      {
+       "hex": "#3B2F2F",
+       "name": "醤油",
+       "nameEn": "Soy Sauce"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "wc2026",
+   "name": "W杯2026ユニフォーム",
+   "nameEn": "World Cup 2026 Kits",
+   "icon": "⚽",
+   "chunks": [
+    {
+     "no": 1,
+     "name": "グループA",
+     "nameEn": "Group A",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#00704A",
+       "name": "(メキシコ)エルトリコロールグリーン",
+       "nameEn": "El Tri Green"
+      },
+      {
+       "hex": "#C60C30",
+       "name": "(韓国)テグクウォリアーズレッド",
+       "nameEn": "Taegeuk Warriors Red"
+      },
+      {
+       "hex": "#FFB81C",
+       "name": "(南アフリカ)バファナバファナゴールド",
+       "nameEn": "Bafana Bafana Gold"
+      },
+      {
+       "hex": "#D7141A",
+       "name": "(チェコ)チェコレッド",
+       "nameEn": "Czechia Red"
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "name": "グループB",
+     "nameEn": "Group B",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#FF0808",
+       "name": "(カナダ)カナダレッド",
+       "nameEn": "Canada Red"
+      },
+      {
+       "hex": "#E4003B",
+       "name": "(スイス)ナティスイスレッド",
+       "nameEn": "Nati Swiss Red"
+      },
+      {
+       "hex": "#8D1B3D",
+       "name": "(カタール)マリーンズマルーン",
+       "nameEn": "Maroons Maroon"
+      },
+      {
+       "hex": "#002395",
+       "name": "(ボスニア)ズマジチブルー",
+       "nameEn": "Zmajčići Blue"
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "name": "グループC",
+     "nameEn": "Group C",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#FFDF00",
+       "name": "(ブラジル)カナリアイエロー",
+       "nameEn": "Canary Yellow"
+      },
+      {
+       "hex": "#C1272D",
+       "name": "(モロッコ)アトラスライオンズレッド",
+       "nameEn": "Atlas Lions Red"
+      },
+      {
+       "hex": "#00209F",
+       "name": "(ハイチ)レ・グレナディエールブルー",
+       "nameEn": "Les Grenadiers Blue"
+      },
+      {
+       "hex": "#003380",
+       "name": "(スコットランド)ブレイヴハーツネイビー",
+       "nameEn": "Brave Hearts Navy"
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "name": "グループD",
+     "nameEn": "Group D",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#002868",
+       "name": "(アメリカ)USAネイビー",
+       "nameEn": "USA Navy"
+      },
+      {
+       "hex": "#D42A1E",
+       "name": "(パラグアイ)ラロハレッド",
+       "nameEn": "La Roja Red"
+      },
+      {
+       "hex": "#FFCD00",
+       "name": "(オーストラリア)サッカールーズゴールド",
+       "nameEn": "Socceroos Gold"
+      },
+      {
+       "hex": "#E30A17",
+       "name": "(トルコ)クレセントレッド",
+       "nameEn": "Crescent Red"
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "name": "グループE",
+     "nameEn": "Group E",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#EFEFEF",
+       "name": "(ドイツ)マンシャフトホワイト",
+       "nameEn": "Mannschaft White"
+      },
+      {
+       "hex": "#FFD100",
+       "name": "(エクアドル)ラトリコロールイエロー",
+       "nameEn": "Tricolor Yellow"
+      },
+      {
+       "hex": "#F77F00",
+       "name": "(コートジボワール)レレファンツオレンジ",
+       "nameEn": "Les Éléphants Orange"
+      },
+      {
+       "hex": "#002B7F",
+       "name": "(キュラソー)キュラソーブルー",
+       "nameEn": "Curaçao Blue"
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "name": "グループF",
+     "nameEn": "Group F",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#FF6400",
+       "name": "(オランダ)オランイェオレンジ",
+       "nameEn": "Oranje Orange"
+      },
+      {
+       "hex": "#003DA5",
+       "name": "(日本)サムライブルー",
+       "nameEn": "Samurai Blue"
+      },
+      {
+       "hex": "#E70013",
+       "name": "(チュニジア)カルタゴイーグルズレッド",
+       "nameEn": "Carthage Eagles Red"
+      },
+      {
+       "hex": "#FECC02",
+       "name": "(スウェーデン)ブロッグルットイエロー",
+       "nameEn": "Blågult Yellow"
+      }
+     ]
+    },
+    {
+     "no": 7,
+     "name": "グループG",
+     "nameEn": "Group G",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#ED2939",
+       "name": "(ベルギー)レッドデビルズレッド",
+       "nameEn": "Red Devils Red"
+      },
+      {
+       "hex": "#CF1128",
+       "name": "(エジプト)ファラオズレッド",
+       "nameEn": "Pharaohs Red"
+      },
+      {
+       "hex": "#F2F2F2",
+       "name": "(イラン)チームメリホワイト",
+       "nameEn": "Team Melli White"
+      },
+      {
+       "hex": "#111111",
+       "name": "(ニュージーランド)オールホワイツブラック",
+       "nameEn": "All Whites Black"
+      }
+     ]
+    },
+    {
+     "no": 8,
+     "name": "グループH",
+     "nameEn": "Group H",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#AD151B",
+       "name": "(スペイン)ラロハフューリアレッド",
+       "nameEn": "La Roja Red"
+      },
+      {
+       "hex": "#5EB6E4",
+       "name": "(ウルグアイ)セレステブルー",
+       "nameEn": "Celeste Blue"
+      },
+      {
+       "hex": "#006C35",
+       "name": "(サウジアラビア)グリーンファルコンズグリーン",
+       "nameEn": "Green Falcons Green"
+      },
+      {
+       "hex": "#003893",
+       "name": "(カーボベルデ)シャークブルー",
+       "nameEn": "Sharks Blue"
+      }
+     ]
+    },
+    {
+     "no": 9,
+     "name": "グループI",
+     "nameEn": "Group I",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#003189",
+       "name": "(フランス)レブルーブルー",
+       "nameEn": "Les Bleus Blue"
+      },
+      {
+       "hex": "#00853F",
+       "name": "(セネガル)テランガライオンズグリーン",
+       "nameEn": "Lions of Teranga Green"
+      },
+      {
+       "hex": "#EF2B2D",
+       "name": "(ノルウェー)ノルスクレッド",
+       "nameEn": "Norsk Red"
+      },
+      {
+       "hex": "#00793C",
+       "name": "(イラク)メソポタミアイーグルズグリーン",
+       "nameEn": "Mesopotamia Eagles Green"
+      }
+     ]
+    },
+    {
+     "no": 10,
+     "name": "グループJ",
+     "nameEn": "Group J",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#75ADDF",
+       "name": "(アルゼンチン)アルビセレステブルー",
+       "nameEn": "Albiceleste Blue"
+      },
+      {
+       "hex": "#E32438",
+       "name": "(オーストリア)レッドブルズレッド",
+       "nameEn": "Das Team Red"
+      },
+      {
+       "hex": "#006233",
+       "name": "(アルジェリア)デザートフォックスグリーン",
+       "nameEn": "Desert Foxes Green"
+      },
+      {
+       "hex": "#FBFBFB",
+       "name": "(ヨルダン)ナシュマットホワイト",
+       "nameEn": "Nashama White"
+      }
+     ]
+    },
+    {
+     "no": 11,
+     "name": "グループK",
+     "nameEn": "Group K",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#006800",
+       "name": "(ポルトガル)ナビオナイスグリーン",
+       "nameEn": "Navigators Green"
+      },
+      {
+       "hex": "#FCD116",
+       "name": "(コロンビア)ロスカフェテロスイエロー",
+       "nameEn": "Los Cafeteros Yellow"
+      },
+      {
+       "hex": "#1EB53A",
+       "name": "(ウズベキスタン)ホワイトウルブズグリーン",
+       "nameEn": "White Wolves Green"
+      },
+      {
+       "hex": "#007FFF",
+       "name": "(DRコンゴ)レオパーズスカイブルー",
+       "nameEn": "Leopards Sky Blue"
+      }
+     ]
+    },
+    {
+     "no": 12,
+     "name": "グループL",
+     "nameEn": "Group L",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#F6F6F6",
+       "name": "(イングランド)スリーライオンズホワイト",
+       "nameEn": "Three Lions White"
+      },
+      {
+       "hex": "#ECECEC",
+       "name": "(クロアチア)バトレニホワイト",
+       "nameEn": "Vatreni White"
+      },
+      {
+       "hex": "#FCD518",
+       "name": "(ガーナ)ブラックスターズゴールド",
+       "nameEn": "Black Stars Gold"
+      },
+      {
+       "hex": "#DA121A",
+       "name": "(パナマ)ロスカナレホスレッド",
+       "nameEn": "Los Canaleros Red"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
