@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "revision": 202611010000,
+ "revision": 202611011403,
  "themes": [
   {
    "id": "enogu",
@@ -1745,22 +1745,22 @@
       {
        "hex": "#00704A",
        "name": "(メキシコ)エルトリコロールグリーン",
-       "nameEn": "El Tri Green"
+       "nameEn": "(Mexico)El Tri Green"
       },
       {
        "hex": "#C60C30",
        "name": "(韓国)テグクウォリアーズレッド",
-       "nameEn": "Taegeuk Warriors Red"
+       "nameEn": "(South Korea)Taegeuk Warriors Red"
       },
       {
        "hex": "#FFB81C",
        "name": "(南アフリカ)バファナバファナゴールド",
-       "nameEn": "Bafana Bafana Gold"
+       "nameEn": "(South Africa)Bafana Bafana Gold"
       },
       {
        "hex": "#D7141A",
        "name": "(チェコ)チェコレッド",
-       "nameEn": "Czechia Red"
+       "nameEn": "(Czechia)Czechia Red"
       }
      ]
     },
@@ -1773,22 +1773,22 @@
       {
        "hex": "#FF0808",
        "name": "(カナダ)カナダレッド",
-       "nameEn": "Canada Red"
+       "nameEn": "(Canada)Canada Red"
       },
       {
        "hex": "#E4003B",
        "name": "(スイス)ナティスイスレッド",
-       "nameEn": "Nati Swiss Red"
+       "nameEn": "(Switzerland)Nati Swiss Red"
       },
       {
        "hex": "#8D1B3D",
        "name": "(カタール)マリーンズマルーン",
-       "nameEn": "Maroons Maroon"
+       "nameEn": "(Qatar)Maroons Maroon"
       },
       {
        "hex": "#002395",
        "name": "(ボスニア)ズマジチブルー",
-       "nameEn": "Zmajčići Blue"
+       "nameEn": "(Bosnia & Herz.)Zmajčići Blue"
       }
      ]
     },
@@ -1801,22 +1801,22 @@
       {
        "hex": "#FFDF00",
        "name": "(ブラジル)カナリアイエロー",
-       "nameEn": "Canary Yellow"
+       "nameEn": "(Brazil)Canary Yellow"
       },
       {
        "hex": "#C1272D",
        "name": "(モロッコ)アトラスライオンズレッド",
-       "nameEn": "Atlas Lions Red"
+       "nameEn": "(Morocco)Atlas Lions Red"
       },
       {
        "hex": "#00209F",
        "name": "(ハイチ)レ・グレナディエールブルー",
-       "nameEn": "Les Grenadiers Blue"
+       "nameEn": "(Haiti)Les Grenadiers Blue"
       },
       {
        "hex": "#003380",
        "name": "(スコットランド)ブレイヴハーツネイビー",
-       "nameEn": "Brave Hearts Navy"
+       "nameEn": "(Scotland)Brave Hearts Navy"
       }
      ]
     },
@@ -1829,22 +1829,22 @@
       {
        "hex": "#002868",
        "name": "(アメリカ)USAネイビー",
-       "nameEn": "USA Navy"
+       "nameEn": "(USA)USA Navy"
       },
       {
        "hex": "#D42A1E",
        "name": "(パラグアイ)ラロハレッド",
-       "nameEn": "La Roja Red"
+       "nameEn": "(Paraguay)La Roja Red"
       },
       {
        "hex": "#FFCD00",
        "name": "(オーストラリア)サッカールーズゴールド",
-       "nameEn": "Socceroos Gold"
+       "nameEn": "(Australia)Socceroos Gold"
       },
       {
        "hex": "#E30A17",
        "name": "(トルコ)クレセントレッド",
-       "nameEn": "Crescent Red"
+       "nameEn": "(Türkiye)Crescent Red"
       }
      ]
     },
@@ -1857,22 +1857,22 @@
       {
        "hex": "#EFEFEF",
        "name": "(ドイツ)マンシャフトホワイト",
-       "nameEn": "Mannschaft White"
+       "nameEn": "(Germany)Mannschaft White"
       },
       {
        "hex": "#FFD100",
        "name": "(エクアドル)ラトリコロールイエロー",
-       "nameEn": "Tricolor Yellow"
+       "nameEn": "(Ecuador)Tricolor Yellow"
       },
       {
        "hex": "#F77F00",
        "name": "(コートジボワール)レレファンツオレンジ",
-       "nameEn": "Les Éléphants Orange"
+       "nameEn": "(Côte d'Ivoire)Les Éléphants Orange"
       },
       {
        "hex": "#002B7F",
        "name": "(キュラソー)キュラソーブルー",
-       "nameEn": "Curaçao Blue"
+       "nameEn": "(Curaçao)Curaçao Blue"
       }
      ]
     },
@@ -1885,22 +1885,22 @@
       {
        "hex": "#FF6400",
        "name": "(オランダ)オランイェオレンジ",
-       "nameEn": "Oranje Orange"
+       "nameEn": "(Netherlands)Oranje Orange"
       },
       {
        "hex": "#003DA5",
        "name": "(日本)サムライブルー",
-       "nameEn": "Samurai Blue"
+       "nameEn": "(Japan)Samurai Blue"
       },
       {
        "hex": "#E70013",
        "name": "(チュニジア)カルタゴイーグルズレッド",
-       "nameEn": "Carthage Eagles Red"
+       "nameEn": "(Tunisia)Carthage Eagles Red"
       },
       {
        "hex": "#FECC02",
        "name": "(スウェーデン)ブロッグルットイエロー",
-       "nameEn": "Blågult Yellow"
+       "nameEn": "(Sweden)Blågult Yellow"
       }
      ]
     },
@@ -1913,22 +1913,22 @@
       {
        "hex": "#ED2939",
        "name": "(ベルギー)レッドデビルズレッド",
-       "nameEn": "Red Devils Red"
+       "nameEn": "(Belgium)Red Devils Red"
       },
       {
        "hex": "#CF1128",
        "name": "(エジプト)ファラオズレッド",
-       "nameEn": "Pharaohs Red"
+       "nameEn": "(Egypt)Pharaohs Red"
       },
       {
        "hex": "#F2F2F2",
        "name": "(イラン)チームメリホワイト",
-       "nameEn": "Team Melli White"
+       "nameEn": "(Iran)Team Melli White"
       },
       {
        "hex": "#111111",
        "name": "(ニュージーランド)オールホワイツブラック",
-       "nameEn": "All Whites Black"
+       "nameEn": "(New Zealand)All Whites Black"
       }
      ]
     },
@@ -1941,22 +1941,22 @@
       {
        "hex": "#AD151B",
        "name": "(スペイン)ラロハフューリアレッド",
-       "nameEn": "La Roja Red"
+       "nameEn": "(Spain)La Roja Red"
       },
       {
        "hex": "#5EB6E4",
        "name": "(ウルグアイ)セレステブルー",
-       "nameEn": "Celeste Blue"
+       "nameEn": "(Uruguay)Celeste Blue"
       },
       {
        "hex": "#006C35",
        "name": "(サウジアラビア)グリーンファルコンズグリーン",
-       "nameEn": "Green Falcons Green"
+       "nameEn": "(Saudi Arabia)Green Falcons Green"
       },
       {
        "hex": "#003893",
        "name": "(カーボベルデ)シャークブルー",
-       "nameEn": "Sharks Blue"
+       "nameEn": "(Cabo Verde)Sharks Blue"
       }
      ]
     },
@@ -1969,22 +1969,22 @@
       {
        "hex": "#003189",
        "name": "(フランス)レブルーブルー",
-       "nameEn": "Les Bleus Blue"
+       "nameEn": "(France)Les Bleus Blue"
       },
       {
        "hex": "#00853F",
        "name": "(セネガル)テランガライオンズグリーン",
-       "nameEn": "Lions of Teranga Green"
+       "nameEn": "(Senegal)Lions of Teranga Green"
       },
       {
        "hex": "#EF2B2D",
        "name": "(ノルウェー)ノルスクレッド",
-       "nameEn": "Norsk Red"
+       "nameEn": "(Norway)Norsk Red"
       },
       {
        "hex": "#00793C",
        "name": "(イラク)メソポタミアイーグルズグリーン",
-       "nameEn": "Mesopotamia Eagles Green"
+       "nameEn": "(Iraq)Mesopotamia Eagles Green"
       }
      ]
     },
@@ -1997,22 +1997,22 @@
       {
        "hex": "#75ADDF",
        "name": "(アルゼンチン)アルビセレステブルー",
-       "nameEn": "Albiceleste Blue"
+       "nameEn": "(Argentina)Albiceleste Blue"
       },
       {
        "hex": "#E32438",
        "name": "(オーストリア)レッドブルズレッド",
-       "nameEn": "Das Team Red"
+       "nameEn": "(Austria)Das Team Red"
       },
       {
        "hex": "#006233",
        "name": "(アルジェリア)デザートフォックスグリーン",
-       "nameEn": "Desert Foxes Green"
+       "nameEn": "(Algeria)Desert Foxes Green"
       },
       {
        "hex": "#FBFBFB",
        "name": "(ヨルダン)ナシュマットホワイト",
-       "nameEn": "Nashama White"
+       "nameEn": "(Jordan)Nashama White"
       }
      ]
     },
@@ -2025,22 +2025,22 @@
       {
        "hex": "#006800",
        "name": "(ポルトガル)ナビオナイスグリーン",
-       "nameEn": "Navigators Green"
+       "nameEn": "(Portugal)Navigators Green"
       },
       {
        "hex": "#FCD116",
        "name": "(コロンビア)ロスカフェテロスイエロー",
-       "nameEn": "Los Cafeteros Yellow"
+       "nameEn": "(Colombia)Los Cafeteros Yellow"
       },
       {
        "hex": "#1EB53A",
        "name": "(ウズベキスタン)ホワイトウルブズグリーン",
-       "nameEn": "White Wolves Green"
+       "nameEn": "(Uzbekistan)White Wolves Green"
       },
       {
        "hex": "#007FFF",
        "name": "(DRコンゴ)レオパーズスカイブルー",
-       "nameEn": "Leopards Sky Blue"
+       "nameEn": "(DR Congo)Leopards Sky Blue"
       }
      ]
     },
@@ -2053,22 +2053,22 @@
       {
        "hex": "#F6F6F6",
        "name": "(イングランド)スリーライオンズホワイト",
-       "nameEn": "Three Lions White"
+       "nameEn": "(England)Three Lions White"
       },
       {
        "hex": "#ECECEC",
        "name": "(クロアチア)バトレニホワイト",
-       "nameEn": "Vatreni White"
+       "nameEn": "(Croatia)Vatreni White"
       },
       {
        "hex": "#FCD518",
        "name": "(ガーナ)ブラックスターズゴールド",
-       "nameEn": "Black Stars Gold"
+       "nameEn": "(Ghana)Black Stars Gold"
       },
       {
        "hex": "#DA121A",
        "name": "(パナマ)ロスカナレホスレッド",
-       "nameEn": "Los Canaleros Red"
+       "nameEn": "(Panama)Los Canaleros Red"
       }
      ]
     }
