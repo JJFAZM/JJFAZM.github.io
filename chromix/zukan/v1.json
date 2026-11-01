@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "revision": 202611011455,
+ "revision": 202611011715,
  "themes": [
   {
    "id": "enogu",
@@ -870,8 +870,8 @@
    "chunks": [
     {
      "no": 1,
-     "name": "昼の空",
-     "nameEn": "Daytime Sky",
+     "name": "朝・昼・夕の空",
+     "nameEn": "Sky from Dawn to Dusk",
      "free": false,
      "colors": [
       {
@@ -888,20 +888,20 @@
        "hex": "#F0F8FF",
        "name": "真昼の白",
        "nameEn": "Midday White"
+      },
+      {
+       "hex": "#87CEEB",
+       "name": "昼空ブルー",
+       "nameEn": "Daytime Sky Blue"
       }
      ]
     },
     {
      "no": 2,
-     "name": "夕暮れと海",
-     "nameEn": "Dusk & Sea",
+     "name": "朝夕の空と海",
+     "nameEn": "Twilight Sky & Sea",
      "free": false,
      "colors": [
-      {
-       "hex": "#87CEEB",
-       "name": "昼空ブルー",
-       "nameEn": "Daytime Sky Blue"
-      },
       {
        "hex": "#FF4500",
        "name": "朝焼けレッド",
@@ -926,8 +926,8 @@
     },
     {
      "no": 3,
-     "name": "深海と嵐",
-     "nameEn": "Deep Sea & Storm",
+     "name": "移ろう空と海",
+     "nameEn": "Shifting Sky & Sea",
      "free": false,
      "colors": [
       {
@@ -954,8 +954,8 @@
     },
     {
      "no": 4,
-     "name": "夜と神秘",
-     "nameEn": "Night & Mystery",
+     "name": "夜空と珊瑚礁",
+     "nameEn": "Night Sky & Coral Reef",
      "free": false,
      "colors": [
       {
@@ -1258,8 +1258,8 @@
    "chunks": [
     {
      "no": 1,
-     "name": "定番ドリンク",
-     "nameEn": "Classic Drinks",
+     "name": "ミルクとアイス",
+     "nameEn": "Milk & Ice",
      "free": false,
      "colors": [
       {
@@ -1276,20 +1276,20 @@
        "hex": "#FFF8F0",
        "name": "ミルクホワイト",
        "nameEn": "Milk White"
+      },
+      {
+       "hex": "#B0E0E6",
+       "name": "アイスブルー",
+       "nameEn": "Ice Blue"
       }
      ]
     },
     {
      "no": 2,
-     "name": "和カフェ",
-     "nameEn": "Japanese Café",
+     "name": "和と洋のカフェ",
+     "nameEn": "Japanese & Western Café",
      "free": false,
      "colors": [
-      {
-       "hex": "#B0E0E6",
-       "name": "アイスブルー",
-       "nameEn": "Ice Blue"
-      },
       {
        "hex": "#8FAF5A",
        "name": "抹茶ラテ",
@@ -2079,6 +2079,7 @@
    "name": "世界の鳥",
    "nameEn": "World Bird Colors",
    "icon": "🐦",
+   "addedAt": "2026-11-01",
    "chunks": [
     {
      "no": 1,
