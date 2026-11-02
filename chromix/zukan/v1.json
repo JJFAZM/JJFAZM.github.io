@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "revision": 202611011715,
+ "revision": 202611020415,
  "themes": [
   {
    "id": "enogu",
@@ -2190,6 +2190,248 @@
        "hex": "#3A3A3A",
        "name": "濃灰",
        "nameEn": "Deep Gray"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "city_night",
+   "name": "都市・夜景の色",
+   "nameEn": "City Nightscape",
+   "icon": "🌃",
+   "addedAt": "2026-11-02",
+   "chunks": [
+    {
+     "no": 1,
+     "name": "ネオンの光",
+     "nameEn": "Neon Lights",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#FF2DAA",
+       "name": "ネオンピンク",
+       "nameEn": "Neon Pink"
+      },
+      {
+       "hex": "#00A8FF",
+       "name": "ネオンブルー",
+       "nameEn": "Neon Blue"
+      },
+      {
+       "hex": "#39FF14",
+       "name": "ネオングリーン",
+       "nameEn": "Neon Green"
+      },
+      {
+       "hex": "#FFA500",
+       "name": "街灯オレンジ",
+       "nameEn": "Streetlight Orange"
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "name": "信号と窓明かり",
+     "nameEn": "Signals & Window Glow",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#FFD966",
+       "name": "窓明かりイエロー",
+       "nameEn": "Window Light Yellow"
+      },
+      {
+       "hex": "#FF0505",
+       "name": "信号レッド",
+       "nameEn": "Traffic Red"
+      },
+      {
+       "hex": "#00FF00",
+       "name": "信号グリーン",
+       "nameEn": "Traffic Green"
+      },
+      {
+       "hex": "#FFFF00",
+       "name": "信号イエロー",
+       "nameEn": "Traffic Yellow"
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "name": "夜の街路",
+     "nameEn": "Night Streets",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#1A1A1A",
+       "name": "夜のビルブラック",
+       "nameEn": "Night Building Black"
+      },
+      {
+       "hex": "#2F4F4F",
+       "name": "濡れた道路",
+       "nameEn": "Wet Road Gray"
+      },
+      {
+       "hex": "#3A6EA5",
+       "name": "雨の反射",
+       "nameEn": "Reflection Blue"
+      },
+      {
+       "hex": "#FFCC00",
+       "name": "タクシーイエロー",
+       "nameEn": "Taxi Yellow"
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "name": "深夜と霧",
+     "nameEn": "Late Night & Fog",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#FAFAFA",
+       "name": "ヘッドライトホワイト",
+       "nameEn": "Headlight White"
+      },
+      {
+       "hex": "#191970",
+       "name": "深夜ブルー",
+       "nameEn": "Midnight Blue"
+      },
+      {
+       "hex": "#687880",
+       "name": "スモッググレー",
+       "nameEn": "Smog Gray"
+      },
+      {
+       "hex": "#9D00FF",
+       "name": "ネオンパープル",
+       "nameEn": "Neon Purple"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "matsuri",
+   "name": "夏祭りの色",
+   "nameEn": "Summer Festival Colors",
+   "icon": "🏮",
+   "addedAt": "2026-11-02",
+   "chunks": [
+    {
+     "no": 1,
+     "name": "提灯と浴衣",
+     "nameEn": "Lanterns & Yukata",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#D9381E",
+       "name": "提灯レッド",
+       "nameEn": "Lantern Red"
+      },
+      {
+       "hex": "#3A5FCD",
+       "name": "浴衣ブルー",
+       "nameEn": "Yukata Blue"
+      },
+      {
+       "hex": "#FFB6C1",
+       "name": "綿菓子ピンク",
+       "nameEn": "Cotton Candy Pink"
+      },
+      {
+       "hex": "#965015",
+       "name": "焼きそばブラウン",
+       "nameEn": "Yakisoba Brown"
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "name": "屋台と花火",
+     "nameEn": "Stalls & Fireworks",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#FFD800",
+       "name": "花火ゴールド",
+       "nameEn": "Fireworks Gold"
+      },
+      {
+       "hex": "#2E8B57",
+       "name": "夜店グリーン",
+       "nameEn": "Stall Green"
+      },
+      {
+       "hex": "#AEEEEE",
+       "name": "ラムネブルー",
+       "nameEn": "Ramune Blue"
+      },
+      {
+       "hex": "#C41E3A",
+       "name": "りんご飴レッド",
+       "nameEn": "Candy Apple Red"
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "name": "夜祭りの色",
+     "nameEn": "Night Festival",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#7FDBFF",
+       "name": "かき氷ブルー",
+       "nameEn": "Shaved Ice Blue"
+      },
+      {
+       "hex": "#FFB000",
+       "name": "電球オレンジ",
+       "nameEn": "Bulb Orange"
+      },
+      {
+       "hex": "#7B2CBF",
+       "name": "花火パープル",
+       "nameEn": "Fireworks Purple"
+      },
+      {
+       "hex": "#A0522D",
+       "name": "射的ウッド",
+       "nameEn": "Shooting Gallery Wood"
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "name": "幻想の夜空",
+     "nameEn": "Fantastical Night Sky",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#FF4D4D",
+       "name": "金魚レッド",
+       "nameEn": "Goldfish Red"
+      },
+      {
+       "hex": "#3FFF20",
+       "name": "ネオン風グリーン",
+       "nameEn": "Festival Neon Green"
+      },
+      {
+       "hex": "#1B1F3B",
+       "name": "夜空ネイビー",
+       "nameEn": "Festival Night Sky"
+      },
+      {
+       "hex": "#6A0DAD",
+       "name": "浴衣柄パープル",
+       "nameEn": "Yukata Pattern Purple"
       }
      ]
     }
