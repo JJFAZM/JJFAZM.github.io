@@ -4,13 +4,34 @@
     "details": [
       {
         "appID": "5WJ92PXT3P.com.higashi.chromix",
-        "paths": ["/chromix/challenge*"]
+        "paths": [
+          "/chromix/challenge*"
+        ]
       },
       {
-        "appIDs": ["5WJ92PXT3P.com.opp.mystampcard"],
+        "appIDs": [
+          "5WJ92PXT3P.com.opp.mystampcard"
+        ],
         "components": [
-          { "/": "/mystamp/card/*", "comment": "カード配布" },
-          { "/": "/mystamp/stamp/*", "comment": "スタンプトークン" }
+          {
+            "/": "/mystamp/card/*",
+            "comment": "カード配布"
+          },
+          {
+            "/": "/mystamp/stamp/*",
+            "comment": "スタンプトークン"
+          }
+        ]
+      },
+      {
+        "appIDs": [
+          "5WJ92PXT3P.com.jjfazm.gonudge"
+        ],
+        "components": [
+          {
+            "/": "/goorelse/join/*",
+            "comment": "GoOrElse グループ招待"
+          }
         ]
       }
     ]
