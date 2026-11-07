@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="referrer" content="no-referrer">
+<title>GoOrElse 招待</title>
+<style>
+:root{--paper:#F3EFE6;--ink:#1C1B19;--muted:#6F6A60;--stamp:#D8432B;--line:rgba(28,27,25,.18)}
+@media (prefers-color-scheme:dark){:root{--paper:#161513;--ink:#ECE6D8;--muted:#A9A396;--stamp:#E25A42;--line:rgba(236,230,216,.2)}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:-apple-system,"Hiragino Sans",sans-serif;line-height:1.6}
+main{max-width:480px;margin:0 auto;padding:40px 16px}
+h1{font-size:22px;margin:0 0 8px}
+p{margin:0 0 16px}
+.muted{color:var(--muted);font-size:14px}
+.btn{display:block;width:100%;padding:14px;margin:0 0 12px;border-radius:3px;border:1px solid var(--ink);background:transparent;color:var(--ink);font:inherit;font-weight:600;text-align:center;text-decoration:none;cursor:pointer}
+.primary{background:var(--stamp);border-color:var(--stamp);color:#fff}
+hr{border:0;border-top:1px dashed var(--line);margin:24px 0}
+[hidden]{display:none}
+</style>
+</head>
+<body>
+<main>
+  <section id="ok" hidden>
+    <h1>グループへの招待</h1>
+    <p>GoOrElse で、お互いの約束を見せ合うグループです。位置情報は共有されません。</p>
+    <a id="open" class="btn primary">アプリで開く</a>
+    <hr>
+    <p class="muted">開かないときは、リンクをコピーして、アプリの「グループ」にある「招待リンクで参加」に貼り付けてください。</p>
+    <button id="copy" class="btn" type="button">リンクをコピー</button>
+    <p class="muted">アプリを入れていない場合は、招待してくれた人に、テスト版のインストール方法を聞いてください。</p>
+  </section>
+  <section id="bad" hidden>
+    <h1>招待リンクが正しくありません</h1>
+    <p>招待してくれた人に、リンクをもう一度送ってもらってください。</p>
+  </section>
+</main>
+<script>
+(function () {
+  var token = location.hash.slice(1);
+  if (!/^[A-Za-z0-9_-]{1,128}$/.test(token)) {
+    document.getElementById('bad').hidden = false;
+    return;
+  }
+  document.getElementById('ok').hidden = false;
+  document.getElementById('open').href = 'goorelse://join#' + token;
+  var copy = document.getElementById('copy');
+  copy.addEventListener('click', function () {
+    navigator.clipboard.writeText(location.href).then(function () {
+      copy.textContent = 'コピーしました';
+    }, function () {
+      copy.textContent = 'コピーできませんでした';
+    });
+  });
+})();
+</script>
+</body>
+</html>
