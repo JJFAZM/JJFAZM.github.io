@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "revision": 202611020415,
+ "revision": 202611131103,
  "themes": [
   {
    "id": "enogu",
@@ -17,24 +17,54 @@
       {
        "hex": "#F5F5F0",
        "name": "チタニウムホワイト",
-       "nameEn": "Titanium White"
+       "nameEn": "Titanium White",
+       "i18n": {
+        "es": "Blanco titanio",
+        "ko": "티타늄 화이트",
+        "pt": "Branco Titânio",
+        "zh": "鈦白"
+       }
       },
       {
        "hex": "#E2341D",
        "name": "カドミウムレッド",
-       "nameEn": "Cadmium Red"
+       "nameEn": "Cadmium Red",
+       "i18n": {
+        "es": "Rojo cadmio",
+        "ko": "카드뮴 레드",
+        "pt": "Vermelho Cádmio",
+        "zh": "鎘紅"
+       }
       },
       {
        "hex": "#4169E1",
        "name": "ウルトラマリン",
-       "nameEn": "Ultramarine"
+       "nameEn": "Ultramarine",
+       "i18n": {
+        "es": "Ultramar",
+        "ko": "울트라마린",
+        "pt": "Azul Ultramar",
+        "zh": "群青藍"
+       }
       },
       {
        "hex": "#FFD700",
        "name": "カドミウムイエロー",
-       "nameEn": "Cadmium Yellow"
+       "nameEn": "Cadmium Yellow",
+       "i18n": {
+        "es": "Amarillo cadmio",
+        "ko": "카드뮴 옐로",
+        "pt": "Amarelo Cádmio",
+        "zh": "鎘黃"
+       }
       }
-     ]
+     ],
+     "i18n": {
+      "es": "Primarios+blanco",
+      "ko": "기본 삼원색+흰색",
+      "pt": "Base e Branco",
+      "zh": "三原色與白色"
+     }
     },
     {
      "no": 2,
@@ -45,24 +75,54 @@
       {
        "hex": "#8B4513",
        "name": "バーントシエナ",
-       "nameEn": "Burnt Sienna"
+       "nameEn": "Burnt Sienna",
+       "i18n": {
+        "es": "Siena tostada",
+        "ko": "번트 시에나",
+        "pt": "Siena Queimada",
+        "zh": "熟赭"
+       }
       },
       {
        "hex": "#6B4226",
        "name": "ローアンバー",
-       "nameEn": "Raw Umber"
+       "nameEn": "Raw Umber",
+       "i18n": {
+        "es": "Sombra natural",
+        "ko": "로 엄버",
+        "pt": "Sombra Natural",
+        "zh": "生褐"
+       }
       },
       {
        "hex": "#E8A830",
        "name": "ゴールデンオーカー",
-       "nameEn": "Golden Ochre"
+       "nameEn": "Golden Ochre",
+       "i18n": {
+        "es": "Ocre dorado",
+        "ko": "골든 오커",
+        "pt": "Ocre Dourado",
+        "zh": "金赭黃"
+       }
       },
       {
        "hex": "#507D2A",
        "name": "サップグリーン",
-       "nameEn": "Sap Green"
+       "nameEn": "Sap Green",
+       "i18n": {
+        "es": "Verde savia",
+        "ko": "샙 그린",
+        "pt": "Verde Seiva",
+        "zh": "樹汁綠"
+       }
       }
-     ]
+     ],
+     "i18n": {
+      "es": "Tierras",
+      "ko": "자연·흙색",
+      "pt": "Tons de Terra",
+      "zh": "自然大地色"
+     }
     },
     {
      "no": 3,
@@ -73,24 +133,54 @@
       {
        "hex": "#FF00AA",
        "name": "マゼンタ",
-       "nameEn": "Magenta"
+       "nameEn": "Magenta",
+       "i18n": {
+        "es": "Magenta",
+        "ko": "마젠타",
+        "pt": "Magenta",
+        "zh": "洋紅"
+       }
       },
       {
        "hex": "#40826D",
        "name": "ビリジアン",
-       "nameEn": "Viridian"
+       "nameEn": "Viridian",
+       "i18n": {
+        "es": "Viridian",
+        "ko": "비리디안",
+        "pt": "Viridiano",
+        "zh": "翡翠綠"
+       }
       },
       {
        "hex": "#FADA5E",
        "name": "ネープルスイエロー",
-       "nameEn": "Naples Yellow"
+       "nameEn": "Naples Yellow",
+       "i18n": {
+        "es": "Amarillo Nápoles",
+        "ko": "나폴리 옐로",
+        "pt": "Amarelo Nápoles",
+        "zh": "那不勒斯黃"
+       }
       },
       {
        "hex": "#1C3F6E",
        "name": "インディゴブルー",
-       "nameEn": "Indigo Blue"
+       "nameEn": "Indigo Blue",
+       "i18n": {
+        "es": "Azul índigo",
+        "ko": "인디고 블루",
+        "pt": "Azul Índigo",
+        "zh": "靛藍"
+       }
       }
-     ]
+     ],
+     "i18n": {
+      "es": "Acentos vivos",
+      "ko": "선명한 포인트",
+      "pt": "Toques Vivos",
+      "zh": "鮮豔亮點色"
+     }
     },
     {
      "no": 4,
@@ -101,26 +191,62 @@
       {
        "hex": "#231F20",
        "name": "アイボリーブラック",
-       "nameEn": "Ivory Black"
+       "nameEn": "Ivory Black",
+       "i18n": {
+        "es": "Negro marfil",
+        "ko": "아이보리 블랙",
+        "pt": "Preto Marfim",
+        "zh": "象牙黑"
+       }
       },
       {
        "hex": "#C03060",
        "name": "ローズマダー",
-       "nameEn": "Rose Madder"
+       "nameEn": "Rose Madder",
+       "i18n": {
+        "es": "Laca rosa",
+        "ko": "로즈 매더",
+        "pt": "Rosa Garança",
+        "zh": "玫瑰茜紅"
+       }
       },
       {
        "hex": "#5B92D4",
        "name": "セルリアンライト",
-       "nameEn": "Cerulean Light"
+       "nameEn": "Cerulean Light",
+       "i18n": {
+        "es": "Cerúleo claro",
+        "ko": "세룰리안 라이트",
+        "pt": "Cerúleo Claro",
+        "zh": "淺天藍"
+       }
       },
       {
        "hex": "#2A52BE",
        "name": "セルリアンブルー",
-       "nameEn": "Cerulean Blue"
+       "nameEn": "Cerulean Blue",
+       "i18n": {
+        "es": "Azul cerúleo",
+        "ko": "세룰리안 블루",
+        "pt": "Azul Cerúleo",
+        "zh": "天藍"
+       }
       }
-     ]
+     ],
+     "i18n": {
+      "es": "Sombra y final",
+      "ko": "그림자·마무리색",
+      "pt": "Sombras e Fim",
+      "zh": "陰影與收尾色"
+     }
     }
-   ]
+   ],
+   "i18n": {
+    "es": "Set de pintura",
+    "ko": "물감 세트",
+    "pt": "Kit de Tintas",
+    "zh": "顏料組"
+   }
   },
   {
    "id": "dentou",
@@ -137,24 +263,54 @@
       {
        "hex": "#E03C31",
        "name": "朱色",
-       "nameEn": "Vermilion"
+       "nameEn": "Vermilion",
+       "i18n": {
+        "es": "Bermellón",
+        "ko": "주홍색",
+        "pt": "Vermelhão",
+        "zh": "朱紅"
+       }
       },
       {
        "hex": "#0099CC",
        "name": "空色",
-       "nameEn": "Sky Blue"
+       "nameEn": "Sky Blue",
+       "i18n": {
+        "es": "Azul cielo",
+        "ko": "하늘색",
+        "pt": "Azul Céu",
+        "zh": "天空藍"
+       }
       },
       {
        "hex": "#90B44B",
        "name": "萌黄色",
-       "nameEn": "Spring Green"
+       "nameEn": "Spring Green",
+       "i18n": {
+        "es": "Verde brote",
+        "ko": "연둣빛",
+        "pt": "Verde Primavera",
+        "zh": "萌黃"
+       }
       },
       {
        "hex": "#E6B422",
        "name": "黄金色",
-       "nameEn": "Gold"
+       "nameEn": "Gold",
+       "i18n": {
+        "es": "Dorado",
+        "ko": "황금색",
+        "pt": "Ouro",
+        "zh": "金黃"
+       }
       }
-     ]
+     ],
+     "i18n": {
+      "es": "Básicos",
+      "ko": "기본색",
+      "pt": "Cores Básicas",
+      "zh": "基本色"
+     }
     },
     {
      "no": 2,
@@ -165,24 +321,54 @@
       {
        "hex": "#FA8072",
        "name": "鮭色",
-       "nameEn": "Salmon"
+       "nameEn": "Salmon",
+       "i18n": {
+        "es": "Salmón",
+        "ko": "연어색",
+        "pt": "Salmão",
+        "zh": "鮭魚粉"
+       }
       },
       {
        "hex": "#8B7EC8",
        "name": "藤色",
-       "nameEn": "Wisteria"
+       "nameEn": "Wisteria",
+       "i18n": {
+        "es": "Glicina",
+        "ko": "연보라",
+        "pt": "Glicínia",
+        "zh": "藤紫"
+       }
       },
       {
        "hex": "#87AE73",
        "name": "鼠緑",
-       "nameEn": "Gray Green"
+       "nameEn": "Gray Green",
+       "i18n": {
+        "es": "Verde grisáceo",
+        "ko": "회녹색",
+        "pt": "Verde Cinza",
+        "zh": "灰綠"
+       }
       },
       {
        "hex": "#FFBF00",
        "name": "琥珀色",
-       "nameEn": "Amber"
+       "nameEn": "Amber",
+       "i18n": {
+        "es": "Ámbar",
+        "ko": "호박색",
+        "pt": "Âmbar",
+        "zh": "琥珀"
+       }
       }
-     ]
+     ],
+     "i18n": {
+      "es": "Básicos suaves",
+      "ko": "차분한 기본색",
+      "pt": "Básicas Suaves",
+      "zh": "沉穩基本色"
+     }
     },
     {
      "no": 3,
@@ -193,24 +379,54 @@
       {
        "hex": "#FF7F50",
        "name": "珊瑚色",
-       "nameEn": "Coral"
+       "nameEn": "Coral",
+       "i18n": {
+        "es": "Coral",
+        "ko": "산호색",
+        "pt": "Coral",
+        "zh": "珊瑚色"
+       }
       },
       {
        "hex": "#C68642",
        "name": "黄褐色",
-       "nameEn": "Ochre"
+       "nameEn": "Ochre",
+       "i18n": {
+        "es": "Ocre",
+        "ko": "황토색",
+        "pt": "Ocre",
+        "zh": "赭黃"
+       }
       },
       {
        "hex": "#E34234",
        "name": "丹色",
-       "nameEn": "Red Ochre"
+       "nameEn": "Red Ochre",
+       "i18n": {
+        "es": "Rojo ocre",
+        "ko": "붉은 황토",
+        "pt": "Ocre Vermelho",
+        "zh": "丹紅"
+       }
       },
       {
        "hex": "#F4A7B9",
        "name": "鴇色",
-       "nameEn": "Peach Pink"
+       "nameEn": "Peach Pink",
+       "i18n": {
+        "es": "Rosa durazno",
+        "ko": "도키 핑크",
+        "pt": "Rosa Pêssego",
+        "zh": "朱鷺粉"
+       }
       }
-     ]
+     ],
+     "i18n": {
+      "es": "Mezcla cálida",
+      "ko": "따뜻한 혼합",
+      "pt": "Mix Quente",
+      "zh": "暖色系"
+     }
     },
     {
      "no": 4,
@@ -221,24 +437,54 @@
       {
        "hex": "#1E50A2",
        "name": "瑠璃色",
-       "nameEn": "Lapis Blue"
+       "nameEn": "Lapis Blue",
+       "i18n": {
+        "es": "Azul lapislázuli",
+        "ko": "라피스 블루",
+        "pt": "Lápis-lazúli",
+        "zh": "琉璃藍"
+       }
       },
       {
        "hex": "#0047AB",
        "name": "群青",
-       "nameEn": "Ultramarine"
+       "nameEn": "Ultramarine",
+       "i18n": {
+        "es": "Ultramar",
+        "ko": "군청색",
+        "pt": "Ultramar",
+        "zh": "群青"
+       }
       },
       {
        "hex": "#01579B",
        "name": "海碧",
-       "nameEn": "Ocean Blue"
+       "nameEn": "Ocean Blue",
+       "i18n": {
+        "es": "Azul océano",
+        "ko": "바다 청색",
+        "pt": "Azul Oceano",
+        "zh": "海碧藍"
+       }
       },
       {
        "hex": "#003153",
        "name": "紺青",
-       "nameEn": "Deep Navy"
+       "nameEn": "Deep Navy",
+       "i18n": {
+        "es": "Azul marino",
+        "ko": "감청색",
+        "pt": "Azul Marinho",
+        "zh": "紺青"
+       }
       }
-     ]
+     ],
+     "i18n": {
+      "es": "Mezcla fría",
+      "ko": "차가운 혼합",
+      "pt": "Mix Frio",
+      "zh": "冷色系"
+     }
     },
     {
      "no": 5,
@@ -249,24 +495,54 @@
       {
        "hex": "#E87472",
        "name": "紅梅色",
-       "nameEn": "Plum Red"
+       "nameEn": "Plum Red",
+       "i18n": {
+        "es": "Rojo ciruela",
+        "ko": "홍매색",
+        "pt": "Vermelho Ameixa",
+        "zh": "紅梅"
+       }
       },
       {
        "hex": "#C0392B",
        "name": "茜色",
-       "nameEn": "Madder Red"
+       "nameEn": "Madder Red",
+       "i18n": {
+        "es": "Rojo granza",
+        "ko": "꼭두서니색",
+        "pt": "Vermelho Garança",
+        "zh": "茜紅"
+       }
       },
       {
        "hex": "#D83A2C",
        "name": "朱砂色",
-       "nameEn": "Cinnabar"
+       "nameEn": "Cinnabar",
+       "i18n": {
+        "es": "Cinabrio",
+        "ko": "주사색",
+        "pt": "Cinábrio",
+        "zh": "朱砂紅"
+       }
       },
       {
        "hex": "#9F3928",
        "name": "弁柄色",
-       "nameEn": "Bengara"
+       "nameEn": "Bengara",
+       "i18n": {
+        "es": "Rojo óxido",
+        "ko": "벵갈라",
+        "pt": "Bengara",
+        "zh": "弁柄紅"
+       }
       }
-     ]
+     ],
+     "i18n": {
+      "es": "Degradé rojo",
+      "ko": "붉은색 그라데이션",
+      "pt": "Vermelhos",
+      "zh": "紅色漸層"
+     }
     },
     {
      "no": 6,
@@ -277,24 +553,54 @@
       {
        "hex": "#2E86C1",
        "name": "露草色",
-       "nameEn": "Tsuyukusa Blue"
+       "nameEn": "Tsuyukusa Blue",
+       "i18n": {
+        "es": "Azul comelina",
+        "ko": "달개비색",
+        "pt": "Azul Trapoeraba",
+        "zh": "鴨跖草藍"
+       }
       },
       {
        "hex": "#1A6FA8",
        "name": "縹色",
-       "nameEn": "Hanada Blue"
+       "nameEn": "Hanada Blue",
+       "i18n": {
+        "es": "Azul hanada",
+        "ko": "연한 쪽빛",
+        "pt": "Azul Hanada",
+        "zh": "縹藍"
+       }
       },
       {
        "hex": "#1A4F8A",
        "name": "藍色",
-       "nameEn": "Indigo Blue"
+       "nameEn": "Indigo Blue",
+       "i18n": {
+        "es": "Índigo",
+        "ko": "쪽빛",
+        "pt": "Azul Índigo",
+        "zh": "藍染靛"
+       }
       },
       {
        "hex": "#0A3060",
        "name": "紺碧",
-       "nameEn": "Azure"
+       "nameEn": "Azure",
+       "i18n": {
+        "es": "Azul azur",
+        "ko": "짙은 벽색",
+        "pt": "Azul Profundo",
+        "zh": "紺碧"
+       }
       }
-     ]
+     ],
+     "i18n": {
+      "es": "Degradé azul",
+      "ko": "푸른색 그라데이션",
+      "pt": "Azuis",
+      "zh": "藍色漸層"
+     }
     },
     {
      "no": 7,
@@ -305,24 +611,54 @@
       {
        "hex": "#800000",
        "name": "栗色",
-       "nameEn": "Maroon"
+       "nameEn": "Maroon",
+       "i18n": {
+        "es": "Granate",
+        "ko": "밤색",
+        "pt": "Grená",
+        "zh": "栗褐"
+       }
       },
       {
        "hex": "#36454F",
        "name": "炭色",
-       "nameEn": "Charcoal"
+       "nameEn": "Charcoal",
+       "i18n": {
+        "es": "Carbón",
+        "ko": "숯색",
+        "pt": "Carvão",
+        "zh": "炭灰"
+       }
       },
       {
        "hex": "#704214",
        "name": "烏賊墨色",
-       "nameEn": "Ink Black"
+       "nameEn": "Ink Black",
+       "i18n": {
+        "es": "Negro tinta",
+        "ko": "세피아",
+        "pt": "Sépia",
+        "zh": "烏賊墨褐"
+       }
       },
       {
        "hex": "#24437E",
        "name": "藍鼠",
-       "nameEn": "Indigo Gray"
+       "nameEn": "Indigo Gray",
+       "i18n": {
+        "es": "Gris índigo",
+        "ko": "청회색",
+        "pt": "Índigo Cinza",
+        "zh": "藍鼠灰"
+       }
       }
-     ]
+     ],
+     "i18n": {
+      "es": "Tonos oscuros",
+      "ko": "어두운 색",
+      "pt": "Tons Escuros",
+      "zh": "深色系"
+     }
     },
     {
      "no": 8,
@@ -333,24 +669,54 @@
       {
        "hex": "#9E9087",
        "name": "薄墨色",
-       "nameEn": "Pale Gray"
+       "nameEn": "Pale Gray",
+       "i18n": {
+        "es": "Gris pálido",
+        "ko": "연한 먹색",
+        "pt": "Cinza Pálido",
+        "zh": "淡墨灰"
+       }
       },
       {
        "hex": "#808000",
        "name": "鶯色",
-       "nameEn": "Olive"
+       "nameEn": "Olive",
+       "i18n": {
+        "es": "Oliva",
+        "ko": "올리브색",
+        "pt": "Oliva",
+        "zh": "鶯綠"
+       }
       },
       {
        "hex": "#8AA654",
        "name": "抹茶色",
-       "nameEn": "Matcha"
+       "nameEn": "Matcha",
+       "i18n": {
+        "es": "Matcha",
+        "ko": "말차색",
+        "pt": "Matcha",
+        "zh": "抹茶綠"
+       }
       },
       {
        "hex": "#664228",
        "name": "煤竹色",
-       "nameEn": "Bamboo Brown"
+       "nameEn": "Bamboo Brown",
+       "i18n": {
+        "es": "Marrón bambú",
+        "ko": "죽갈색",
+        "pt": "Marrom Bambu",
+        "zh": "煤竹褐"
+       }
       }
-     ]
+     ],
+     "i18n": {
+      "es": "Tonos apagados",
+      "ko": "칙칙한 색",
+      "pt": "Tons Foscos",
+      "zh": "灰調色"
+     }
     },
     {
      "no": 9,
@@ -361,26 +727,62 @@
       {
        "hex": "#800020",
        "name": "葡萄酒色",
-       "nameEn": "Wine Red"
+       "nameEn": "Wine Red",
+       "i18n": {
+        "es": "Vino tinto",
+        "ko": "와인색",
+        "pt": "Vinho",
+        "zh": "葡萄酒紅"
+       }
       },
       {
        "hex": "#4B0082",
        "name": "江戸紫",
-       "nameEn": "Edo Purple"
+       "nameEn": "Edo Purple",
+       "i18n": {
+        "es": "Púrpura Edo",
+        "ko": "에도 보라",
+        "pt": "Roxo Edo",
+        "zh": "江戶紫"
+       }
       },
       {
        "hex": "#C47495",
        "name": "萩色",
-       "nameEn": "Bush Clover"
+       "nameEn": "Bush Clover",
+       "i18n": {
+        "es": "Lespedeza",
+        "ko": "싸리꽃색",
+        "pt": "Rosa Hagi",
+        "zh": "胡枝子紅"
+       }
       },
       {
        "hex": "#703030",
        "name": "焦茶",
-       "nameEn": "Dark Brown"
+       "nameEn": "Dark Brown",
+       "i18n": {
+        "es": "Marrón oscuro",
+        "ko": "고동색",
+        "pt": "Marrom Escuro",
+        "zh": "焦茶"
+       }
       }
-     ]
+     ],
+     "i18n": {
+      "es": "Difíciles",
+      "ko": "구분하기 어려움",
+      "pt": "Quase Iguais",
+      "zh": "難以分辨"
+     }
     }
-   ]
+   ],
+   "i18n": {
+    "es": "Japón clásico",
+    "ko": "일본 전통색",
+    "pt": "Cores do Japão",
+    "zh": "日本傳統色"
+   }
   },
   {
    "id": "hana",
@@ -397,24 +799,54 @@
       {
        "hex": "#F9C0C8",
        "name": "乙女桜",
-       "nameEn": "Cherry Blossom Pink"
+       "nameEn": "Cherry Blossom Pink",
+       "i18n": {
+        "es": "Rosa cerezo",
+        "ko": "벚꽃 핑크",
+        "pt": "Rosa Cerejeira",
+        "zh": "櫻花粉"
+       }
       },
       {
        "hex": "#FFD900",
        "name": "向日葵色",
-       "nameEn": "Sunflower Yellow"
+       "nameEn": "Sunflower Yellow",
+       "i18n": {
+        "es": "Amarillo girasol",
+        "ko": "해바라기색",
+        "pt": "Amarelo Girassol",
+        "zh": "向日葵黃"
+       }
       },
       {
        "hex": "#FFF5A0",
        "name": "水仙色",
-       "nameEn": "Narcissus"
+       "nameEn": "Narcissus",
+       "i18n": {
+        "es": "Narciso",
+        "ko": "수선화색",
+        "pt": "Narciso",
+        "zh": "水仙黃"
+       }
       },
       {
        "hex": "#F5E642",
        "name": "菊色",
-       "nameEn": "Chrysanthemum"
+       "nameEn": "Chrysanthemum",
+       "i18n": {
+        "es": "Crisantemo",
+        "ko": "국화색",
+        "pt": "Crisântemo",
+        "zh": "菊黃"
+       }
       }
-     ]
+     ],
+     "i18n": {
+      "es": "Básicos vivos",
+      "ko": "알록달록 기본",
+      "pt": "Básicas Vivas",
+      "zh": "繽紛基本款"
+     }
     },
     {
      "no": 2,
@@ -425,24 +857,54 @@
       {
        "hex": "#E7A2C0",
        "name": "撫子色",
-       "nameEn": "Dianthus Pink"
+       "nameEn": "Dianthus Pink",
+       "i18n": {
+        "es": "Rosa clavel",
+        "ko": "패랭이 핑크",
+        "pt": "Rosa Cravo",
+        "zh": "石竹粉"
+       }
       },
       {
        "hex": "#7B9EC8",
        "name": "紫陽花色",
-       "nameEn": "Hydrangea Blue"
+       "nameEn": "Hydrangea Blue",
+       "i18n": {
+        "es": "Azul hortensia",
+        "ko": "수국 블루",
+        "pt": "Azul Hortênsia",
+        "zh": "繡球藍"
+       }
       },
       {
        "hex": "#F2A0B0",
        "name": "蓮色",
-       "nameEn": "Lotus Pink"
+       "nameEn": "Lotus Pink",
+       "i18n": {
+        "es": "Rosa loto",
+        "ko": "연꽃 핑크",
+        "pt": "Rosa Lótus",
+        "zh": "蓮花粉"
+       }
       },
       {
        "hex": "#C8A84B",
        "name": "芥子色",
-       "nameEn": "Poppy Yellow"
+       "nameEn": "Poppy Yellow",
+       "i18n": {
+        "es": "Amarillo amapola",
+        "ko": "겨자색",
+        "pt": "Amarelo Papoula",
+        "zh": "芥子黃"
+       }
       }
-     ]
+     ],
+     "i18n": {
+      "es": "Flores pastel",
+      "ko": "파스텔 계열",
+      "pt": "Tons Pastel",
+      "zh": "粉彩花朵"
+     }
     },
     {
      "no": 3,
@@ -453,24 +915,54 @@
       {
        "hex": "#F3A0A0",
        "name": "牡丹色",
-       "nameEn": "Peony"
+       "nameEn": "Peony",
+       "i18n": {
+        "es": "Peonía",
+        "ko": "모란색",
+        "pt": "Peônia",
+        "zh": "牡丹粉"
+       }
       },
       {
        "hex": "#CF6D8C",
        "name": "梅色",
-       "nameEn": "Plum"
+       "nameEn": "Plum",
+       "i18n": {
+        "es": "Ciruelo",
+        "ko": "매화색",
+        "pt": "Ameixa",
+        "zh": "梅紅"
+       }
       },
       {
        "hex": "#F0E040",
        "name": "菜の花色",
-       "nameEn": "Rapeseed Yellow"
+       "nameEn": "Rapeseed Yellow",
+       "i18n": {
+        "es": "Amarillo colza",
+        "ko": "유채꽃색",
+        "pt": "Flor de Colza",
+        "zh": "油菜花黃"
+       }
       },
       {
        "hex": "#E83060",
        "name": "薔薇色",
-       "nameEn": "Rose"
+       "nameEn": "Rose",
+       "i18n": {
+        "es": "Rosal",
+        "ko": "장미색",
+        "pt": "Rosa Vermelha",
+        "zh": "薔薇紅"
+       }
       }
-     ]
+     ],
+     "i18n": {
+      "es": "Tonos cálidos",
+      "ko": "따뜻한 색감",
+      "pt": "Tons Quentes",
+      "zh": "暖色花朵"
+     }
     },
     {
      "no": 4,
@@ -481,26 +973,62 @@
       {
        "hex": "#7B5EA7",
        "name": "菫色",
-       "nameEn": "Violet"
+       "nameEn": "Violet",
+       "i18n": {
+        "es": "Violeta",
+        "ko": "제비꽃색",
+        "pt": "Violeta",
+        "zh": "堇紫"
+       }
       },
       {
        "hex": "#4A6FA5",
        "name": "朝顔色",
-       "nameEn": "Morning Glory"
+       "nameEn": "Morning Glory",
+       "i18n": {
+        "es": "Campanilla",
+        "ko": "나팔꽃색",
+        "pt": "Glória-da-manhã",
+        "zh": "牽牛花藍"
+       }
       },
       {
        "hex": "#9B6B9E",
        "name": "紫苑色",
-       "nameEn": "Aster Purple"
+       "nameEn": "Aster Purple",
+       "i18n": {
+        "es": "Aster",
+        "ko": "쑥부쟁이 보라",
+        "pt": "Roxo Áster",
+        "zh": "紫苑紫"
+       }
       },
       {
        "hex": "#7A9EC0",
        "name": "紫陽花青",
-       "nameEn": "Hydrangea Deep"
+       "nameEn": "Hydrangea Deep",
+       "i18n": {
+        "es": "Hortensia oscura",
+        "ko": "짙은 수국색",
+        "pt": "Hortênsia Escura",
+        "zh": "深繡球藍"
+       }
       }
-     ]
+     ],
+     "i18n": {
+      "es": "Fríos y morados",
+      "ko": "차가운 색+보라",
+      "pt": "Frios e Roxos",
+      "zh": "冷色與紫色"
+     }
     }
-   ]
+   ],
+   "i18n": {
+    "es": "Flores",
+    "ko": "꽃의 색",
+    "pt": "Flores",
+    "zh": "花卉色彩"
+   }
   },
   {
    "id": "houseki",
@@ -517,24 +1045,54 @@
       {
        "hex": "#FFC200",
        "name": "トパーズ",
-       "nameEn": "Topaz"
+       "nameEn": "Topaz",
+       "i18n": {
+        "es": "Topacio",
+        "ko": "토파즈",
+        "pt": "Topázio",
+        "zh": "黃玉"
+       }
       },
       {
        "hex": "#7FFFD4",
        "name": "アクアマリン",
-       "nameEn": "Aquamarine"
+       "nameEn": "Aquamarine",
+       "i18n": {
+        "es": "Aguamarina",
+        "ko": "아쿠아마린",
+        "pt": "Água-marinha",
+        "zh": "海藍寶"
+       }
       },
       {
        "hex": "#E6A817",
        "name": "アンバー",
-       "nameEn": "Amber"
+       "nameEn": "Amber",
+       "i18n": {
+        "es": "Ámbar",
+        "ko": "앰버",
+        "pt": "Âmbar",
+        "zh": "琥珀黃"
+       }
       },
       {
        "hex": "#D4D4E8",
        "name": "ムーンストーン",
-       "nameEn": "Moonstone"
+       "nameEn": "Moonstone",
+       "i18n": {
+        "es": "Piedra luna",
+        "ko": "문스톤",
+        "pt": "Pedra da Lua",
+        "zh": "月光石"
+       }
       }
-     ]
+     ],
+     "i18n": {
+      "es": "Básicas vivas",
+      "ko": "선명한 기본",
+      "pt": "Básicas Vivas",
+      "zh": "鮮豔基本款"
+     }
     },
     {
      "no": 2,
@@ -545,24 +1103,54 @@
       {
        "hex": "#FF6B6B",
        "name": "コーラル",
-       "nameEn": "Coral"
+       "nameEn": "Coral",
+       "i18n": {
+        "es": "Coral",
+        "ko": "코랄",
+        "pt": "Coral",
+        "zh": "珊瑚紅"
+       }
       },
       {
        "hex": "#3CB371",
        "name": "ジェイド",
-       "nameEn": "Jade"
+       "nameEn": "Jade",
+       "i18n": {
+        "es": "Jade",
+        "ko": "제이드",
+        "pt": "Jade",
+        "zh": "翡翠"
+       }
       },
       {
        "hex": "#7B4FA0",
        "name": "アメジスト",
-       "nameEn": "Amethyst"
+       "nameEn": "Amethyst",
+       "i18n": {
+        "es": "Amatista",
+        "ko": "자수정",
+        "pt": "Ametista",
+        "zh": "紫水晶"
+       }
       },
       {
        "hex": "#9AB648",
        "name": "ペリドット",
-       "nameEn": "Peridot"
+       "nameEn": "Peridot",
+       "i18n": {
+        "es": "Peridoto",
+        "ko": "페리도트",
+        "pt": "Peridoto",
+        "zh": "橄欖石"
+       }
       }
-     ]
+     ],
+     "i18n": {
+      "es": "Tonos medios",
+      "ko": "중간색",
+      "pt": "Tons Médios",
+      "zh": "中間色調"
+     }
     },
     {
      "no": 3,
@@ -573,24 +1161,54 @@
       {
        "hex": "#046307",
        "name": "エメラルド",
-       "nameEn": "Emerald"
+       "nameEn": "Emerald",
+       "i18n": {
+        "es": "Esmeralda",
+        "ko": "에메랄드",
+        "pt": "Esmeralda",
+        "zh": "祖母綠"
+       }
       },
       {
        "hex": "#E8D5C0",
        "name": "オパール",
-       "nameEn": "Opal"
+       "nameEn": "Opal",
+       "i18n": {
+        "es": "Ópalo",
+        "ko": "오팔",
+        "pt": "Opala",
+        "zh": "蛋白石"
+       }
       },
       {
        "hex": "#D0E8F5",
        "name": "ダイヤモンド",
-       "nameEn": "Diamond"
+       "nameEn": "Diamond",
+       "i18n": {
+        "es": "Diamante",
+        "ko": "다이아몬드",
+        "pt": "Diamante",
+        "zh": "鑽石"
+       }
       },
       {
        "hex": "#6B0F1A",
        "name": "ガーネット",
-       "nameEn": "Garnet"
+       "nameEn": "Garnet",
+       "i18n": {
+        "es": "Granate",
+        "ko": "가넷",
+        "pt": "Granada",
+        "zh": "石榴石"
+       }
       }
-     ]
+     ],
+     "i18n": {
+      "es": "Lujo",
+      "ko": "고급스러움",
+      "pt": "Luxo",
+      "zh": "奢華寶石"
+     }
     },
     {
      "no": 4,
@@ -601,26 +1219,62 @@
       {
        "hex": "#9B1B30",
        "name": "ルビー",
-       "nameEn": "Ruby"
+       "nameEn": "Ruby",
+       "i18n": {
+        "es": "Rubí",
+        "ko": "루비",
+        "pt": "Rubi",
+        "zh": "紅寶石"
+       }
       },
       {
        "hex": "#1F3A9A",
        "name": "サファイア",
-       "nameEn": "Sapphire"
+       "nameEn": "Sapphire",
+       "i18n": {
+        "es": "Zafiro",
+        "ko": "사파이어",
+        "pt": "Safira",
+        "zh": "藍寶石"
+       }
       },
       {
        "hex": "#1A1A2E",
        "name": "オブシディアン",
-       "nameEn": "Obsidian"
+       "nameEn": "Obsidian",
+       "i18n": {
+        "es": "Obsidiana",
+        "ko": "옵시디언",
+        "pt": "Obsidiana",
+        "zh": "黑曜石"
+       }
       },
       {
        "hex": "#4B5E9E",
        "name": "タンザナイト",
-       "nameEn": "Tanzanite"
+       "nameEn": "Tanzanite",
+       "i18n": {
+        "es": "Tanzanita",
+        "ko": "탄자나이트",
+        "pt": "Tanzanita",
+        "zh": "丹泉石"
+       }
       }
-     ]
+     ],
+     "i18n": {
+      "es": "Gemas oscuras",
+      "ko": "어두운 보석",
+      "pt": "Gemas Escuras",
+      "zh": "暗色寶石"
+     }
     }
-   ]
+   ],
+   "i18n": {
+    "es": "Gemas",
+    "ko": "보석의 색",
+    "pt": "Gemas",
+    "zh": "寶石色彩"
+   }
   },
   {
    "id": "kokki",
@@ -637,24 +1291,54 @@
       {
        "hex": "#BC002D",
        "name": "日本レッド",
-       "nameEn": "Hinomaru Red"
+       "nameEn": "Hinomaru Red",
+       "i18n": {
+        "es": "Rojo Japón",
+        "ko": "일장기 레드",
+        "pt": "Vermelho Hinomaru",
+        "zh": "日之丸紅"
+       }
       },
       {
        "hex": "#DE2910",
        "name": "チャイナレッド",
-       "nameEn": "China Red"
+       "nameEn": "China Red",
+       "i18n": {
+        "es": "Rojo China",
+        "ko": "중국 레드",
+        "pt": "Vermelho China",
+        "zh": "中國紅"
+       }
       },
       {
        "hex": "#003478",
        "name": "コリアブルー",
-       "nameEn": "Korea Blue"
+       "nameEn": "Korea Blue",
+       "i18n": {
+        "es": "Azul Corea",
+        "ko": "한국 블루",
+        "pt": "Azul Coreia",
+        "zh": "韓國藍"
+       }
       },
       {
        "hex": "#0066B3",
        "name": "モンゴルブルー",
-       "nameEn": "Mongolia Blue"
+       "nameEn": "Mongolia Blue",
+       "i18n": {
+        "es": "Azul Mongolia",
+        "ko": "몽골 블루",
+        "pt": "Azul Mongólia",
+        "zh": "蒙古藍"
+       }
       }
-     ]
+     ],
+     "i18n": {
+      "es": "Asia oriental",
+      "ko": "동아시아의 상징",
+      "pt": "Leste Asiático",
+      "zh": "東亞代表色"
+     }
     },
     {
      "no": 2,
@@ -665,24 +1349,54 @@
       {
        "hex": "#A51931",
        "name": "タイレッド",
-       "nameEn": "Thailand Red"
+       "nameEn": "Thailand Red",
+       "i18n": {
+        "es": "Rojo Tailandia",
+        "ko": "태국 레드",
+        "pt": "Vermelho Tailândia",
+        "zh": "泰國紅"
+       }
       },
       {
        "hex": "#FFDD00",
        "name": "ベトナムイエロー",
-       "nameEn": "Vietnam Yellow"
+       "nameEn": "Vietnam Yellow",
+       "i18n": {
+        "es": "Amarillo Vietnam",
+        "ko": "베트남 옐로",
+        "pt": "Amarelo Vietnã",
+        "zh": "越南黃"
+       }
       },
       {
        "hex": "#FF0000",
        "name": "インドネシアレッド",
-       "nameEn": "Indonesia Red"
+       "nameEn": "Indonesia Red",
+       "i18n": {
+        "es": "Rojo Indonesia",
+        "ko": "인도네시아 레드",
+        "pt": "Vermelho Indonésia",
+        "zh": "印尼紅"
+       }
       },
       {
        "hex": "#0038A8",
        "name": "フィリピンブルー",
-       "nameEn": "Philippines Blue"
+       "nameEn": "Philippines Blue",
+       "i18n": {
+        "es": "Azul Filipinas",
+        "ko": "필리핀 블루",
+        "pt": "Azul Filipinas",
+        "zh": "菲律賓藍"
+       }
       }
-     ]
+     ],
+     "i18n": {
+      "es": "Sudeste asiático",
+      "ko": "동남아시아의 활기",
+      "pt": "Sudeste da Ásia",
+      "zh": "東南亞活力"
+     }
     },
     {
      "no": 3,
@@ -693,24 +1407,54 @@
       {
        "hex": "#FF9933",
        "name": "インドサフラン",
-       "nameEn": "India Saffron"
+       "nameEn": "India Saffron",
+       "i18n": {
+        "es": "Azafrán India",
+        "ko": "인도 사프란",
+        "pt": "Açafrão Índia",
+        "zh": "印度藏紅橘"
+       }
       },
       {
        "hex": "#01411C",
        "name": "パキスタングリーン",
-       "nameEn": "Pakistan Green"
+       "nameEn": "Pakistan Green",
+       "i18n": {
+        "es": "Verde Pakistán",
+        "ko": "파키스탄 그린",
+        "pt": "Verde Paquistão",
+        "zh": "巴基斯坦綠"
+       }
       },
       {
        "hex": "#006A4E",
        "name": "バングラデシュグリーン",
-       "nameEn": "Bangladesh Green"
+       "nameEn": "Bangladesh Green",
+       "i18n": {
+        "es": "Verde Bangladés",
+        "ko": "방글라데시 그린",
+        "pt": "Verde Bangladesh",
+        "zh": "孟加拉綠"
+       }
       },
       {
        "hex": "#8D153A",
        "name": "スリランカマルーン",
-       "nameEn": "Sri Lanka Maroon"
+       "nameEn": "Sri Lanka Maroon",
+       "i18n": {
+        "es": "Granate Sri Lanka",
+        "ko": "스리랑카 마룬",
+        "pt": "Grená Sri Lanka",
+        "zh": "斯里蘭卡栗"
+       }
       }
-     ]
+     ],
+     "i18n": {
+      "es": "Sur de Asia",
+      "ko": "남아시아의 전통",
+      "pt": "Sul da Ásia",
+      "zh": "南亞傳統"
+     }
     },
     {
      "no": 4,
@@ -721,26 +1465,62 @@
       {
        "hex": "#CE1126",
        "name": "パンアラブレッド",
-       "nameEn": "Pan Arab Red"
+       "nameEn": "Pan Arab Red",
+       "i18n": {
+        "es": "Rojo panárabe",
+        "ko": "범아랍 레드",
+        "pt": "Vermelho Pan-Árabe",
+        "zh": "泛阿拉伯紅"
+       }
       },
       {
        "hex": "#007A3D",
        "name": "パンアラブグリーン",
-       "nameEn": "Pan Arab Green"
+       "nameEn": "Pan Arab Green",
+       "i18n": {
+        "es": "Verde panárabe",
+        "ko": "범아랍 그린",
+        "pt": "Verde Pan-Árabe",
+        "zh": "泛阿拉伯綠"
+       }
       },
       {
        "hex": "#0A0A0A",
        "name": "ブラックスタンダード",
-       "nameEn": "Arab Black"
+       "nameEn": "Arab Black",
+       "i18n": {
+        "es": "Negro árabe",
+        "ko": "아랍 블랙",
+        "pt": "Preto Árabe",
+        "zh": "阿拉伯黑"
+       }
       },
       {
        "hex": "#F8F8F8",
        "name": "ホワイトスタンダード",
-       "nameEn": "Arab White"
+       "nameEn": "Arab White",
+       "i18n": {
+        "es": "Blanco árabe",
+        "ko": "아랍 화이트",
+        "pt": "Branco Árabe",
+        "zh": "阿拉伯白"
+       }
       }
-     ]
+     ],
+     "i18n": {
+      "es": "Oriente Medio",
+      "ko": "중동의 강인함",
+      "pt": "Oriente Médio",
+      "zh": "中東力量"
+     }
     }
-   ]
+   ],
+   "i18n": {
+    "es": "Banderas",
+    "ko": "세계 국기색",
+    "pt": "Bandeiras",
+    "zh": "世界國旗色"
+   }
   },
   {
    "id": "tabemono",
@@ -757,24 +1537,54 @@
       {
        "hex": "#CE2939",
        "name": "トマトレッド",
-       "nameEn": "Tomato Red"
+       "nameEn": "Tomato Red",
+       "i18n": {
+        "es": "Rojo tomate",
+        "ko": "토마토 레드",
+        "pt": "Vermelho Tomate",
+        "zh": "番茄紅"
+       }
       },
       {
        "hex": "#FFE135",
        "name": "バナナイエロー",
-       "nameEn": "Banana Yellow"
+       "nameEn": "Banana Yellow",
+       "i18n": {
+        "es": "Amarillo banana",
+        "ko": "바나나 옐로",
+        "pt": "Amarelo Banana",
+        "zh": "香蕉黃"
+       }
       },
       {
        "hex": "#779E3C",
        "name": "抹茶グリーン",
-       "nameEn": "Matcha Green"
+       "nameEn": "Matcha Green",
+       "i18n": {
+        "es": "Verde matcha",
+        "ko": "말차 그린",
+        "pt": "Verde Matcha",
+        "zh": "抹茶綠"
+       }
       },
       {
        "hex": "#FFFDE7",
        "name": "バニラホワイト",
-       "nameEn": "Vanilla White"
+       "nameEn": "Vanilla White",
+       "i18n": {
+        "es": "Blanco vainilla",
+        "ko": "바닐라 화이트",
+        "pt": "Branco Baunilha",
+        "zh": "香草白"
+       }
       }
-     ]
+     ],
+     "i18n": {
+      "es": "Alimentos base",
+      "ko": "기본 식재료",
+      "pt": "Ingredientes",
+      "zh": "主食食材"
+     }
     },
     {
      "no": 2,
@@ -785,24 +1595,54 @@
       {
        "hex": "#7B3F00",
        "name": "チョコレート",
-       "nameEn": "Chocolate"
+       "nameEn": "Chocolate",
+       "i18n": {
+        "es": "Chocolate",
+        "ko": "초콜릿",
+        "pt": "Chocolate",
+        "zh": "巧克力"
+       }
       },
       {
        "hex": "#4F2398",
        "name": "ブルーベリー",
-       "nameEn": "Blueberry"
+       "nameEn": "Blueberry",
+       "i18n": {
+        "es": "Arándano",
+        "ko": "블루베리",
+        "pt": "Mirtilo",
+        "zh": "藍莓"
+       }
       },
       {
        "hex": "#FF6F61",
        "name": "トマトサーモン",
-       "nameEn": "Tomato Salmon"
+       "nameEn": "Tomato Salmon",
+       "i18n": {
+        "es": "Tomate salmón",
+        "ko": "토마토 샐먼",
+        "pt": "Tomate Salmão",
+        "zh": "番茄鮭橘"
+       }
       },
       {
        "hex": "#FF8C00",
        "name": "マンゴーオレンジ",
-       "nameEn": "Mango Orange"
+       "nameEn": "Mango Orange",
+       "i18n": {
+        "es": "Naranja mango",
+        "ko": "망고 오렌지",
+        "pt": "Laranja Manga",
+        "zh": "芒果橘"
+       }
       }
-     ]
+     ],
+     "i18n": {
+      "es": "Dulces y frutas",
+      "ko": "디저트·과일",
+      "pt": "Doces e Frutas",
+      "zh": "甜點與水果"
+     }
     },
     {
      "no": 3,
@@ -813,24 +1653,54 @@
       {
        "hex": "#F5B800",
        "name": "黄身イエロー",
-       "nameEn": "Egg Yolk"
+       "nameEn": "Egg Yolk",
+       "i18n": {
+        "es": "Yema de huevo",
+        "ko": "노른자 옐로",
+        "pt": "Gema de Ovo",
+        "zh": "蛋黃"
+       }
       },
       {
        "hex": "#6B9E2A",
        "name": "抹茶グリーン濃",
-       "nameEn": "Deep Matcha Green"
+       "nameEn": "Deep Matcha Green",
+       "i18n": {
+        "es": "Matcha intenso",
+        "ko": "진한 말차색",
+        "pt": "Matcha Escuro",
+        "zh": "濃抹茶綠"
+       }
       },
       {
        "hex": "#9E1B32",
        "name": "ビーツレッド",
-       "nameEn": "Beet Red"
+       "nameEn": "Beet Red",
+       "i18n": {
+        "es": "Rojo remolacha",
+        "ko": "비트 레드",
+        "pt": "Vermelho Beterraba",
+        "zh": "甜菜紅"
+       }
       },
       {
        "hex": "#568203",
        "name": "アボカドグリーン",
-       "nameEn": "Avocado Green"
+       "nameEn": "Avocado Green",
+       "i18n": {
+        "es": "Verde aguacate",
+        "ko": "아보카도 그린",
+        "pt": "Verde Abacate",
+        "zh": "酪梨綠"
+       }
       }
-     ]
+     ],
+     "i18n": {
+      "es": "Del huerto",
+      "ko": "자연 식재료",
+      "pt": "Natureza",
+      "zh": "天然蔬果"
+     }
     },
     {
      "no": 4,
@@ -841,26 +1711,62 @@
       {
        "hex": "#4A2010",
        "name": "ダークロースト",
-       "nameEn": "Dark Roast"
+       "nameEn": "Dark Roast",
+       "i18n": {
+        "es": "Tueste oscuro",
+        "ko": "다크 로스트",
+        "pt": "Torra Escura",
+        "zh": "深焙褐"
+       }
       },
       {
        "hex": "#C8A2C8",
        "name": "ラベンダーはちみつ",
-       "nameEn": "Lavender Honey"
+       "nameEn": "Lavender Honey",
+       "i18n": {
+        "es": "Miel y lavanda",
+        "ko": "라벤더 허니",
+        "pt": "Lavanda e Mel",
+        "zh": "薰衣草蜜"
+       }
       },
       {
        "hex": "#FC4C4E",
        "name": "スイカレッド",
-       "nameEn": "Watermelon Red"
+       "nameEn": "Watermelon Red",
+       "i18n": {
+        "es": "Rojo sandía",
+        "ko": "수박 레드",
+        "pt": "Melancia",
+        "zh": "西瓜紅"
+       }
       },
       {
        "hex": "#E3A020",
        "name": "ターメリック",
-       "nameEn": "Turmeric"
+       "nameEn": "Turmeric",
+       "i18n": {
+        "es": "Cúrcuma",
+        "ko": "터메릭",
+        "pt": "Cúrcuma",
+        "zh": "薑黃"
+       }
       }
-     ]
+     ],
+     "i18n": {
+      "es": "Especias",
+      "ko": "향신료 색",
+      "pt": "Temperos",
+      "zh": "香料色調"
+     }
     }
-   ]
+   ],
+   "i18n": {
+    "es": "Comida",
+    "ko": "음식의 색",
+    "pt": "Comidas",
+    "zh": "食物色彩"
+   }
   },
   {
    "id": "soraumi",
@@ -877,24 +1783,54 @@
       {
        "hex": "#FFB7C5",
        "name": "夜明けピンク",
-       "nameEn": "Dawn Pink"
+       "nameEn": "Dawn Pink",
+       "i18n": {
+        "es": "Rosa amanecer",
+        "ko": "새벽 핑크",
+        "pt": "Rosa Alvorada",
+        "zh": "黎明粉"
+       }
       },
       {
        "hex": "#FF6B35",
        "name": "夕焼けオレンジ",
-       "nameEn": "Sunset Orange"
+       "nameEn": "Sunset Orange",
+       "i18n": {
+        "es": "Naranja ocaso",
+        "ko": "노을 오렌지",
+        "pt": "Laranja Poente",
+        "zh": "夕陽橘"
+       }
       },
       {
        "hex": "#F0F8FF",
        "name": "真昼の白",
-       "nameEn": "Midday White"
+       "nameEn": "Midday White",
+       "i18n": {
+        "es": "Blanco mediodía",
+        "ko": "한낮의 흰색",
+        "pt": "Branco Meio-dia",
+        "zh": "正午白"
+       }
       },
       {
        "hex": "#87CEEB",
        "name": "昼空ブルー",
-       "nameEn": "Daytime Sky Blue"
+       "nameEn": "Daytime Sky Blue",
+       "i18n": {
+        "es": "Azul cielo día",
+        "ko": "낮 하늘색",
+        "pt": "Azul Céu de Dia",
+        "zh": "晴空藍"
+       }
       }
-     ]
+     ],
+     "i18n": {
+      "es": "Alba a ocaso",
+      "ko": "아침·낮·저녁 하늘",
+      "pt": "Céus do Dia",
+      "zh": "黎明到黃昏的天空"
+     }
     },
     {
      "no": 2,
@@ -905,24 +1841,54 @@
       {
        "hex": "#FF4500",
        "name": "朝焼けレッド",
-       "nameEn": "Morning Glow Red"
+       "nameEn": "Morning Glow Red",
+       "i18n": {
+        "es": "Rojo alba",
+        "ko": "아침노을 레드",
+        "pt": "Vermelho Aurora",
+        "zh": "朝霞紅"
+       }
       },
       {
        "hex": "#663399",
        "name": "黄昏パープル",
-       "nameEn": "Twilight Purple"
+       "nameEn": "Twilight Purple",
+       "i18n": {
+        "es": "Púrpura ocaso",
+        "ko": "황혼 보라",
+        "pt": "Roxo Crepúsculo",
+        "zh": "暮色紫"
+       }
       },
       {
        "hex": "#40E0D0",
        "name": "浅瀬ターコイズ",
-       "nameEn": "Shallow Sea Turquoise"
+       "nameEn": "Shallow Sea Turquoise",
+       "i18n": {
+        "es": "Turquesa playa",
+        "ko": "얕은 바다 청록",
+        "pt": "Turquesa Raso",
+        "zh": "淺海青綠"
+       }
       },
       {
        "hex": "#002366",
        "name": "深海ネイビー",
-       "nameEn": "Deep Sea Navy"
+       "nameEn": "Deep Sea Navy",
+       "i18n": {
+        "es": "Azul abisal",
+        "ko": "심해 네이비",
+        "pt": "Azul Abissal",
+        "zh": "深海藍"
+       }
       }
-     ]
+     ],
+     "i18n": {
+      "es": "Crepúsculo y mar",
+      "ko": "노을 하늘과 바다",
+      "pt": "Crepúsculo",
+      "zh": "暮色天空與海"
+     }
     },
     {
      "no": 3,
@@ -933,24 +1899,54 @@
       {
        "hex": "#DAA520",
        "name": "夕暮れゴールド",
-       "nameEn": "Dusk Gold"
+       "nameEn": "Dusk Gold",
+       "i18n": {
+        "es": "Oro del ocaso",
+        "ko": "해질녘 골드",
+        "pt": "Ouro Entardecer",
+        "zh": "黃昏金"
+       }
       },
       {
        "hex": "#708090",
        "name": "嵐のグレー",
-       "nameEn": "Storm Gray"
+       "nameEn": "Storm Gray",
+       "i18n": {
+        "es": "Gris tormenta",
+        "ko": "폭풍 회색",
+        "pt": "Cinza Tempestade",
+        "zh": "暴風雨灰"
+       }
       },
       {
        "hex": "#006994",
        "name": "熱帯海ブルー",
-       "nameEn": "Tropical Sea Blue"
+       "nameEn": "Tropical Sea Blue",
+       "i18n": {
+        "es": "Mar tropical",
+        "ko": "열대 바다색",
+        "pt": "Mar Tropical",
+        "zh": "熱帶海藍"
+       }
       },
       {
        "hex": "#1A1033",
        "name": "夜空インディゴ",
-       "nameEn": "Night Sky Indigo"
+       "nameEn": "Night Sky Indigo",
+       "i18n": {
+        "es": "Índigo noche",
+        "ko": "밤하늘 인디고",
+        "pt": "Índigo Noturno",
+        "zh": "夜空靛"
+       }
       }
-     ]
+     ],
+     "i18n": {
+      "es": "Cielo cambiante",
+      "ko": "변하는 하늘과 바다",
+      "pt": "Céu em Mudança",
+      "zh": "變幻天海"
+     }
     },
     {
      "no": 4,
@@ -961,26 +1957,62 @@
       {
        "hex": "#4CBB88",
        "name": "オーロラグリーン",
-       "nameEn": "Aurora Green"
+       "nameEn": "Aurora Green",
+       "i18n": {
+        "es": "Verde aurora",
+        "ko": "오로라 그린",
+        "pt": "Verde Aurora",
+        "zh": "極光綠"
+       }
       },
       {
        "hex": "#E8E8FF",
        "name": "星明かりホワイト",
-       "nameEn": "Starlight White"
+       "nameEn": "Starlight White",
+       "i18n": {
+        "es": "Blanco estelar",
+        "ko": "별빛 화이트",
+        "pt": "Branco Estelar",
+        "zh": "星光白"
+       }
       },
       {
        "hex": "#0D0D1A",
        "name": "深夜ブラック",
-       "nameEn": "Midnight Black"
+       "nameEn": "Midnight Black",
+       "i18n": {
+        "es": "Negro medianoche",
+        "ko": "한밤 블랙",
+        "pt": "Preto Meia-noite",
+        "zh": "深夜黑"
+       }
       },
       {
        "hex": "#FF7F7F",
        "name": "珊瑚礁コーラル",
-       "nameEn": "Coral Reef"
+       "nameEn": "Coral Reef",
+       "i18n": {
+        "es": "Coral arrecife",
+        "ko": "산호초 코랄",
+        "pt": "Recife de Coral",
+        "zh": "珊瑚礁紅"
+       }
       }
-     ]
+     ],
+     "i18n": {
+      "es": "Noche y arrecife",
+      "ko": "밤하늘과 산호초",
+      "pt": "Noite e Corais",
+      "zh": "夜空與珊瑚礁"
+     }
     }
-   ]
+   ],
+   "i18n": {
+    "es": "Cielo y mar",
+    "ko": "하늘과 바다",
+    "pt": "Céu e Mar",
+    "zh": "天空與海洋色"
+   }
   },
   {
    "id": "europe",
@@ -997,24 +2029,54 @@
       {
        "hex": "#C66733",
        "name": "テラコッタ",
-       "nameEn": "Terracotta"
+       "nameEn": "Terracotta",
+       "i18n": {
+        "es": "Terracota",
+        "ko": "테라코타",
+        "pt": "Terracota",
+        "zh": "赤陶色"
+       }
       },
       {
        "hex": "#F2EFE4",
        "name": "石灰ホワイト",
-       "nameEn": "Lime White"
+       "nameEn": "Lime White",
+       "i18n": {
+        "es": "Blanco cal",
+        "ko": "석회 화이트",
+        "pt": "Branco Cal",
+        "zh": "石灰白"
+       }
       },
       {
        "hex": "#1F4E9A",
        "name": "コバルトドア",
-       "nameEn": "Cobalt Door"
+       "nameEn": "Cobalt Door",
+       "i18n": {
+        "es": "Puerta cobalto",
+        "ko": "코발트 문",
+        "pt": "Porta Cobalto",
+        "zh": "鈷藍門"
+       }
       },
       {
        "hex": "#F5DEB3",
        "name": "麦わらイエロー",
-       "nameEn": "Straw Yellow"
+       "nameEn": "Straw Yellow",
+       "i18n": {
+        "es": "Amarillo paja",
+        "ko": "밀짚 옐로",
+        "pt": "Amarelo Palha",
+        "zh": "麥稈黃"
+       }
       }
-     ]
+     ],
+     "i18n": {
+      "es": "Sol mediterráneo",
+      "ko": "지중해의 햇살",
+      "pt": "Mediterrâneo",
+      "zh": "地中海陽光"
+     }
     },
     {
      "no": 2,
@@ -1025,24 +2087,54 @@
       {
        "hex": "#4E9F7A",
        "name": "錆び銅グリーン",
-       "nameEn": "Verdigris Green"
+       "nameEn": "Verdigris Green",
+       "i18n": {
+        "es": "Verde cardenillo",
+        "ko": "녹청 그린",
+        "pt": "Verde Azinhavre",
+        "zh": "銅鏽綠"
+       }
       },
       {
        "hex": "#9E9E8E",
        "name": "パリのグレー",
-       "nameEn": "Paris Gray"
+       "nameEn": "Paris Gray",
+       "i18n": {
+        "es": "Gris París",
+        "ko": "파리의 회색",
+        "pt": "Cinza Paris",
+        "zh": "巴黎灰"
+       }
       },
       {
        "hex": "#8B2500",
        "name": "ブリックレッド",
-       "nameEn": "Brick Red"
+       "nameEn": "Brick Red",
+       "i18n": {
+        "es": "Rojo ladrillo",
+        "ko": "벽돌 레드",
+        "pt": "Vermelho Tijolo",
+        "zh": "磚紅"
+       }
       },
       {
        "hex": "#556B2F",
        "name": "オリーブドア",
-       "nameEn": "Olive Door"
+       "nameEn": "Olive Door",
+       "i18n": {
+        "es": "Puerta oliva",
+        "ko": "올리브 문",
+        "pt": "Porta Oliva",
+        "zh": "橄欖綠門"
+       }
       }
-     ]
+     ],
+     "i18n": {
+      "es": "Calles y puertas",
+      "ko": "돌길과 문",
+      "pt": "Pedra e Portas",
+      "zh": "石板路與門扉"
+     }
     },
     {
      "no": 3,
@@ -1053,24 +2145,54 @@
       {
        "hex": "#C9A84C",
        "name": "ヴェネツィアゴールド",
-       "nameEn": "Venetian Gold"
+       "nameEn": "Venetian Gold",
+       "i18n": {
+        "es": "Oro veneciano",
+        "ko": "베네치아 골드",
+        "pt": "Ouro Veneziano",
+        "zh": "威尼斯金"
+       }
       },
       {
        "hex": "#A89F91",
        "name": "ロンドンフォグ",
-       "nameEn": "London Fog"
+       "nameEn": "London Fog",
+       "i18n": {
+        "es": "Niebla Londres",
+        "ko": "런던 안개",
+        "pt": "Névoa de Londres",
+        "zh": "倫敦霧灰"
+       }
       },
       {
        "hex": "#C57B8C",
        "name": "プラハローズ",
-       "nameEn": "Prague Rose"
+       "nameEn": "Prague Rose",
+       "i18n": {
+        "es": "Rosa Praga",
+        "ko": "프라하 로즈",
+        "pt": "Rosa Praga",
+        "zh": "布拉格玫瑰"
+       }
       },
       {
        "hex": "#DCDCDC",
        "name": "大理石グレー",
-       "nameEn": "Marble Gray"
+       "nameEn": "Marble Gray",
+       "i18n": {
+        "es": "Gris mármol",
+        "ko": "대리석 회색",
+        "pt": "Cinza Mármore",
+        "zh": "大理石灰"
+       }
       }
-     ]
+     ],
+     "i18n": {
+      "es": "Arq. histórica",
+      "ko": "역사적 건축",
+      "pt": "Históricos",
+      "zh": "歷史建築"
+     }
     },
     {
      "no": 4,
@@ -1081,26 +2203,62 @@
       {
        "hex": "#1A4FA0",
        "name": "ポルトガルタイル",
-       "nameEn": "Portugal Tile"
+       "nameEn": "Portugal Tile",
+       "i18n": {
+        "es": "Azulejo Portugal",
+        "ko": "포르투갈 타일",
+        "pt": "Azulejo",
+        "zh": "葡萄牙瓷磚藍"
+       }
       },
       {
        "hex": "#1B4FBB",
        "name": "サントリーニブルー",
-       "nameEn": "Santorini Blue"
+       "nameEn": "Santorini Blue",
+       "i18n": {
+        "es": "Azul Santorini",
+        "ko": "산토리니 블루",
+        "pt": "Azul Santorini",
+        "zh": "聖托里尼藍"
+       }
       },
       {
        "hex": "#3B6B4F",
        "name": "ブダペストグリーン",
-       "nameEn": "Budapest Green"
+       "nameEn": "Budapest Green",
+       "i18n": {
+        "es": "Verde Budapest",
+        "ko": "부다페스트 그린",
+        "pt": "Verde Budapeste",
+        "zh": "布達佩斯綠"
+       }
       },
       {
        "hex": "#8B1A1A",
        "name": "フィレンツェレッド",
-       "nameEn": "Florence Red"
+       "nameEn": "Florence Red",
+       "i18n": {
+        "es": "Rojo Florencia",
+        "ko": "피렌체 레드",
+        "pt": "Vermelho Florença",
+        "zh": "佛羅倫斯紅"
+       }
       }
-     ]
+     ],
+     "i18n": {
+      "es": "Murallas",
+      "ko": "묵직한 성벽",
+      "pt": "Muralhas",
+      "zh": "要塞城牆"
+     }
     }
-   ]
+   ],
+   "i18n": {
+    "es": "Arq. europea",
+    "ko": "유럽 건축",
+    "pt": "Arq. Europeia",
+    "zh": "歐洲建築"
+   }
   },
   {
    "id": "dobutsu",
@@ -1117,24 +2275,54 @@
       {
        "hex": "#00BFFF",
        "name": "モルフォ蝶ブルー",
-       "nameEn": "Morpho Blue"
+       "nameEn": "Morpho Blue",
+       "i18n": {
+        "es": "Azul morfo",
+        "ko": "몰포 나비 블루",
+        "pt": "Azul Morpho",
+        "zh": "閃蝶藍"
+       }
       },
       {
        "hex": "#FC8EAC",
        "name": "フラミンゴピンク",
-       "nameEn": "Flamingo Pink"
+       "nameEn": "Flamingo Pink",
+       "i18n": {
+        "es": "Rosa flamenco",
+        "ko": "플라밍고 핑크",
+        "pt": "Rosa Flamingo",
+        "zh": "紅鶴粉"
+       }
       },
       {
        "hex": "#C8960C",
        "name": "チーター柄ゴールド",
-       "nameEn": "Cheetah Gold"
+       "nameEn": "Cheetah Gold",
+       "i18n": {
+        "es": "Oro guepardo",
+        "ko": "치타 골드",
+        "pt": "Ouro Guepardo",
+        "zh": "獵豹金"
+       }
       },
       {
        "hex": "#F5F5F5",
        "name": "パンダホワイト",
-       "nameEn": "Panda White"
+       "nameEn": "Panda White",
+       "i18n": {
+        "es": "Blanco panda",
+        "ko": "판다 화이트",
+        "pt": "Branco Panda",
+        "zh": "熊貓白"
+       }
       }
-     ]
+     ],
+     "i18n": {
+      "es": "Animales vivos",
+      "ko": "선명한 동물",
+      "pt": "Animais Vivos",
+      "zh": "鮮豔動物"
+     }
     },
     {
      "no": 2,
@@ -1145,24 +2333,54 @@
       {
        "hex": "#FF6600",
        "name": "トラオレンジ",
-       "nameEn": "Tiger Orange"
+       "nameEn": "Tiger Orange",
+       "i18n": {
+        "es": "Naranja tigre",
+        "ko": "호랑이 오렌지",
+        "pt": "Laranja Tigre",
+        "zh": "老虎橘"
+       }
       },
       {
        "hex": "#00827F",
        "name": "クジャクグリーン",
-       "nameEn": "Peacock Green"
+       "nameEn": "Peacock Green",
+       "i18n": {
+        "es": "Verde pavo real",
+        "ko": "공작 그린",
+        "pt": "Verde Pavão",
+        "zh": "孔雀綠"
+       }
       },
       {
        "hex": "#CC1100",
        "name": "テントウムシレッド",
-       "nameEn": "Ladybug Red"
+       "nameEn": "Ladybug Red",
+       "i18n": {
+        "es": "Rojo mariquita",
+        "ko": "무당벌레 레드",
+        "pt": "Joaninha",
+        "zh": "瓢蟲紅"
+       }
       },
       {
        "hex": "#2C2C2C",
        "name": "シマウマブラック",
-       "nameEn": "Zebra Black"
+       "nameEn": "Zebra Black",
+       "i18n": {
+        "es": "Negro cebra",
+        "ko": "얼룩말 블랙",
+        "pt": "Preto Zebra",
+        "zh": "斑馬黑"
+       }
       }
-     ]
+     ],
+     "i18n": {
+      "es": "Depredadores",
+      "ko": "맹수의 색",
+      "pt": "Feras",
+      "zh": "掠食者色彩"
+     }
     },
     {
      "no": 3,
@@ -1173,24 +2391,54 @@
       {
        "hex": "#5C8A00",
        "name": "カメレオングリーン",
-       "nameEn": "Chameleon Green"
+       "nameEn": "Chameleon Green",
+       "i18n": {
+        "es": "Verde camaleón",
+        "ko": "카멜레온 그린",
+        "pt": "Verde Camaleão",
+        "zh": "變色龍綠"
+       }
       },
       {
        "hex": "#7B2D8B",
        "name": "タコパープル",
-       "nameEn": "Octopus Purple"
+       "nameEn": "Octopus Purple",
+       "i18n": {
+        "es": "Púrpura pulpo",
+        "ko": "문어 보라",
+        "pt": "Roxo Polvo",
+        "zh": "章魚紫"
+       }
       },
       {
        "hex": "#FF6F00",
        "name": "サンゴオレンジ",
-       "nameEn": "Coral Orange"
+       "nameEn": "Coral Orange",
+       "i18n": {
+        "es": "Naranja coral",
+        "ko": "산호 오렌지",
+        "pt": "Laranja Coral",
+        "zh": "珊瑚橘"
+       }
       },
       {
        "hex": "#E8E840",
        "name": "ホタルイエロー",
-       "nameEn": "Firefly Yellow"
+       "nameEn": "Firefly Yellow",
+       "i18n": {
+        "es": "Luciérnaga",
+        "ko": "반딧불 옐로",
+        "pt": "Amarelo Vagalume",
+        "zh": "螢火蟲黃"
+       }
       }
-     ]
+     ],
+     "i18n": {
+      "es": "Insectos y mar",
+      "ko": "곤충과 바다",
+      "pt": "Insetos e Mar",
+      "zh": "昆蟲與海洋"
+     }
     },
     {
      "no": 4,
@@ -1201,24 +2449,54 @@
       {
        "hex": "#EEF0F0",
        "name": "ホッキョクグマ",
-       "nameEn": "Polar Bear White"
+       "nameEn": "Polar Bear White",
+       "i18n": {
+        "es": "Blanco oso polar",
+        "ko": "북극곰 화이트",
+        "pt": "Urso Polar",
+        "zh": "北極熊白"
+       }
       },
       {
        "hex": "#2D1B3D",
        "name": "コウモリパープル",
-       "nameEn": "Bat Purple"
+       "nameEn": "Bat Purple",
+       "i18n": {
+        "es": "Murciélago",
+        "ko": "박쥐 보라",
+        "pt": "Roxo Morcego",
+        "zh": "蝙蝠紫"
+       }
       },
       {
        "hex": "#8B5A2B",
        "name": "カブトムシブラウン",
-       "nameEn": "Beetle Brown"
+       "nameEn": "Beetle Brown",
+       "i18n": {
+        "es": "Escarabajo",
+        "ko": "장수풍뎅이 갈색",
+        "pt": "Marrom Besouro",
+        "zh": "獨角仙褐"
+       }
       },
       {
        "hex": "#5D3A6A",
        "name": "アメフラシパープル",
-       "nameEn": "Sea Hare Purple"
+       "nameEn": "Sea Hare Purple",
+       "i18n": {
+        "es": "Liebre de mar",
+        "ko": "군소 보라",
+        "pt": "Lebre-do-mar",
+        "zh": "海兔紫"
+       }
       }
-     ]
+     ],
+     "i18n": {
+      "es": "Noctámbulos",
+      "ko": "야행성 동물",
+      "pt": "Noturnas",
+      "zh": "夜行動物色"
+     }
     },
     {
      "no": 5,
@@ -1229,26 +2507,62 @@
       {
        "hex": "#5CA04E",
        "name": "オウムグリーン",
-       "nameEn": "Parrot Green"
+       "nameEn": "Parrot Green",
+       "i18n": {
+        "es": "Verde loro",
+        "ko": "앵무새 그린",
+        "pt": "Verde Papagaio",
+        "zh": "鸚鵡綠"
+       }
       },
       {
        "hex": "#1C1C28",
        "name": "イカスミブラック",
-       "nameEn": "Squid Ink Black"
+       "nameEn": "Squid Ink Black",
+       "i18n": {
+        "es": "Negro calamar",
+        "ko": "오징어먹 블랙",
+        "pt": "Tinta de Lula",
+        "zh": "墨魚汁黑"
+       }
       },
       {
        "hex": "#C8A96E",
        "name": "ヒョウ柄ベージュ",
-       "nameEn": "Leopard Beige"
+       "nameEn": "Leopard Beige",
+       "i18n": {
+        "es": "Beige leopardo",
+        "ko": "표범 베이지",
+        "pt": "Bege Leopardo",
+        "zh": "花豹米"
+       }
       },
       {
        "hex": "#E8C840",
        "name": "ミツバチイエロー",
-       "nameEn": "Honeybee Yellow"
+       "nameEn": "Honeybee Yellow",
+       "i18n": {
+        "es": "Amarillo abeja",
+        "ko": "꿀벌 옐로",
+        "pt": "Amarelo Abelha",
+        "zh": "蜜蜂黃"
+       }
       }
-     ]
+     ],
+     "i18n": {
+      "es": "Trópico y abismo",
+      "ko": "열대와 심해",
+      "pt": "Trópicos/Abismo",
+      "zh": "熱帶與深海"
+     }
     }
-   ]
+   ],
+   "i18n": {
+    "es": "Fauna y bichos",
+    "ko": "곤충·동물",
+    "pt": "Bichos/Insetos",
+    "zh": "動物與昆蟲色"
+   }
   },
   {
    "id": "cafe",
@@ -1265,24 +2579,54 @@
       {
        "hex": "#C8A882",
        "name": "カフェラテ",
-       "nameEn": "Cafe Latte"
+       "nameEn": "Cafe Latte",
+       "i18n": {
+        "es": "Café latte",
+        "ko": "카페라테",
+        "pt": "Café com Leite",
+        "zh": "拿鐵"
+       }
       },
       {
        "hex": "#F3E5AB",
        "name": "バニラクリーム",
-       "nameEn": "Vanilla Cream"
+       "nameEn": "Vanilla Cream",
+       "i18n": {
+        "es": "Crema vainilla",
+        "ko": "바닐라 크림",
+        "pt": "Creme Baunilha",
+        "zh": "香草奶油"
+       }
       },
       {
        "hex": "#FFF8F0",
        "name": "ミルクホワイト",
-       "nameEn": "Milk White"
+       "nameEn": "Milk White",
+       "i18n": {
+        "es": "Blanco leche",
+        "ko": "밀크 화이트",
+        "pt": "Branco Leite",
+        "zh": "牛奶白"
+       }
       },
       {
        "hex": "#B0E0E6",
        "name": "アイスブルー",
-       "nameEn": "Ice Blue"
+       "nameEn": "Ice Blue",
+       "i18n": {
+        "es": "Azul hielo",
+        "ko": "아이스 블루",
+        "pt": "Azul Gelo",
+        "zh": "冰藍"
+       }
       }
-     ]
+     ],
+     "i18n": {
+      "es": "Leche y hielo",
+      "ko": "우유와 아이스",
+      "pt": "Leite e Gelo",
+      "zh": "牛奶與冰"
+     }
     },
     {
      "no": 2,
@@ -1293,24 +2637,54 @@
       {
        "hex": "#8FAF5A",
        "name": "抹茶ラテ",
-       "nameEn": "Matcha Latte"
+       "nameEn": "Matcha Latte",
+       "i18n": {
+        "es": "Matcha latte",
+        "ko": "말차 라테",
+        "pt": "Matcha Latte",
+        "zh": "抹茶拿鐵"
+       }
       },
       {
        "hex": "#8B6347",
        "name": "ほうじ茶",
-       "nameEn": "Hojicha"
+       "nameEn": "Hojicha",
+       "i18n": {
+        "es": "Hojicha",
+        "ko": "호지차",
+        "pt": "Hojicha",
+        "zh": "焙茶"
+       }
       },
       {
        "hex": "#A0785A",
        "name": "カプチーノ",
-       "nameEn": "Cappuccino"
+       "nameEn": "Cappuccino",
+       "i18n": {
+        "es": "Capuchino",
+        "ko": "카푸치노",
+        "pt": "Cappuccino",
+        "zh": "卡布奇諾"
+       }
       },
       {
        "hex": "#FC7999",
        "name": "ストロベリーピンク",
-       "nameEn": "Strawberry Pink"
+       "nameEn": "Strawberry Pink",
+       "i18n": {
+        "es": "Rosa fresa",
+        "ko": "딸기 핑크",
+        "pt": "Rosa Morango",
+        "zh": "草莓粉"
+       }
       }
-     ]
+     ],
+     "i18n": {
+      "es": "Café fusión",
+      "ko": "일본식·서양식 카페",
+      "pt": "Leste e Oeste",
+      "zh": "和風與西式咖啡館"
+     }
     },
     {
      "no": 3,
@@ -1321,24 +2695,54 @@
       {
        "hex": "#5C3317",
        "name": "ダークモカ",
-       "nameEn": "Dark Mocha"
+       "nameEn": "Dark Mocha",
+       "i18n": {
+        "es": "Moca oscuro",
+        "ko": "다크 모카",
+        "pt": "Mocha Escuro",
+        "zh": "深摩卡"
+       }
       },
       {
        "hex": "#D2691E",
        "name": "シナモン",
-       "nameEn": "Cinnamon"
+       "nameEn": "Cinnamon",
+       "i18n": {
+        "es": "Canela",
+        "ko": "시나몬",
+        "pt": "Canela",
+        "zh": "肉桂"
+       }
       },
       {
        "hex": "#C47C3E",
        "name": "チャイスパイス",
-       "nameEn": "Chai Spice"
+       "nameEn": "Chai Spice",
+       "i18n": {
+        "es": "Especias chai",
+        "ko": "차이 스파이스",
+        "pt": "Chai Especiado",
+        "zh": "香料奶茶"
+       }
       },
       {
        "hex": "#9B8EC4",
        "name": "ラベンダーラテ",
-       "nameEn": "Lavender Latte"
+       "nameEn": "Lavender Latte",
+       "i18n": {
+        "es": "Latte lavanda",
+        "ko": "라벤더 라테",
+        "pt": "Latte Lavanda",
+        "zh": "薰衣草拿鐵"
+       }
       }
-     ]
+     ],
+     "i18n": {
+      "es": "Especias y aroma",
+      "ko": "향신료와 향기",
+      "pt": "Especiarias",
+      "zh": "香料與香氣"
+     }
     },
     {
      "no": 4,
@@ -1349,26 +2753,62 @@
       {
        "hex": "#3B1A08",
        "name": "エスプレッソ",
-       "nameEn": "Espresso"
+       "nameEn": "Espresso",
+       "i18n": {
+        "es": "Espresso",
+        "ko": "에스프레소",
+        "pt": "Espresso",
+        "zh": "濃縮咖啡"
+       }
       },
       {
        "hex": "#2C1A0E",
        "name": "コールドブリュー",
-       "nameEn": "Cold Brew"
+       "nameEn": "Cold Brew",
+       "i18n": {
+        "es": "Cold brew",
+        "ko": "콜드브루",
+        "pt": "Cold Brew",
+        "zh": "冷萃咖啡"
+       }
       },
       {
        "hex": "#3E7B5E",
        "name": "チョコミント",
-       "nameEn": "Choco Mint"
+       "nameEn": "Choco Mint",
+       "i18n": {
+        "es": "Menta choco",
+        "ko": "초코민트",
+        "pt": "Chocomenta",
+        "zh": "薄荷巧克力"
+       }
       },
       {
        "hex": "#1A0A00",
        "name": "ブラックコーヒー",
-       "nameEn": "Black Coffee"
+       "nameEn": "Black Coffee",
+       "i18n": {
+        "es": "Café negro",
+        "ko": "블랙커피",
+        "pt": "Café Preto",
+        "zh": "黑咖啡"
+       }
       }
-     ]
+     ],
+     "i18n": {
+      "es": "Tueste oscuro",
+      "ko": "깊게 볶은 어둠",
+      "pt": "Torra Escura",
+      "zh": "深焙"
+     }
     }
-   ]
+   ],
+   "i18n": {
+    "es": "Café",
+    "ko": "카페의 색",
+    "pt": "Cafeteria",
+    "zh": "咖啡館色彩"
+   }
   },
   {
    "id": "kyoto",
@@ -1385,24 +2825,54 @@
       {
        "hex": "#F2A5B5",
        "name": "春の霞",
-       "nameEn": "Spring Haze"
+       "nameEn": "Spring Haze",
+       "i18n": {
+        "es": "Bruma primaveral",
+        "ko": "봄 안개",
+        "pt": "Névoa Rosada",
+        "zh": "春霞粉"
+       }
       },
       {
        "hex": "#8DBB6B",
        "name": "若葉グリーン",
-       "nameEn": "Fresh Leaf Green"
+       "nameEn": "Fresh Leaf Green",
+       "i18n": {
+        "es": "Hoja tierna",
+        "ko": "새잎 그린",
+        "pt": "Verde Folha Nova",
+        "zh": "新葉綠"
+       }
       },
       {
        "hex": "#5B9BD5",
        "name": "夏空ブルー",
-       "nameEn": "Summer Sky Blue"
+       "nameEn": "Summer Sky Blue",
+       "i18n": {
+        "es": "Cielo de verano",
+        "ko": "여름 하늘색",
+        "pt": "Céu de Verão",
+        "zh": "夏空藍"
+       }
       },
       {
        "hex": "#E8DCC8",
        "name": "白砂ベージュ",
-       "nameEn": "White Sand Beige"
+       "nameEn": "White Sand Beige",
+       "i18n": {
+        "es": "Arena blanca",
+        "ko": "흰 모래 베이지",
+        "pt": "Areia Branca",
+        "zh": "白砂米"
+       }
       }
-     ]
+     ],
+     "i18n": {
+      "es": "Primavera",
+      "ko": "봄과 신록",
+      "pt": "Primavera",
+      "zh": "春天與新綠"
+     }
     },
     {
      "no": 2,
@@ -1413,24 +2883,54 @@
       {
        "hex": "#C8516B",
        "name": "牡丹ローズ",
-       "nameEn": "Peony Rose"
+       "nameEn": "Peony Rose",
+       "i18n": {
+        "es": "Peonía rosa",
+        "ko": "모란 로즈",
+        "pt": "Rosa Peônia",
+        "zh": "牡丹玫瑰"
+       }
       },
       {
        "hex": "#4A7C59",
        "name": "青もみじ",
-       "nameEn": "Green Maple"
+       "nameEn": "Green Maple",
+       "i18n": {
+        "es": "Arce verde",
+        "ko": "푸른 단풍",
+        "pt": "Bordo Verde",
+        "zh": "青楓綠"
+       }
       },
       {
        "hex": "#C84B2F",
        "name": "燃える紅葉",
-       "nameEn": "Burning Autumn Red"
+       "nameEn": "Burning Autumn Red",
+       "i18n": {
+        "es": "Rojo arce",
+        "ko": "타오르는 단풍",
+        "pt": "Vermelho Outono",
+        "zh": "烈焰楓紅"
+       }
       },
       {
        "hex": "#E8722A",
        "name": "柿オレンジ",
-       "nameEn": "Persimmon Orange"
+       "nameEn": "Persimmon Orange",
+       "i18n": {
+        "es": "Naranja caqui",
+        "ko": "감 오렌지",
+        "pt": "Laranja Caqui",
+        "zh": "柿子橘"
+       }
       }
-     ]
+     ],
+     "i18n": {
+      "es": "Verano y otoño",
+      "ko": "여름·가을의 색",
+      "pt": "Verão e Outono",
+      "zh": "夏秋色彩"
+     }
     },
     {
      "no": 3,
@@ -1441,24 +2941,54 @@
       {
        "hex": "#B8962E",
        "name": "金箔色",
-       "nameEn": "Gold Leaf"
+       "nameEn": "Gold Leaf",
+       "i18n": {
+        "es": "Pan de oro",
+        "ko": "금박색",
+        "pt": "Folha de Ouro",
+        "zh": "金箔金"
+       }
       },
       {
        "hex": "#5C7A3E",
        "name": "苔グリーン",
-       "nameEn": "Moss Green"
+       "nameEn": "Moss Green",
+       "i18n": {
+        "es": "Verde musgo",
+        "ko": "이끼 그린",
+        "pt": "Verde Musgo",
+        "zh": "苔綠"
+       }
       },
       {
        "hex": "#BB3B0E",
        "name": "朱塗りレッド",
-       "nameEn": "Vermilion Lacquer"
+       "nameEn": "Vermilion Lacquer",
+       "i18n": {
+        "es": "Laca bermellón",
+        "ko": "주칠 레드",
+        "pt": "Laca Vermelhão",
+        "zh": "朱漆紅"
+       }
       },
       {
        "hex": "#6B8E4E",
        "name": "竹の緑",
-       "nameEn": "Bamboo Green"
+       "nameEn": "Bamboo Green",
+       "i18n": {
+        "es": "Verde bambú",
+        "ko": "대나무 초록",
+        "pt": "Verde Bambu",
+        "zh": "竹綠"
+       }
       }
-     ]
+     ],
+     "i18n": {
+      "es": "Oro, musgo, rojo",
+      "ko": "금박·이끼·주홍",
+      "pt": "Ouro e Musgo",
+      "zh": "金色、苔蘚與朱紅"
+     }
     },
     {
      "no": 4,
@@ -1469,26 +2999,62 @@
       {
        "hex": "#F0EFEB",
        "name": "冬の雪白",
-       "nameEn": "Winter Snow White"
+       "nameEn": "Winter Snow White",
+       "i18n": {
+        "es": "Blanco nieve",
+        "ko": "겨울 눈 흰색",
+        "pt": "Branco Neve",
+        "zh": "冬雪白"
+       }
       },
       {
        "hex": "#A8294A",
        "name": "深紅の椿",
-       "nameEn": "Deep Camellia Red"
+       "nameEn": "Deep Camellia Red",
+       "i18n": {
+        "es": "Rojo camelia",
+        "ko": "짙은 동백 레드",
+        "pt": "Camélia Escura",
+        "zh": "深紅山茶"
+       }
       },
       {
        "hex": "#1A2352",
        "name": "夜の藍",
-       "nameEn": "Night Indigo"
+       "nameEn": "Night Indigo",
+       "i18n": {
+        "es": "Índigo nocturno",
+        "ko": "밤의 쪽빛",
+        "pt": "Índigo Noturno",
+        "zh": "夜之靛"
+       }
       },
       {
        "hex": "#7B8D9E",
        "name": "灰青（鈍色）",
-       "nameEn": "Ash Blue"
+       "nameEn": "Ash Blue",
+       "i18n": {
+        "es": "Azul ceniza",
+        "ko": "잿빛 청색",
+        "pt": "Azul Acinzentado",
+        "zh": "灰藍"
+       }
       }
-     ]
+     ],
+     "i18n": {
+      "es": "Invierno y noche",
+      "ko": "겨울과 밤의 교토",
+      "pt": "Inverno/Noite",
+      "zh": "京都冬夜"
+     }
     }
-   ]
+   ],
+   "i18n": {
+    "es": "Kioto estacional",
+    "ko": "교토의 사계절",
+    "pt": "Quioto Sazonal",
+    "zh": "京都四季"
+   }
   },
   {
    "id": "kodomo",
@@ -1505,24 +3071,54 @@
       {
        "hex": "#1A84F0",
        "name": "こいのぼりブルー",
-       "nameEn": "Koinobori Blue"
+       "nameEn": "Koinobori Blue",
+       "i18n": {
+        "es": "Azul koinobori",
+        "ko": "잉어깃발 블루",
+        "pt": "Azul Koinobori",
+        "zh": "鯉魚旗藍"
+       }
       },
       {
        "hex": "#FF2E2E",
        "name": "こいのぼりレッド",
-       "nameEn": "Koinobori Red"
+       "nameEn": "Koinobori Red",
+       "i18n": {
+        "es": "Rojo koinobori",
+        "ko": "잉어깃발 레드",
+        "pt": "Vermelho Koinobori",
+        "zh": "鯉魚旗紅"
+       }
       },
       {
        "hex": "#2EC82E",
        "name": "こいのぼりグリーン",
-       "nameEn": "Koinobori Green"
+       "nameEn": "Koinobori Green",
+       "i18n": {
+        "es": "Verde koinobori",
+        "ko": "잉어깃발 그린",
+        "pt": "Verde Koinobori",
+        "zh": "鯉魚旗綠"
+       }
       },
       {
        "hex": "#D4AF37",
        "name": "兜ゴールド",
-       "nameEn": "Helmet Gold"
+       "nameEn": "Helmet Gold",
+       "i18n": {
+        "es": "Oro del casco",
+        "ko": "투구 골드",
+        "pt": "Ouro do Elmo",
+        "zh": "武士盔金"
+       }
       }
-     ]
+     ],
+     "i18n": {
+      "es": "Koinobori",
+      "ko": "잉어 깃발",
+      "pt": "Koinobori",
+      "zh": "鯉魚旗"
+     }
     },
     {
      "no": 2,
@@ -1533,24 +3129,54 @@
       {
        "hex": "#6B8E23",
        "name": "柏餅グリーン",
-       "nameEn": "Kashiwa Green"
+       "nameEn": "Kashiwa Green",
+       "i18n": {
+        "es": "Verde kashiwa",
+        "ko": "가시와떡 그린",
+        "pt": "Verde Kashiwa",
+        "zh": "柏餅綠"
+       }
       },
       {
        "hex": "#7CFC00",
        "name": "芝生グリーン",
-       "nameEn": "Lawn Green"
+       "nameEn": "Lawn Green",
+       "i18n": {
+        "es": "Verde césped",
+        "ko": "잔디 그린",
+        "pt": "Verde Gramado",
+        "zh": "草地綠"
+       }
       },
       {
        "hex": "#A8D8E0",
        "name": "空気ブルー",
-       "nameEn": "Air Blue"
+       "nameEn": "Air Blue",
+       "i18n": {
+        "es": "Azul aire",
+        "ko": "공기 블루",
+        "pt": "Azul Ar",
+        "zh": "空氣藍"
+       }
       },
       {
        "hex": "#4682B4",
        "name": "五月晴れブルー",
-       "nameEn": "Clear May Blue"
+       "nameEn": "Clear May Blue",
+       "i18n": {
+        "es": "Azul mayo claro",
+        "ko": "맑은 오월 블루",
+        "pt": "Azul de Maio",
+        "zh": "五月晴藍"
+       }
       }
-     ]
+     ],
+     "i18n": {
+      "es": "Cielo y verdor",
+      "ko": "오월의 하늘과 초록",
+      "pt": "Céu de Maio",
+      "zh": "五月天空與綠意"
+     }
     },
     {
      "no": 3,
@@ -1561,24 +3187,54 @@
       {
        "hex": "#FFB0C0",
        "name": "和菓子ピンク",
-       "nameEn": "Japanese Sweet Pink"
+       "nameEn": "Japanese Sweet Pink",
+       "i18n": {
+        "es": "Rosa wagashi",
+        "ko": "화과자 핑크",
+        "pt": "Rosa Doce",
+        "zh": "和菓子粉"
+       }
       },
       {
        "hex": "#8FD2F0",
        "name": "青空ブルー",
-       "nameEn": "May Sky Blue"
+       "nameEn": "May Sky Blue",
+       "i18n": {
+        "es": "Cielo de mayo",
+        "ko": "오월 하늘색",
+        "pt": "Azul Céu de Maio",
+        "zh": "五月天藍"
+       }
       },
       {
        "hex": "#FFCF00",
        "name": "紙吹雪カラフル",
-       "nameEn": "Confetti Color"
+       "nameEn": "Confetti Color",
+       "i18n": {
+        "es": "Confeti",
+        "ko": "색종이 컬러",
+        "pt": "Cor de Confete",
+        "zh": "彩紙黃"
+       }
       },
       {
        "hex": "#FFF176",
        "name": "日差しイエロー",
-       "nameEn": "Sunlight Yellow"
+       "nameEn": "Sunlight Yellow",
+       "i18n": {
+        "es": "Amarillo solar",
+        "ko": "햇살 옐로",
+        "pt": "Amarelo Sol",
+        "zh": "陽光黃"
+       }
       }
-     ]
+     ],
+     "i18n": {
+      "es": "Dulces y adornos",
+      "ko": "화과자와 장식",
+      "pt": "Doces e Enfeites",
+      "zh": "和菓子與裝飾"
+     }
     },
     {
      "no": 4,
@@ -1589,26 +3245,62 @@
       {
        "hex": "#F8F8F5",
        "name": "風オフホワイト",
-       "nameEn": "Wind White"
+       "nameEn": "Wind White",
+       "i18n": {
+        "es": "Blanco viento",
+        "ko": "바람 화이트",
+        "pt": "Branco Vento",
+        "zh": "微風白"
+       }
       },
       {
        "hex": "#1C1C1C",
        "name": "鯉ブラック",
-       "nameEn": "Koi Black"
+       "nameEn": "Koi Black",
+       "i18n": {
+        "es": "Negro koi",
+        "ko": "잉어 블랙",
+        "pt": "Preto Carpa",
+        "zh": "鯉魚黑"
+       }
       },
       {
        "hex": "#FEFEFE",
        "name": "旗ホワイト",
-       "nameEn": "Flag White"
+       "nameEn": "Flag White",
+       "i18n": {
+        "es": "Blanco bandera",
+        "ko": "깃발 화이트",
+        "pt": "Branco Bandeira",
+        "zh": "旗幟白"
+       }
       },
       {
        "hex": "#7A3C10",
        "name": "木柱ブラウン",
-       "nameEn": "Pole Brown"
+       "nameEn": "Pole Brown",
+       "i18n": {
+        "es": "Marrón poste",
+        "ko": "기둥 갈색",
+        "pt": "Marrom Mastro",
+        "zh": "旗桿褐"
+       }
       }
-     ]
+     ],
+     "i18n": {
+      "es": "Carpas, banderas",
+      "ko": "잉어와 깃발",
+      "pt": "Carpa e Bandeira",
+      "zh": "鯉魚與旗幟"
+     }
     }
-   ]
+   ],
+   "i18n": {
+    "es": "Día del Niño",
+    "ko": "어린이날의 색",
+    "pt": "Dia da Criança",
+    "zh": "日本兒童節色彩"
+   }
   },
   {
    "id": "sushi",
@@ -1625,24 +3317,54 @@
       {
        "hex": "#FF7060",
        "name": "サーモン",
-       "nameEn": "Salmon"
+       "nameEn": "Salmon",
+       "i18n": {
+        "es": "Salmón",
+        "ko": "샐먼",
+        "pt": "Salmão",
+        "zh": "鮭魚"
+       }
       },
       {
        "hex": "#FFA07A",
        "name": "エビ",
-       "nameEn": "Shrimp"
+       "nameEn": "Shrimp",
+       "i18n": {
+        "es": "Camarón",
+        "ko": "새우",
+        "pt": "Camarão",
+        "zh": "鮮蝦"
+       }
       },
       {
        "hex": "#FFF8DC",
        "name": "シャリ",
-       "nameEn": "Rice"
+       "nameEn": "Rice",
+       "i18n": {
+        "es": "Arroz",
+        "ko": "밥알",
+        "pt": "Arroz",
+        "zh": "壽司飯"
+       }
       },
       {
        "hex": "#2D9E50",
        "name": "大葉",
-       "nameEn": "Shiso"
+       "nameEn": "Shiso",
+       "i18n": {
+        "es": "Shiso",
+        "ko": "시소잎",
+        "pt": "Shissô",
+        "zh": "紫蘇綠"
+       }
       }
-     ]
+     ],
+     "i18n": {
+      "es": "Clásicos",
+      "ko": "기본 재료",
+      "pt": "Clássicos",
+      "zh": "經典壽司料"
+     }
     },
     {
      "no": 2,
@@ -1653,24 +3375,54 @@
       {
        "hex": "#C01530",
        "name": "マグロ",
-       "nameEn": "Tuna"
+       "nameEn": "Tuna",
+       "i18n": {
+        "es": "Atún",
+        "ko": "참치",
+        "pt": "Atum",
+        "zh": "鮪魚"
+       }
       },
       {
        "hex": "#F08080",
        "name": "中トロ",
-       "nameEn": "Fatty Tuna"
+       "nameEn": "Fatty Tuna",
+       "i18n": {
+        "es": "Chutoro",
+        "ko": "중뱃살",
+        "pt": "Atum Gordo",
+        "zh": "鮪魚中腹"
+       }
       },
       {
        "hex": "#FAF0E6",
        "name": "ヒラメ",
-       "nameEn": "Flounder"
+       "nameEn": "Flounder",
+       "i18n": {
+        "es": "Lenguado",
+        "ko": "광어",
+        "pt": "Linguado",
+        "zh": "比目魚"
+       }
       },
       {
        "hex": "#E9967A",
        "name": "サーモン脂",
-       "nameEn": "Fat Salmon"
+       "nameEn": "Fat Salmon",
+       "i18n": {
+        "es": "Salmón graso",
+        "ko": "연어 지방",
+        "pt": "Salmão Gordo",
+        "zh": "鮭魚腹肉"
+       }
       }
-     ]
+     ],
+     "i18n": {
+      "es": "Rojos y blancos",
+      "ko": "붉은살·흰살 생선",
+      "pt": "Rubro e Branco",
+      "zh": "紅肉與白肉魚"
+     }
     },
     {
      "no": 3,
@@ -1681,24 +3433,54 @@
       {
        "hex": "#FF6200",
        "name": "イクラ",
-       "nameEn": "Salmon Roe"
+       "nameEn": "Salmon Roe",
+       "i18n": {
+        "es": "Ikura",
+        "ko": "연어알",
+        "pt": "Ovas de Salmão",
+        "zh": "鮭魚卵"
+       }
       },
       {
        "hex": "#FFB300",
        "name": "ウニ",
-       "nameEn": "Sea Urchin"
+       "nameEn": "Sea Urchin",
+       "i18n": {
+        "es": "Erizo de mar",
+        "ko": "성게",
+        "pt": "Ouriço-do-mar",
+        "zh": "海膽"
+       }
       },
       {
        "hex": "#4A7A00",
        "name": "アボカド",
-       "nameEn": "Avocado"
+       "nameEn": "Avocado",
+       "i18n": {
+        "es": "Aguacate",
+        "ko": "아보카도",
+        "pt": "Abacate",
+        "zh": "酪梨"
+       }
       },
       {
        "hex": "#1A1A0A",
        "name": "海苔",
-       "nameEn": "Nori"
+       "nameEn": "Nori",
+       "i18n": {
+        "es": "Nori",
+        "ko": "김",
+        "pt": "Nori",
+        "zh": "海苔"
+       }
       }
-     ]
+     ],
+     "i18n": {
+      "es": "Gunkan y rollos",
+      "ko": "군함·김밥",
+      "pt": "Gunkan e Rolos",
+      "zh": "軍艦與捲物"
+     }
     },
     {
      "no": 4,
@@ -1709,26 +3491,62 @@
       {
        "hex": "#FFD54F",
        "name": "玉子",
-       "nameEn": "Tamagoyaki"
+       "nameEn": "Tamagoyaki",
+       "i18n": {
+        "es": "Tamago",
+        "ko": "계란말이",
+        "pt": "Tamagoyaki",
+        "zh": "玉子燒"
+       }
       },
       {
        "hex": "#FFB6A3",
        "name": "ガリ",
-       "nameEn": "Pickled Ginger"
+       "nameEn": "Pickled Ginger",
+       "i18n": {
+        "es": "Jengibre rosa",
+        "ko": "초생강",
+        "pt": "Gengibre Rosa",
+        "zh": "醃薑"
+       }
       },
       {
        "hex": "#7CBB5A",
        "name": "わさび",
-       "nameEn": "Wasabi"
+       "nameEn": "Wasabi",
+       "i18n": {
+        "es": "Wasabi",
+        "ko": "고추냉이",
+        "pt": "Wasabi",
+        "zh": "山葵"
+       }
       },
       {
        "hex": "#3B2F2F",
        "name": "醤油",
-       "nameEn": "Soy Sauce"
+       "nameEn": "Soy Sauce",
+       "i18n": {
+        "es": "Salsa de soja",
+        "ko": "간장",
+        "pt": "Shoyu",
+        "zh": "醬油"
+       }
       }
-     ]
+     ],
+     "i18n": {
+      "es": "Extras y final",
+      "ko": "고명·마무리",
+      "pt": "Condimentos",
+      "zh": "佐料與收尾"
+     }
     }
-   ]
+   ],
+   "i18n": {
+    "es": "Sushi",
+    "ko": "초밥 재료",
+    "pt": "Sushi",
+    "zh": "壽司色彩"
+   }
   },
   {
    "id": "wc2026",
@@ -1745,24 +3563,54 @@
       {
        "hex": "#00704A",
        "name": "(メキシコ)エルトリコロールグリーン",
-       "nameEn": "(Mexico)El Tri Green"
+       "nameEn": "(Mexico)El Tri Green",
+       "i18n": {
+        "es": "México verde",
+        "ko": "멕시코 그린",
+        "pt": "Verde México",
+        "zh": "(墨西哥)三色綠"
+       }
       },
       {
        "hex": "#C60C30",
        "name": "(韓国)テグクウォリアーズレッド",
-       "nameEn": "(South Korea)Taegeuk Warriors Red"
+       "nameEn": "(South Korea)Taegeuk Warriors Red",
+       "i18n": {
+        "es": "Corea rojo",
+        "ko": "한국 태극 레드",
+        "pt": "Vermelho Coreia",
+        "zh": "(南韓)太極戰士紅"
+       }
       },
       {
        "hex": "#FFB81C",
        "name": "(南アフリカ)バファナバファナゴールド",
-       "nameEn": "(South Africa)Bafana Bafana Gold"
+       "nameEn": "(South Africa)Bafana Bafana Gold",
+       "i18n": {
+        "es": "Sudáfrica oro",
+        "ko": "남아공 골드",
+        "pt": "Ouro Áf. do Sul",
+        "zh": "(南非)巴法納金"
+       }
       },
       {
        "hex": "#D7141A",
        "name": "(チェコ)チェコレッド",
-       "nameEn": "(Czechia)Czechia Red"
+       "nameEn": "(Czechia)Czechia Red",
+       "i18n": {
+        "es": "Chequia rojo",
+        "ko": "체코 레드",
+        "pt": "Vermelho Tchéquia",
+        "zh": "(捷克)捷克紅"
+       }
       }
-     ]
+     ],
+     "i18n": {
+      "es": "Grupo A",
+      "ko": "A조",
+      "pt": "Grupo A",
+      "zh": "A 組"
+     }
     },
     {
      "no": 2,
@@ -1773,24 +3621,54 @@
       {
        "hex": "#FF0808",
        "name": "(カナダ)カナダレッド",
-       "nameEn": "(Canada)Canada Red"
+       "nameEn": "(Canada)Canada Red",
+       "i18n": {
+        "es": "Canadá rojo",
+        "ko": "캐나다 레드",
+        "pt": "Vermelho Canadá",
+        "zh": "(加拿大)楓葉紅"
+       }
       },
       {
        "hex": "#E4003B",
        "name": "(スイス)ナティスイスレッド",
-       "nameEn": "(Switzerland)Nati Swiss Red"
+       "nameEn": "(Switzerland)Nati Swiss Red",
+       "i18n": {
+        "es": "Suiza rojo",
+        "ko": "스위스 레드",
+        "pt": "Vermelho Suíça",
+        "zh": "(瑞士)瑞士紅"
+       }
       },
       {
        "hex": "#8D1B3D",
        "name": "(カタール)マリーンズマルーン",
-       "nameEn": "(Qatar)Maroons Maroon"
+       "nameEn": "(Qatar)Maroons Maroon",
+       "i18n": {
+        "es": "Catar granate",
+        "ko": "카타르 마룬",
+        "pt": "Grená Catar",
+        "zh": "(卡達)酒紅"
+       }
       },
       {
        "hex": "#002395",
        "name": "(ボスニア)ズマジチブルー",
-       "nameEn": "(Bosnia & Herz.)Zmajčići Blue"
+       "nameEn": "(Bosnia & Herz.)Zmajčići Blue",
+       "i18n": {
+        "es": "Bosnia azul",
+        "ko": "보스니아 블루",
+        "pt": "Azul Bósnia",
+        "zh": "(波士尼亞)小龍藍"
+       }
       }
-     ]
+     ],
+     "i18n": {
+      "es": "Grupo B",
+      "ko": "B조",
+      "pt": "Grupo B",
+      "zh": "B 組"
+     }
     },
     {
      "no": 3,
@@ -1801,24 +3679,54 @@
       {
        "hex": "#FFDF00",
        "name": "(ブラジル)カナリアイエロー",
-       "nameEn": "(Brazil)Canary Yellow"
+       "nameEn": "(Brazil)Canary Yellow",
+       "i18n": {
+        "es": "Brasil amarillo",
+        "ko": "브라질 카나리아",
+        "pt": "Amarelo Brasil",
+        "zh": "(巴西)金絲雀黃"
+       }
       },
       {
        "hex": "#C1272D",
        "name": "(モロッコ)アトラスライオンズレッド",
-       "nameEn": "(Morocco)Atlas Lions Red"
+       "nameEn": "(Morocco)Atlas Lions Red",
+       "i18n": {
+        "es": "Marruecos rojo",
+        "ko": "모로코 레드",
+        "pt": "Vermelho Marrocos",
+        "zh": "(摩洛哥)亞特拉斯紅"
+       }
       },
       {
        "hex": "#00209F",
        "name": "(ハイチ)レ・グレナディエールブルー",
-       "nameEn": "(Haiti)Les Grenadiers Blue"
+       "nameEn": "(Haiti)Les Grenadiers Blue",
+       "i18n": {
+        "es": "Haití azul",
+        "ko": "아이티 블루",
+        "pt": "Azul Haiti",
+        "zh": "(海地)擲彈兵藍"
+       }
       },
       {
        "hex": "#003380",
        "name": "(スコットランド)ブレイヴハーツネイビー",
-       "nameEn": "(Scotland)Brave Hearts Navy"
+       "nameEn": "(Scotland)Brave Hearts Navy",
+       "i18n": {
+        "es": "Escocia marino",
+        "ko": "스코틀랜드 네이비",
+        "pt": "Azul Escócia",
+        "zh": "(蘇格蘭)勇者之心藍"
+       }
       }
-     ]
+     ],
+     "i18n": {
+      "es": "Grupo C",
+      "ko": "C조",
+      "pt": "Grupo C",
+      "zh": "C 組"
+     }
     },
     {
      "no": 4,
@@ -1829,24 +3737,54 @@
       {
        "hex": "#002868",
        "name": "(アメリカ)USAネイビー",
-       "nameEn": "(USA)USA Navy"
+       "nameEn": "(USA)USA Navy",
+       "i18n": {
+        "es": "EE. UU. azul",
+        "ko": "미국 네이비",
+        "pt": "Azul EUA",
+        "zh": "(美國)美國海軍藍"
+       }
       },
       {
        "hex": "#D42A1E",
        "name": "(パラグアイ)ラロハレッド",
-       "nameEn": "(Paraguay)La Roja Red"
+       "nameEn": "(Paraguay)La Roja Red",
+       "i18n": {
+        "es": "Paraguay rojo",
+        "ko": "파라과이 레드",
+        "pt": "Vermelho Paraguai",
+        "zh": "(巴拉圭)拉羅哈紅"
+       }
       },
       {
        "hex": "#FFCD00",
        "name": "(オーストラリア)サッカールーズゴールド",
-       "nameEn": "(Australia)Socceroos Gold"
+       "nameEn": "(Australia)Socceroos Gold",
+       "i18n": {
+        "es": "Australia oro",
+        "ko": "호주 골드",
+        "pt": "Ouro Austrália",
+        "zh": "(澳洲)袋鼠軍團金"
+       }
       },
       {
        "hex": "#E30A17",
        "name": "(トルコ)クレセントレッド",
-       "nameEn": "(Türkiye)Crescent Red"
+       "nameEn": "(Türkiye)Crescent Red",
+       "i18n": {
+        "es": "Turquía rojo",
+        "ko": "튀르키예 레드",
+        "pt": "Vermelho Turquia",
+        "zh": "(土耳其)新月紅"
+       }
       }
-     ]
+     ],
+     "i18n": {
+      "es": "Grupo D",
+      "ko": "D조",
+      "pt": "Grupo D",
+      "zh": "D 組"
+     }
     },
     {
      "no": 5,
@@ -1857,24 +3795,54 @@
       {
        "hex": "#EFEFEF",
        "name": "(ドイツ)マンシャフトホワイト",
-       "nameEn": "(Germany)Mannschaft White"
+       "nameEn": "(Germany)Mannschaft White",
+       "i18n": {
+        "es": "Alemania blanco",
+        "ko": "독일 화이트",
+        "pt": "Branco Alemanha",
+        "zh": "(德國)德意志白"
+       }
       },
       {
        "hex": "#FFD100",
        "name": "(エクアドル)ラトリコロールイエロー",
-       "nameEn": "(Ecuador)Tricolor Yellow"
+       "nameEn": "(Ecuador)Tricolor Yellow",
+       "i18n": {
+        "es": "Ecuador amarillo",
+        "ko": "에콰도르 옐로",
+        "pt": "Amarelo Equador",
+        "zh": "(厄瓜多)三色黃"
+       }
       },
       {
        "hex": "#F77F00",
        "name": "(コートジボワール)レレファンツオレンジ",
-       "nameEn": "(Côte d'Ivoire)Les Éléphants Orange"
+       "nameEn": "(Côte d'Ivoire)Les Éléphants Orange",
+       "i18n": {
+        "es": "C. Marfil naranja",
+        "ko": "코트디부아르 오렌지",
+        "pt": "Laranja C. Marfim",
+        "zh": "(象牙海岸)大象橘"
+       }
       },
       {
        "hex": "#002B7F",
        "name": "(キュラソー)キュラソーブルー",
-       "nameEn": "(Curaçao)Curaçao Blue"
+       "nameEn": "(Curaçao)Curaçao Blue",
+       "i18n": {
+        "es": "Curazao azul",
+        "ko": "퀴라소 블루",
+        "pt": "Azul Curaçao",
+        "zh": "(古拉索)古拉索藍"
+       }
       }
-     ]
+     ],
+     "i18n": {
+      "es": "Grupo E",
+      "ko": "E조",
+      "pt": "Grupo E",
+      "zh": "E 組"
+     }
     },
     {
      "no": 6,
@@ -1885,24 +3853,54 @@
       {
        "hex": "#FF6400",
        "name": "(オランダ)オランイェオレンジ",
-       "nameEn": "(Netherlands)Oranje Orange"
+       "nameEn": "(Netherlands)Oranje Orange",
+       "i18n": {
+        "es": "Holanda naranja",
+        "ko": "네덜란드 오렌지",
+        "pt": "Laranja Holanda",
+        "zh": "(荷蘭)橙衣橘"
+       }
       },
       {
        "hex": "#003DA5",
        "name": "(日本)サムライブルー",
-       "nameEn": "(Japan)Samurai Blue"
+       "nameEn": "(Japan)Samurai Blue",
+       "i18n": {
+        "es": "Japón azul",
+        "ko": "일본 사무라이 블루",
+        "pt": "Azul Samurai",
+        "zh": "(日本)武士藍"
+       }
       },
       {
        "hex": "#E70013",
        "name": "(チュニジア)カルタゴイーグルズレッド",
-       "nameEn": "(Tunisia)Carthage Eagles Red"
+       "nameEn": "(Tunisia)Carthage Eagles Red",
+       "i18n": {
+        "es": "Túnez rojo",
+        "ko": "튀니지 레드",
+        "pt": "Vermelho Tunísia",
+        "zh": "(突尼西亞)迦太基紅"
+       }
       },
       {
        "hex": "#FECC02",
        "name": "(スウェーデン)ブロッグルットイエロー",
-       "nameEn": "(Sweden)Blågult Yellow"
+       "nameEn": "(Sweden)Blågult Yellow",
+       "i18n": {
+        "es": "Suecia amarillo",
+        "ko": "스웨덴 옐로",
+        "pt": "Amarelo Suécia",
+        "zh": "(瑞典)藍黃隊黃"
+       }
       }
-     ]
+     ],
+     "i18n": {
+      "es": "Grupo F",
+      "ko": "F조",
+      "pt": "Grupo F",
+      "zh": "F 組"
+     }
     },
     {
      "no": 7,
@@ -1913,24 +3911,54 @@
       {
        "hex": "#ED2939",
        "name": "(ベルギー)レッドデビルズレッド",
-       "nameEn": "(Belgium)Red Devils Red"
+       "nameEn": "(Belgium)Red Devils Red",
+       "i18n": {
+        "es": "Bélgica rojo",
+        "ko": "벨기에 레드",
+        "pt": "Vermelho Bélgica",
+        "zh": "(比利時)紅魔鬼紅"
+       }
       },
       {
        "hex": "#CF1128",
        "name": "(エジプト)ファラオズレッド",
-       "nameEn": "(Egypt)Pharaohs Red"
+       "nameEn": "(Egypt)Pharaohs Red",
+       "i18n": {
+        "es": "Egipto rojo",
+        "ko": "이집트 레드",
+        "pt": "Vermelho Egito",
+        "zh": "(埃及)法老王紅"
+       }
       },
       {
        "hex": "#F2F2F2",
        "name": "(イラン)チームメリホワイト",
-       "nameEn": "(Iran)Team Melli White"
+       "nameEn": "(Iran)Team Melli White",
+       "i18n": {
+        "es": "Irán blanco",
+        "ko": "이란 화이트",
+        "pt": "Branco Irã",
+        "zh": "(伊朗)國家隊白"
+       }
       },
       {
        "hex": "#111111",
        "name": "(ニュージーランド)オールホワイツブラック",
-       "nameEn": "(New Zealand)All Whites Black"
+       "nameEn": "(New Zealand)All Whites Black",
+       "i18n": {
+        "es": "N. Zelanda negro",
+        "ko": "뉴질랜드 블랙",
+        "pt": "Preto N. Zelândia",
+        "zh": "(紐西蘭)全白軍黑"
+       }
       }
-     ]
+     ],
+     "i18n": {
+      "es": "Grupo G",
+      "ko": "G조",
+      "pt": "Grupo G",
+      "zh": "G 組"
+     }
     },
     {
      "no": 8,
@@ -1941,24 +3969,54 @@
       {
        "hex": "#AD151B",
        "name": "(スペイン)ラロハフューリアレッド",
-       "nameEn": "(Spain)La Roja Red"
+       "nameEn": "(Spain)La Roja Red",
+       "i18n": {
+        "es": "España rojo",
+        "ko": "스페인 레드",
+        "pt": "Vermelho Espanha",
+        "zh": "(西班牙)鬥牛士紅"
+       }
       },
       {
        "hex": "#5EB6E4",
        "name": "(ウルグアイ)セレステブルー",
-       "nameEn": "(Uruguay)Celeste Blue"
+       "nameEn": "(Uruguay)Celeste Blue",
+       "i18n": {
+        "es": "Uruguay celeste",
+        "ko": "우루과이 셀레스테",
+        "pt": "Celeste Uruguai",
+        "zh": "(烏拉圭)天空藍"
+       }
       },
       {
        "hex": "#006C35",
        "name": "(サウジアラビア)グリーンファルコンズグリーン",
-       "nameEn": "(Saudi Arabia)Green Falcons Green"
+       "nameEn": "(Saudi Arabia)Green Falcons Green",
+       "i18n": {
+        "es": "Arabia verde",
+        "ko": "사우디 그린",
+        "pt": "Verde Arábia",
+        "zh": "(沙烏地)綠鷹綠"
+       }
       },
       {
        "hex": "#003893",
        "name": "(カーボベルデ)シャークブルー",
-       "nameEn": "(Cabo Verde)Sharks Blue"
+       "nameEn": "(Cabo Verde)Sharks Blue",
+       "i18n": {
+        "es": "Cabo Verde azul",
+        "ko": "카보베르데 블루",
+        "pt": "Azul Cabo Verde",
+        "zh": "(維德角)鯊魚藍"
+       }
       }
-     ]
+     ],
+     "i18n": {
+      "es": "Grupo H",
+      "ko": "H조",
+      "pt": "Grupo H",
+      "zh": "H 組"
+     }
     },
     {
      "no": 9,
@@ -1969,24 +4027,54 @@
       {
        "hex": "#003189",
        "name": "(フランス)レブルーブルー",
-       "nameEn": "(France)Les Bleus Blue"
+       "nameEn": "(France)Les Bleus Blue",
+       "i18n": {
+        "es": "Francia azul",
+        "ko": "프랑스 블루",
+        "pt": "Azul França",
+        "zh": "(法國)法蘭西藍"
+       }
       },
       {
        "hex": "#00853F",
        "name": "(セネガル)テランガライオンズグリーン",
-       "nameEn": "(Senegal)Lions of Teranga Green"
+       "nameEn": "(Senegal)Lions of Teranga Green",
+       "i18n": {
+        "es": "Senegal verde",
+        "ko": "세네갈 그린",
+        "pt": "Verde Senegal",
+        "zh": "(塞內加爾)獅子綠"
+       }
       },
       {
        "hex": "#EF2B2D",
        "name": "(ノルウェー)ノルスクレッド",
-       "nameEn": "(Norway)Norsk Red"
+       "nameEn": "(Norway)Norsk Red",
+       "i18n": {
+        "es": "Noruega rojo",
+        "ko": "노르웨이 레드",
+        "pt": "Vermelho Noruega",
+        "zh": "(挪威)挪威紅"
+       }
       },
       {
        "hex": "#00793C",
        "name": "(イラク)メソポタミアイーグルズグリーン",
-       "nameEn": "(Iraq)Mesopotamia Eagles Green"
+       "nameEn": "(Iraq)Mesopotamia Eagles Green",
+       "i18n": {
+        "es": "Irak verde",
+        "ko": "이라크 그린",
+        "pt": "Verde Iraque",
+        "zh": "(伊拉克)兩河之鷹綠"
+       }
       }
-     ]
+     ],
+     "i18n": {
+      "es": "Grupo I",
+      "ko": "I조",
+      "pt": "Grupo I",
+      "zh": "I 組"
+     }
     },
     {
      "no": 10,
@@ -1997,24 +4085,54 @@
       {
        "hex": "#75ADDF",
        "name": "(アルゼンチン)アルビセレステブルー",
-       "nameEn": "(Argentina)Albiceleste Blue"
+       "nameEn": "(Argentina)Albiceleste Blue",
+       "i18n": {
+        "es": "Argentina celeste",
+        "ko": "아르헨티나 하늘색",
+        "pt": "Celeste Argentina",
+        "zh": "(阿根廷)白天藍"
+       }
       },
       {
        "hex": "#E32438",
        "name": "(オーストリア)レッドブルズレッド",
-       "nameEn": "(Austria)Das Team Red"
+       "nameEn": "(Austria)Das Team Red",
+       "i18n": {
+        "es": "Austria rojo",
+        "ko": "오스트리아 레드",
+        "pt": "Vermelho Áustria",
+        "zh": "(奧地利)奧地利紅"
+       }
       },
       {
        "hex": "#006233",
        "name": "(アルジェリア)デザートフォックスグリーン",
-       "nameEn": "(Algeria)Desert Foxes Green"
+       "nameEn": "(Algeria)Desert Foxes Green",
+       "i18n": {
+        "es": "Argelia verde",
+        "ko": "알제리 그린",
+        "pt": "Verde Argélia",
+        "zh": "(阿爾及利亞)狐狸綠"
+       }
       },
       {
        "hex": "#FBFBFB",
        "name": "(ヨルダン)ナシュマットホワイト",
-       "nameEn": "(Jordan)Nashama White"
+       "nameEn": "(Jordan)Nashama White",
+       "i18n": {
+        "es": "Jordania blanco",
+        "ko": "요르단 화이트",
+        "pt": "Branco Jordânia",
+        "zh": "(約旦)勇者白"
+       }
       }
-     ]
+     ],
+     "i18n": {
+      "es": "Grupo J",
+      "ko": "J조",
+      "pt": "Grupo J",
+      "zh": "J 組"
+     }
     },
     {
      "no": 11,
@@ -2025,24 +4143,54 @@
       {
        "hex": "#006800",
        "name": "(ポルトガル)ナビオナイスグリーン",
-       "nameEn": "(Portugal)Navigators Green"
+       "nameEn": "(Portugal)Navigators Green",
+       "i18n": {
+        "es": "Portugal verde",
+        "ko": "포르투갈 그린",
+        "pt": "Verde Portugal",
+        "zh": "(葡萄牙)航海家綠"
+       }
       },
       {
        "hex": "#FCD116",
        "name": "(コロンビア)ロスカフェテロスイエロー",
-       "nameEn": "(Colombia)Los Cafeteros Yellow"
+       "nameEn": "(Colombia)Los Cafeteros Yellow",
+       "i18n": {
+        "es": "Colombia amarillo",
+        "ko": "콜롬비아 옐로",
+        "pt": "Amarelo Colômbia",
+        "zh": "(哥倫比亞)咖啡農黃"
+       }
       },
       {
        "hex": "#1EB53A",
        "name": "(ウズベキスタン)ホワイトウルブズグリーン",
-       "nameEn": "(Uzbekistan)White Wolves Green"
+       "nameEn": "(Uzbekistan)White Wolves Green",
+       "i18n": {
+        "es": "Uzbekistán verde",
+        "ko": "우즈베키스탄 그린",
+        "pt": "Verde Uzbequistão",
+        "zh": "(烏茲別克)白狼綠"
+       }
       },
       {
        "hex": "#007FFF",
        "name": "(DRコンゴ)レオパーズスカイブルー",
-       "nameEn": "(DR Congo)Leopards Sky Blue"
+       "nameEn": "(DR Congo)Leopards Sky Blue",
+       "i18n": {
+        "es": "RD Congo celeste",
+        "ko": "콩고민주 하늘색",
+        "pt": "Azul RD Congo",
+        "zh": "(民主剛果)花豹天藍"
+       }
       }
-     ]
+     ],
+     "i18n": {
+      "es": "Grupo K",
+      "ko": "K조",
+      "pt": "Grupo K",
+      "zh": "K 組"
+     }
     },
     {
      "no": 12,
@@ -2053,32 +4201,74 @@
       {
        "hex": "#F6F6F6",
        "name": "(イングランド)スリーライオンズホワイト",
-       "nameEn": "(England)Three Lions White"
+       "nameEn": "(England)Three Lions White",
+       "i18n": {
+        "es": "Inglaterra blanco",
+        "ko": "잉글랜드 화이트",
+        "pt": "Branco Inglaterra",
+        "zh": "(英格蘭)三獅白"
+       }
       },
       {
        "hex": "#ECECEC",
        "name": "(クロアチア)バトレニホワイト",
-       "nameEn": "(Croatia)Vatreni White"
+       "nameEn": "(Croatia)Vatreni White",
+       "i18n": {
+        "es": "Croacia blanco",
+        "ko": "크로아티아 화이트",
+        "pt": "Branco Croácia",
+        "zh": "(克羅埃西亞)火焰白"
+       }
       },
       {
        "hex": "#FCD518",
        "name": "(ガーナ)ブラックスターズゴールド",
-       "nameEn": "(Ghana)Black Stars Gold"
+       "nameEn": "(Ghana)Black Stars Gold",
+       "i18n": {
+        "es": "Ghana oro",
+        "ko": "가나 골드",
+        "pt": "Ouro Gana",
+        "zh": "(迦納)黑星金"
+       }
       },
       {
        "hex": "#DA121A",
        "name": "(パナマ)ロスカナレホスレッド",
-       "nameEn": "(Panama)Los Canaleros Red"
+       "nameEn": "(Panama)Los Canaleros Red",
+       "i18n": {
+        "es": "Panamá rojo",
+        "ko": "파나마 레드",
+        "pt": "Vermelho Panamá",
+        "zh": "(巴拿馬)運河紅"
+       }
       }
-     ]
+     ],
+     "i18n": {
+      "es": "Grupo L",
+      "ko": "L조",
+      "pt": "Grupo L",
+      "zh": "L 組"
+     }
     }
-   ]
+   ],
+   "i18n": {
+    "es": "Mundial 2026",
+    "ko": "월드컵 2026 유니폼",
+    "pt": "Copa 2026",
+    "zh": "2026 世足球衣"
+   }
   },
   {
    "id": "bird",
    "name": "世界の鳥",
    "nameEn": "World Bird Colors",
    "icon": "🐦",
+   "i18n": {
+    "es": "Aves",
+    "ko": "세계의 새",
+    "pt": "Aves do Mundo",
+    "zh": "世界鳥類色彩"
+   },
    "addedAt": "2026-11-01",
    "chunks": [
     {
@@ -2090,24 +4280,54 @@
       {
        "hex": "#FF5500",
        "name": "オウム",
-       "nameEn": "Parrot"
+       "nameEn": "Parrot",
+       "i18n": {
+        "es": "Loro",
+        "ko": "앵무새",
+        "pt": "Arara",
+        "zh": "鸚鵡橘紅"
+       }
       },
       {
        "hex": "#FFD200",
        "name": "カナリア",
-       "nameEn": "Canary"
+       "nameEn": "Canary",
+       "i18n": {
+        "es": "Canario",
+        "ko": "카나리아",
+        "pt": "Canário",
+        "zh": "金絲雀"
+       }
       },
       {
        "hex": "#0080E0",
        "name": "カワセミ",
-       "nameEn": "Kingfisher"
+       "nameEn": "Kingfisher",
+       "i18n": {
+        "es": "Martín pescador",
+        "ko": "물총새",
+        "pt": "Martim-pescador",
+        "zh": "翠鳥藍"
+       }
       },
       {
        "hex": "#35D435",
        "name": "インコ",
-       "nameEn": "Parakeet"
+       "nameEn": "Parakeet",
+       "i18n": {
+        "es": "Periquito",
+        "ko": "사랑앵무",
+        "pt": "Periquito",
+        "zh": "虎皮鸚鵡綠"
+       }
       }
-     ]
+     ],
+     "i18n": {
+      "es": "Aves coloridas",
+      "ko": "알록달록 새",
+      "pt": "Aves Coloridas",
+      "zh": "繽紛鳥類"
+     }
     },
     {
      "no": 2,
@@ -2118,24 +4338,54 @@
       {
        "hex": "#FF1493",
        "name": "フラミンゴ",
-       "nameEn": "Flamingo"
+       "nameEn": "Flamingo",
+       "i18n": {
+        "es": "Flamenco",
+        "ko": "플라밍고",
+        "pt": "Flamingo",
+        "zh": "火烈鳥桃紅"
+       }
       },
       {
        "hex": "#00B4C8",
        "name": "ターコイズ鳥",
-       "nameEn": "Turquoise Bird"
+       "nameEn": "Turquoise Bird",
+       "i18n": {
+        "es": "Ave turquesa",
+        "ko": "터키석 새",
+        "pt": "Ave Turquesa",
+        "zh": "青綠羽色"
+       }
       },
       {
        "hex": "#ADFF2F",
        "name": "オウム緑",
-       "nameEn": "Parrot Green"
+       "nameEn": "Parrot Green",
+       "i18n": {
+        "es": "Loro verde lima",
+        "ko": "앵무 연두",
+        "pt": "Verde Papagaio",
+        "zh": "鸚鵡亮綠"
+       }
       },
       {
        "hex": "#FF8800",
        "name": "トロピカル",
-       "nameEn": "Tropical Orange"
+       "nameEn": "Tropical Orange",
+       "i18n": {
+        "es": "Naranja tropical",
+        "ko": "트로피컬 오렌지",
+        "pt": "Laranja Tropical",
+        "zh": "熱帶橘"
+       }
       }
-     ]
+     ],
+     "i18n": {
+      "es": "Aves tropicales",
+      "ko": "열대의 새",
+      "pt": "Aves Tropicais",
+      "zh": "熱帶鳥類"
+     }
     },
     {
      "no": 3,
@@ -2146,24 +4396,54 @@
       {
        "hex": "#926018",
        "name": "スズメ",
-       "nameEn": "Brown Sparrow"
+       "nameEn": "Brown Sparrow",
+       "i18n": {
+        "es": "Gorrión",
+        "ko": "참새 갈색",
+        "pt": "Pardal",
+        "zh": "麻雀褐"
+       }
       },
       {
        "hex": "#4E6128",
        "name": "ウグイス",
-       "nameEn": "Warbler"
+       "nameEn": "Warbler",
+       "i18n": {
+        "es": "Curruca",
+        "ko": "휘파람새",
+        "pt": "Mariquita",
+        "zh": "樹鶯綠"
+       }
       },
       {
        "hex": "#222222",
        "name": "カラス",
-       "nameEn": "Crow"
+       "nameEn": "Crow",
+       "i18n": {
+        "es": "Cuervo",
+        "ko": "까마귀",
+        "pt": "Corvo",
+        "zh": "烏鴉黑"
+       }
       },
       {
        "hex": "#956028",
        "name": "ワシ",
-       "nameEn": "Eagle"
+       "nameEn": "Eagle",
+       "i18n": {
+        "es": "Águila",
+        "ko": "독수리",
+        "pt": "Águia",
+        "zh": "老鷹褐"
+       }
       }
-     ]
+     ],
+     "i18n": {
+      "es": "Aves naturales",
+      "ko": "자연 속 새",
+      "pt": "Tons Naturais",
+      "zh": "自然鳥類"
+     }
     },
     {
      "no": 4,
@@ -2174,24 +4454,54 @@
       {
        "hex": "#696969",
        "name": "グレー鳥",
-       "nameEn": "Gray Bird"
+       "nameEn": "Gray Bird",
+       "i18n": {
+        "es": "Ave gris",
+        "ko": "회색 새",
+        "pt": "Cinza Ave",
+        "zh": "羽毛灰"
+       }
       },
       {
        "hex": "#6A7E8E",
        "name": "くすみ青",
-       "nameEn": "Dull Blue"
+       "nameEn": "Dull Blue",
+       "i18n": {
+        "es": "Azul apagado",
+        "ko": "칙칙한 청색",
+        "pt": "Azul Fosco",
+        "zh": "霧藍"
+       }
       },
       {
        "hex": "#374F3A",
        "name": "暗緑",
-       "nameEn": "Dark Green"
+       "nameEn": "Dark Green",
+       "i18n": {
+        "es": "Verde oscuro",
+        "ko": "짙은 초록",
+        "pt": "Verde Escuro",
+        "zh": "暗綠"
+       }
       },
       {
        "hex": "#3A3A3A",
        "name": "濃灰",
-       "nameEn": "Deep Gray"
+       "nameEn": "Deep Gray",
+       "i18n": {
+        "es": "Gris oscuro",
+        "ko": "진한 회색",
+        "pt": "Cinza Escuro",
+        "zh": "深灰"
+       }
       }
-     ]
+     ],
+     "i18n": {
+      "es": "Aves apagadas",
+      "ko": "수수한 새",
+      "pt": "Aves Discretas",
+      "zh": "素色鳥類"
+     }
     }
    ]
   },
@@ -2200,6 +4510,12 @@
    "name": "都市・夜景の色",
    "nameEn": "City Nightscape",
    "icon": "🌃",
+   "i18n": {
+    "es": "Noche urbana",
+    "ko": "도시·야경",
+    "pt": "Cidade à Noite",
+    "zh": "都市夜景"
+   },
    "addedAt": "2026-11-02",
    "chunks": [
     {
@@ -2211,24 +4527,54 @@
       {
        "hex": "#FF2DAA",
        "name": "ネオンピンク",
-       "nameEn": "Neon Pink"
+       "nameEn": "Neon Pink",
+       "i18n": {
+        "es": "Rosa neón",
+        "ko": "네온 핑크",
+        "pt": "Rosa Neon",
+        "zh": "霓虹粉"
+       }
       },
       {
        "hex": "#00A8FF",
        "name": "ネオンブルー",
-       "nameEn": "Neon Blue"
+       "nameEn": "Neon Blue",
+       "i18n": {
+        "es": "Azul neón",
+        "ko": "네온 블루",
+        "pt": "Azul Neon",
+        "zh": "霓虹藍"
+       }
       },
       {
        "hex": "#39FF14",
        "name": "ネオングリーン",
-       "nameEn": "Neon Green"
+       "nameEn": "Neon Green",
+       "i18n": {
+        "es": "Verde neón",
+        "ko": "네온 그린",
+        "pt": "Verde Neon",
+        "zh": "霓虹綠"
+       }
       },
       {
        "hex": "#FFA500",
        "name": "街灯オレンジ",
-       "nameEn": "Streetlight Orange"
+       "nameEn": "Streetlight Orange",
+       "i18n": {
+        "es": "Naranja farola",
+        "ko": "가로등 오렌지",
+        "pt": "Laranja Poste",
+        "zh": "路燈橘"
+       }
       }
-     ]
+     ],
+     "i18n": {
+      "es": "Luces de neón",
+      "ko": "네온 불빛",
+      "pt": "Luzes de Neon",
+      "zh": "霓虹燈光"
+     }
     },
     {
      "no": 2,
@@ -2239,24 +4585,54 @@
       {
        "hex": "#FFD966",
        "name": "窓明かりイエロー",
-       "nameEn": "Window Light Yellow"
+       "nameEn": "Window Light Yellow",
+       "i18n": {
+        "es": "Luz de ventana",
+        "ko": "창문 불빛 옐로",
+        "pt": "Luz de Janela",
+        "zh": "窗光黃"
+       }
       },
       {
        "hex": "#FF0505",
        "name": "信号レッド",
-       "nameEn": "Traffic Red"
+       "nameEn": "Traffic Red",
+       "i18n": {
+        "es": "Semáforo rojo",
+        "ko": "신호 레드",
+        "pt": "Vermelho Sinal",
+        "zh": "號誌紅"
+       }
       },
       {
        "hex": "#00FF00",
        "name": "信号グリーン",
-       "nameEn": "Traffic Green"
+       "nameEn": "Traffic Green",
+       "i18n": {
+        "es": "Semáforo verde",
+        "ko": "신호 그린",
+        "pt": "Verde Sinal",
+        "zh": "號誌綠"
+       }
       },
       {
        "hex": "#FFFF00",
        "name": "信号イエロー",
-       "nameEn": "Traffic Yellow"
+       "nameEn": "Traffic Yellow",
+       "i18n": {
+        "es": "Semáforo amarillo",
+        "ko": "신호 옐로",
+        "pt": "Amarelo Sinal",
+        "zh": "號誌黃"
+       }
       }
-     ]
+     ],
+     "i18n": {
+      "es": "Luces y señales",
+      "ko": "신호등과 창문 불빛",
+      "pt": "Sinais e Luzes",
+      "zh": "號誌與窗光"
+     }
     },
     {
      "no": 3,
@@ -2267,24 +4643,54 @@
       {
        "hex": "#1A1A1A",
        "name": "夜のビルブラック",
-       "nameEn": "Night Building Black"
+       "nameEn": "Night Building Black",
+       "i18n": {
+        "es": "Negro edificio",
+        "ko": "밤 빌딩 블랙",
+        "pt": "Prédio Noturno",
+        "zh": "夜樓黑"
+       }
       },
       {
        "hex": "#2F4F4F",
        "name": "濡れた道路",
-       "nameEn": "Wet Road Gray"
+       "nameEn": "Wet Road Gray",
+       "i18n": {
+        "es": "Calle mojada",
+        "ko": "젖은 도로 회색",
+        "pt": "Rua Molhada",
+        "zh": "濕路灰"
+       }
       },
       {
        "hex": "#3A6EA5",
        "name": "雨の反射",
-       "nameEn": "Reflection Blue"
+       "nameEn": "Reflection Blue",
+       "i18n": {
+        "es": "Lluvia azul",
+        "ko": "비의 반사광",
+        "pt": "Azul Reflexo",
+        "zh": "雨中倒影藍"
+       }
       },
       {
        "hex": "#FFCC00",
        "name": "タクシーイエロー",
-       "nameEn": "Taxi Yellow"
+       "nameEn": "Taxi Yellow",
+       "i18n": {
+        "es": "Amarillo taxi",
+        "ko": "택시 옐로",
+        "pt": "Amarelo Táxi",
+        "zh": "計程車黃"
+       }
       }
-     ]
+     ],
+     "i18n": {
+      "es": "Calles nocturnas",
+      "ko": "밤거리",
+      "pt": "Ruas à Noite",
+      "zh": "夜間街道"
+     }
     },
     {
      "no": 4,
@@ -2295,24 +4701,54 @@
       {
        "hex": "#FAFAFA",
        "name": "ヘッドライトホワイト",
-       "nameEn": "Headlight White"
+       "nameEn": "Headlight White",
+       "i18n": {
+        "es": "Blanco faros",
+        "ko": "헤드라이트 화이트",
+        "pt": "Farol Branco",
+        "zh": "車燈白"
+       }
       },
       {
        "hex": "#191970",
        "name": "深夜ブルー",
-       "nameEn": "Midnight Blue"
+       "nameEn": "Midnight Blue",
+       "i18n": {
+        "es": "Azul medianoche",
+        "ko": "한밤 블루",
+        "pt": "Azul Meia-noite",
+        "zh": "午夜藍"
+       }
       },
       {
        "hex": "#687880",
        "name": "スモッググレー",
-       "nameEn": "Smog Gray"
+       "nameEn": "Smog Gray",
+       "i18n": {
+        "es": "Gris smog",
+        "ko": "스모그 회색",
+        "pt": "Cinza Smog",
+        "zh": "霧霾灰"
+       }
       },
       {
        "hex": "#9D00FF",
        "name": "ネオンパープル",
-       "nameEn": "Neon Purple"
+       "nameEn": "Neon Purple",
+       "i18n": {
+        "es": "Púrpura neón",
+        "ko": "네온 퍼플",
+        "pt": "Roxo Neon",
+        "zh": "霓虹紫"
+       }
       }
-     ]
+     ],
+     "i18n": {
+      "es": "Noche y niebla",
+      "ko": "심야와 안개",
+      "pt": "Névoa Noturna",
+      "zh": "深夜與霧"
+     }
     }
    ]
   },
@@ -2321,6 +4757,12 @@
    "name": "夏祭りの色",
    "nameEn": "Summer Festival Colors",
    "icon": "🏮",
+   "i18n": {
+    "es": "Fiesta verano",
+    "ko": "여름 축제",
+    "pt": "Festa de Verão",
+    "zh": "夏日祭典色彩"
+   },
    "addedAt": "2026-11-02",
    "chunks": [
     {
@@ -2332,24 +4774,54 @@
       {
        "hex": "#D9381E",
        "name": "提灯レッド",
-       "nameEn": "Lantern Red"
+       "nameEn": "Lantern Red",
+       "i18n": {
+        "es": "Rojo farol",
+        "ko": "초롱 레드",
+        "pt": "Lanterna",
+        "zh": "燈籠紅"
+       }
       },
       {
        "hex": "#3A5FCD",
        "name": "浴衣ブルー",
-       "nameEn": "Yukata Blue"
+       "nameEn": "Yukata Blue",
+       "i18n": {
+        "es": "Azul yukata",
+        "ko": "유카타 블루",
+        "pt": "Azul Yukata",
+        "zh": "浴衣藍"
+       }
       },
       {
        "hex": "#FFB6C1",
        "name": "綿菓子ピンク",
-       "nameEn": "Cotton Candy Pink"
+       "nameEn": "Cotton Candy Pink",
+       "i18n": {
+        "es": "Rosa algodón",
+        "ko": "솜사탕 핑크",
+        "pt": "Algodão-doce",
+        "zh": "棉花糖粉"
+       }
       },
       {
        "hex": "#965015",
        "name": "焼きそばブラウン",
-       "nameEn": "Yakisoba Brown"
+       "nameEn": "Yakisoba Brown",
+       "i18n": {
+        "es": "Marrón yakisoba",
+        "ko": "야키소바 갈색",
+        "pt": "Marrom Yakisoba",
+        "zh": "炒麵褐"
+       }
       }
-     ]
+     ],
+     "i18n": {
+      "es": "Faroles y yukata",
+      "ko": "초롱과 유카타",
+      "pt": "Lanterna/Yukata",
+      "zh": "燈籠與浴衣"
+     }
     },
     {
      "no": 2,
@@ -2360,24 +4832,54 @@
       {
        "hex": "#FFD800",
        "name": "花火ゴールド",
-       "nameEn": "Fireworks Gold"
+       "nameEn": "Fireworks Gold",
+       "i18n": {
+        "es": "Oro fuegos",
+        "ko": "불꽃놀이 골드",
+        "pt": "Ouro Fogos",
+        "zh": "煙火金"
+       }
       },
       {
        "hex": "#2E8B57",
        "name": "夜店グリーン",
-       "nameEn": "Stall Green"
+       "nameEn": "Stall Green",
+       "i18n": {
+        "es": "Verde de puesto",
+        "ko": "포장마차 그린",
+        "pt": "Verde Barraca",
+        "zh": "夜攤綠"
+       }
       },
       {
        "hex": "#AEEEEE",
        "name": "ラムネブルー",
-       "nameEn": "Ramune Blue"
+       "nameEn": "Ramune Blue",
+       "i18n": {
+        "es": "Azul ramune",
+        "ko": "라무네 블루",
+        "pt": "Azul Ramune",
+        "zh": "彈珠汽水藍"
+       }
       },
       {
        "hex": "#C41E3A",
        "name": "りんご飴レッド",
-       "nameEn": "Candy Apple Red"
+       "nameEn": "Candy Apple Red",
+       "i18n": {
+        "es": "Manzana caramelo",
+        "ko": "사과사탕 레드",
+        "pt": "Maçã do Amor",
+        "zh": "蘋果糖紅"
+       }
       }
-     ]
+     ],
+     "i18n": {
+      "es": "Puestos y fuegos",
+      "ko": "포장마차와 불꽃놀이",
+      "pt": "Barracas e Fogos",
+      "zh": "攤販與煙火"
+     }
     },
     {
      "no": 3,
@@ -2388,24 +4890,54 @@
       {
        "hex": "#7FDBFF",
        "name": "かき氷ブルー",
-       "nameEn": "Shaved Ice Blue"
+       "nameEn": "Shaved Ice Blue",
+       "i18n": {
+        "es": "Azul raspado",
+        "ko": "빙수 블루",
+        "pt": "Azul Raspadinha",
+        "zh": "刨冰藍"
+       }
       },
       {
        "hex": "#FFB000",
        "name": "電球オレンジ",
-       "nameEn": "Bulb Orange"
+       "nameEn": "Bulb Orange",
+       "i18n": {
+        "es": "Naranja bombilla",
+        "ko": "전구 오렌지",
+        "pt": "Laranja Lâmpada",
+        "zh": "燈泡橘"
+       }
       },
       {
        "hex": "#7B2CBF",
        "name": "花火パープル",
-       "nameEn": "Fireworks Purple"
+       "nameEn": "Fireworks Purple",
+       "i18n": {
+        "es": "Fuegos morados",
+        "ko": "불꽃놀이 보라",
+        "pt": "Roxo Fogos",
+        "zh": "煙火紫"
+       }
       },
       {
        "hex": "#A0522D",
        "name": "射的ウッド",
-       "nameEn": "Shooting Gallery Wood"
+       "nameEn": "Shooting Gallery Wood",
+       "i18n": {
+        "es": "Madera de tiro",
+        "ko": "사격장 나무색",
+        "pt": "Tiro ao Alvo",
+        "zh": "打靶攤木色"
+       }
       }
-     ]
+     ],
+     "i18n": {
+      "es": "Noche de fiesta",
+      "ko": "밤 축제의 색",
+      "pt": "Noite de Festa",
+      "zh": "夜祭"
+     }
     },
     {
      "no": 4,
@@ -2416,22 +4948,294 @@
       {
        "hex": "#FF4D4D",
        "name": "金魚レッド",
-       "nameEn": "Goldfish Red"
+       "nameEn": "Goldfish Red",
+       "i18n": {
+        "es": "Pez dorado",
+        "ko": "금붕어 레드",
+        "pt": "Vermelho Kinguio",
+        "zh": "金魚紅"
+       }
       },
       {
        "hex": "#3FFF20",
        "name": "ネオン風グリーン",
-       "nameEn": "Festival Neon Green"
+       "nameEn": "Festival Neon Green",
+       "i18n": {
+        "es": "Neón de fiesta",
+        "ko": "축제 네온 그린",
+        "pt": "Verde Neon Festa",
+        "zh": "祭典霓虹綠"
+       }
       },
       {
        "hex": "#1B1F3B",
        "name": "夜空ネイビー",
-       "nameEn": "Festival Night Sky"
+       "nameEn": "Festival Night Sky",
+       "i18n": {
+        "es": "Cielo nocturno",
+        "ko": "축제 밤하늘",
+        "pt": "Céu Noturno",
+        "zh": "祭典夜空藍"
+       }
       },
       {
        "hex": "#6A0DAD",
        "name": "浴衣柄パープル",
-       "nameEn": "Yukata Pattern Purple"
+       "nameEn": "Yukata Pattern Purple",
+       "i18n": {
+        "es": "Yukata morado",
+        "ko": "유카타 무늬 보라",
+        "pt": "Roxo Yukata",
+        "zh": "浴衣花紫"
+       }
+      }
+     ],
+     "i18n": {
+      "es": "Cielo fantástico",
+      "ko": "환상적인 밤하늘",
+      "pt": "Céu Fantástico",
+      "zh": "夢幻夜空"
+     }
+    }
+   ]
+  },
+  {
+   "id": "fuyu",
+   "name": "冬景色の色",
+   "nameEn": "Winter Landscape Colors",
+   "icon": "⛄",
+   "addedAt": "2026-11-13",
+   "chunks": [
+    {
+     "no": 1,
+     "name": "雪と氷",
+     "nameEn": "Snow & Ice",
+     "free": true,
+     "colors": [
+      {
+       "hex": "#F4F8FC",
+       "name": "新雪",
+       "nameEn": "Fresh Snow"
+      },
+      {
+       "hex": "#BFE3F2",
+       "name": "氷柱",
+       "nameEn": "Icicle"
+      },
+      {
+       "hex": "#D5E3EC",
+       "name": "樹氷",
+       "nameEn": "Rime Ice"
+      },
+      {
+       "hex": "#8FB8D0",
+       "name": "流氷",
+       "nameEn": "Drift Ice"
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "name": "冬の空と湖",
+     "nameEn": "Winter Sky & Lake",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#5FA8D8",
+       "name": "冬の青空",
+       "nameEn": "Winter Sky"
+      },
+      {
+       "hex": "#9AA6B0",
+       "name": "雪雲",
+       "nameEn": "Snow Cloud"
+      },
+      {
+       "hex": "#3E7CA0",
+       "name": "凍る湖",
+       "nameEn": "Frozen Lake"
+      },
+      {
+       "hex": "#7C9CC8",
+       "name": "雪影の青",
+       "nameEn": "Snow Shadow"
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "name": "冬の森と大地",
+     "nameEn": "Winter Forest & Ground",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#2F5A4A",
+       "name": "雪の針葉樹",
+       "nameEn": "Snowy Fir"
+      },
+      {
+       "hex": "#5B4636",
+       "name": "枯れ枝",
+       "nameEn": "Bare Branch"
+      },
+      {
+       "hex": "#B7B9A0",
+       "name": "霜の草原",
+       "nameEn": "Frosted Meadow"
+      },
+      {
+       "hex": "#7A6B5E",
+       "name": "凍てつく大地",
+       "nameEn": "Frozen Ground"
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "name": "冬のぬくもり",
+     "nameEn": "Winter Warmth",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#D93A3A",
+       "name": "南天の実",
+       "nameEn": "Nandina Berry"
+      },
+      {
+       "hex": "#E6E1DA",
+       "name": "湯けむり",
+       "nameEn": "Hot Spring Steam"
+      },
+      {
+       "hex": "#E8622A",
+       "name": "暖炉の火",
+       "nameEn": "Hearth Fire"
+      },
+      {
+       "hex": "#F28C28",
+       "name": "蜜柑",
+       "nameEn": "Mikan Orange"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "wine",
+   "name": "ワインの色",
+   "nameEn": "Wine Colors",
+   "icon": "🍷",
+   "addedAt": "2026-11-13",
+   "chunks": [
+    {
+     "no": 1,
+     "name": "ロゼとスパークリング",
+     "nameEn": "Rosé & Sparkling",
+     "free": true,
+     "colors": [
+      {
+       "hex": "#F4C2BA",
+       "name": "プロヴァンスロゼ",
+       "nameEn": "Provence Rosé"
+      },
+      {
+       "hex": "#F29C8A",
+       "name": "サーモンロゼ",
+       "nameEn": "Salmon Rosé"
+      },
+      {
+       "hex": "#F0A4B0",
+       "name": "ピンクスパークリング",
+       "nameEn": "Pink Sparkling"
+      },
+      {
+       "hex": "#EFD9A1",
+       "name": "シャンパンゴールド",
+       "nameEn": "Champagne Gold"
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "name": "白とオレンジ",
+     "nameEn": "White & Orange",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#EEEBB8",
+       "name": "ミュスカデ",
+       "nameEn": "Muscadet"
+      },
+      {
+       "hex": "#E6CC66",
+       "name": "シャルドネ",
+       "nameEn": "Chardonnay"
+      },
+      {
+       "hex": "#C98A1E",
+       "name": "貴腐ワイン",
+       "nameEn": "Noble Rot"
+      },
+      {
+       "hex": "#D88A3A",
+       "name": "オレンジワイン",
+       "nameEn": "Orange Wine"
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "name": "赤ワイン",
+     "nameEn": "Red Wines",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#B01E48",
+       "name": "ヌーヴォー",
+       "nameEn": "Nouveau"
+      },
+      {
+       "hex": "#7C1D3E",
+       "name": "ブルゴーニュ",
+       "nameEn": "Burgundy"
+      },
+      {
+       "hex": "#5B1527",
+       "name": "ボルドー",
+       "nameEn": "Bordeaux"
+      },
+      {
+       "hex": "#9A4A2E",
+       "name": "熟成レンガ",
+       "nameEn": "Aged Brick"
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "name": "酒精強化と冬",
+     "nameEn": "Fortified & Winter",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#3D0C1B",
+       "name": "ポート",
+       "nameEn": "Port"
+      },
+      {
+       "hex": "#8A4B1A",
+       "name": "マデイラ",
+       "nameEn": "Madeira"
+      },
+      {
+       "hex": "#B06A22",
+       "name": "シェリー",
+       "nameEn": "Sherry"
+      },
+      {
+       "hex": "#6E1E2A",
+       "name": "ホットワイン",
+       "nameEn": "Mulled Wine"
       }
      ]
     }
