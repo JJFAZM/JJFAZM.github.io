@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "revision": 202611131103,
+ "revision": 202611191105,
  "themes": [
   {
    "id": "enogu",
@@ -4996,6 +4996,254 @@
       "pt": "Céu Fantástico",
       "zh": "夢幻夜空"
      }
+    }
+   ]
+  },
+  {
+   "id": "umi",
+   "name": "世界の海の色",
+   "nameEn": "World Ocean Colors",
+   "icon": "🐠",
+   "addedAt": "2026-11-19",
+   "chunks": [
+    {
+     "no": 1,
+     "name": "熱帯の海",
+     "nameEn": "Tropical Seas",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#00CED1",
+       "name": "カリブターコイズ",
+       "nameEn": "Caribbean Turquoise"
+      },
+      {
+       "hex": "#00E5D0",
+       "name": "珊瑚礁シアン",
+       "nameEn": "Coral Reef Cyan"
+      },
+      {
+       "hex": "#8AAFC0",
+       "name": "北極海グレー",
+       "nameEn": "Arctic Ocean Gray"
+      },
+      {
+       "hex": "#C8E8F5",
+       "name": "南極海アイス",
+       "nameEn": "Antarctic Ice Blue"
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "name": "大洋の青",
+     "nameEn": "Open Ocean Blue",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#1A6B9A",
+       "name": "地中海ブルー",
+       "nameEn": "Mediterranean Blue"
+      },
+      {
+       "hex": "#1B4F8A",
+       "name": "タスマンブルー",
+       "nameEn": "Tasman Blue"
+      },
+      {
+       "hex": "#1565C0",
+       "name": "アラビア海コバルト",
+       "nameEn": "Arabian Sea Cobalt"
+      },
+      {
+       "hex": "#7A9AAE",
+       "name": "オホーツクグレー",
+       "nameEn": "Okhotsk Gray"
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "name": "湾と緑の海",
+     "nameEn": "Bays & Green Seas",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#2E8B6E",
+       "name": "紅海エメラルド",
+       "nameEn": "Red Sea Emerald"
+      },
+      {
+       "hex": "#4A7A4A",
+       "name": "サルガッソーグリーン",
+       "nameEn": "Sargasso Green"
+      },
+      {
+       "hex": "#8A9E6B",
+       "name": "黄海カーキ",
+       "nameEn": "Yellow Sea Khaki"
+      },
+      {
+       "hex": "#1A7A6E",
+       "name": "マラッカエメラルド",
+       "nameEn": "Malacca Emerald"
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "name": "深海の闇",
+     "nameEn": "Deep Sea Darkness",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#050A1A",
+       "name": "深海ブラック",
+       "nameEn": "Deep Sea Black"
+      },
+      {
+       "hex": "#5F8C74",
+       "name": "バルト海鈍色",
+       "nameEn": "Baltic Sea Dull"
+      },
+      {
+       "hex": "#5A7A8E",
+       "name": "ベンガル湾グレー",
+       "nameEn": "Bay of Bengal Gray"
+      },
+      {
+       "hex": "#1A2B5E",
+       "name": "日本海ネイビー",
+       "nameEn": "Sea of Japan Navy"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "showa",
+   "name": "昭和レトロの色",
+   "nameEn": "Showa Retro",
+   "icon": "📻",
+   "addedAt": "2026-11-19",
+   "chunks": [
+    {
+     "no": 1,
+     "name": "街角の色",
+     "nameEn": "Street Corner",
+     "free": true,
+     "colors": [
+      {
+       "hex": "#D7261E",
+       "name": "赤いポスト",
+       "nameEn": "Red Postbox"
+      },
+      {
+       "hex": "#1F5FA8",
+       "name": "ホーロー看板",
+       "nameEn": "Enamel Sign Blue"
+      },
+      {
+       "hex": "#3F8F4E",
+       "name": "緑の公衆電話",
+       "nameEn": "Green Payphone"
+      },
+      {
+       "hex": "#F07FA0",
+       "name": "ピンク電話",
+       "nameEn": "Pink Payphone"
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "name": "純喫茶",
+     "nameEn": "Retro Cafe",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#4FC48A",
+       "name": "クリームソーダ",
+       "nameEn": "Cream Soda"
+      },
+      {
+       "hex": "#7A1F2B",
+       "name": "純喫茶のビロード",
+       "nameEn": "Cafe Velvet"
+      },
+      {
+       "hex": "#E25D2C",
+       "name": "ナポリタン",
+       "nameEn": "Napolitan"
+      },
+      {
+       "hex": "#A0825A",
+       "name": "セピア写真",
+       "nameEn": "Sepia Photo"
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "name": "茶の間",
+     "nameEn": "Living Room",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#1C1C1C",
+       "name": "黒電話",
+       "nameEn": "Black Rotary Phone",
+       "i18n": {
+        "es": "Negro koi",
+        "ko": "잉어 블랙",
+        "pt": "Preto Carpa",
+        "zh": "鯉魚黑"
+       }
+      },
+      {
+       "hex": "#7B4A2A",
+       "name": "ちゃぶ台",
+       "nameEn": "Chabudai Table"
+      },
+      {
+       "hex": "#5A6660",
+       "name": "ブラウン管",
+       "nameEn": "CRT Screen"
+      },
+      {
+       "hex": "#A8D8C0",
+       "name": "ミントの冷蔵庫",
+       "nameEn": "Mint Refrigerator"
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "name": "下町の暮らし",
+     "nameEn": "Downtown Life",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#F5C518",
+       "name": "駄菓子の黄",
+       "nameEn": "Candy Shop Yellow"
+      },
+      {
+       "hex": "#8EC7E0",
+       "name": "ラムネ瓶",
+       "nameEn": "Ramune Bottle"
+      },
+      {
+       "hex": "#4E9BC2",
+       "name": "銭湯のタイル",
+       "nameEn": "Bathhouse Tile"
+      },
+      {
+       "hex": "#D8CFBC",
+       "name": "団地の壁",
+       "nameEn": "Danchi Wall"
+      }
+     ]
     }
    ]
   },
