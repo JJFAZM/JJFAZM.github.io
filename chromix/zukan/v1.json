@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "revision": 202611191105,
+ "revision": 202611191145,
  "themes": [
   {
    "id": "enogu",
@@ -5484,6 +5484,127 @@
        "hex": "#6E1E2A",
        "name": "ホットワイン",
        "nameEn": "Mulled Wine"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "thanksgiving",
+   "name": "サンクスギビングの色",
+   "nameEn": "Thanksgiving Colors",
+   "icon": "🦃",
+   "addedAt": "2026-11-19",
+   "chunks": [
+    {
+     "no": 1,
+     "name": "感謝祭の食卓",
+     "nameEn": "Thanksgiving Table",
+     "free": true,
+     "colors": [
+      {
+       "hex": "#B5652B",
+       "name": "ターキーの焼き色",
+       "nameEn": "Roasted Turkey"
+      },
+      {
+       "hex": "#A81C3A",
+       "name": "クランベリーソース",
+       "nameEn": "Cranberry Relish"
+      },
+      {
+       "hex": "#F3E7C8",
+       "name": "マッシュポテト",
+       "nameEn": "Mashed Potatoes"
+      },
+      {
+       "hex": "#4F7A35",
+       "name": "グリーンビーンズ",
+       "nameEn": "Green Beans"
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "name": "秋の収穫",
+     "nameEn": "Fall Harvest",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#F08A24",
+       "name": "カボチャ",
+       "nameEn": "Pumpkin"
+      },
+      {
+       "hex": "#E8B93C",
+       "name": "黄色いトウモロコシ",
+       "nameEn": "Yellow Corn"
+      },
+      {
+       "hex": "#5E2F5A",
+       "name": "紫のトウモロコシ",
+       "nameEn": "Indian Corn Purple"
+      },
+      {
+       "hex": "#7C8F3A",
+       "name": "ひょうたん",
+       "nameEn": "Gourd Green"
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "name": "デザート",
+     "nameEn": "Desserts",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#C77A2E",
+       "name": "パンプキンパイ",
+       "nameEn": "Pumpkin Pie"
+      },
+      {
+       "hex": "#6F3F20",
+       "name": "ピーカンパイ",
+       "nameEn": "Pecan Pie"
+      },
+      {
+       "hex": "#D9A55A",
+       "name": "アップルパイ",
+       "nameEn": "Apple Pie"
+      },
+      {
+       "hex": "#FFF4DC",
+       "name": "ホイップクリーム",
+       "nameEn": "Whipped Cream"
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "name": "秋の景色",
+     "nameEn": "Autumn Scenery",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#D4B060",
+       "name": "干し草",
+       "nameEn": "Hay Bale"
+      },
+      {
+       "hex": "#A33A22",
+       "name": "落ち葉",
+       "nameEn": "Fallen Leaf Red"
+      },
+      {
+       "hex": "#F2A13B",
+       "name": "ハーベストムーン",
+       "nameEn": "Harvest Moon"
+      },
+      {
+       "hex": "#8E7F52",
+       "name": "枯れ野",
+       "nameEn": "Dry Field"
       }
      ]
     }
