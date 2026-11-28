@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "revision": 202611191145,
+ "revision": 202611280456,
  "themes": [
   {
    "id": "enogu",
@@ -5004,7 +5004,7 @@
    "name": "世界の海の色",
    "nameEn": "World Ocean Colors",
    "icon": "🐠",
-   "addedAt": "2026-11-19",
+   "addedAt": "2026-11-28",
    "chunks": [
     {
      "no": 1,
@@ -5121,11 +5121,132 @@
    ]
   },
   {
+   "id": "meiga",
+   "name": "名画の色",
+   "nameEn": "Masterpiece Colors",
+   "icon": "🖼️",
+   "addedAt": "2026-11-28",
+   "chunks": [
+    {
+     "no": 1,
+     "name": "オランダの巨匠",
+     "nameEn": "Dutch Masters",
+     "free": true,
+     "colors": [
+      {
+       "hex": "#2A4D9B",
+       "name": "フェルメールブルー",
+       "nameEn": "Vermeer Blue"
+      },
+      {
+       "hex": "#E8C547",
+       "name": "フェルメールの黄",
+       "nameEn": "Vermeer Yellow"
+      },
+      {
+       "hex": "#3B2A1E",
+       "name": "レンブラントの影",
+       "nameEn": "Rembrandt Shadow"
+      },
+      {
+       "hex": "#F2B705",
+       "name": "ゴッホのひまわり",
+       "nameEn": "Van Gogh Sunflowers"
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "name": "光と空気の画家",
+     "nameEn": "Painters of Light",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#7FA38A",
+       "name": "モネの睡蓮",
+       "nameEn": "Monet Water Lilies"
+      },
+      {
+       "hex": "#E8A4A0",
+       "name": "ルノワールの薔薇",
+       "nameEn": "Renoir Rose"
+      },
+      {
+       "hex": "#F2C4C8",
+       "name": "ドガの踊り子",
+       "nameEn": "Degas Dancer Pink"
+      },
+      {
+       "hex": "#E9D9B0",
+       "name": "ターナーの霞",
+       "nameEn": "Turner Haze"
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "name": "情熱の色彩",
+     "nameEn": "Passionate Hues",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#E06A2C",
+       "name": "ムンクの空",
+       "nameEn": "Munch Sky"
+      },
+      {
+       "hex": "#A3262A",
+       "name": "ベラスケスの赤",
+       "nameEn": "Velazquez Red"
+      },
+      {
+       "hex": "#8E4E7A",
+       "name": "ゴーギャンの紫",
+       "nameEn": "Gauguin Purple"
+      },
+      {
+       "hex": "#1E3A6E",
+       "name": "星月夜",
+       "nameEn": "Starry Night"
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "name": "近代の巨匠",
+     "nameEn": "Modern Masters",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#A78A5A",
+       "name": "ミレーの大地",
+       "nameEn": "Millet Earth"
+      },
+      {
+       "hex": "#6E7F3A",
+       "name": "セザンヌの緑",
+       "nameEn": "Cezanne Green"
+      },
+      {
+       "hex": "#3E6E8E",
+       "name": "ピカソ青の時代",
+       "nameEn": "Picasso Blue Period"
+      },
+      {
+       "hex": "#B8902E",
+       "name": "クリムトの金",
+       "nameEn": "Klimt Gold"
+      }
+     ]
+    }
+   ]
+  },
+  {
    "id": "showa",
    "name": "昭和レトロの色",
    "nameEn": "Showa Retro",
    "icon": "📻",
-   "addedAt": "2026-11-19",
+   "addedAt": "2026-11-28",
    "chunks": [
     {
      "no": 1,
@@ -5248,11 +5369,132 @@
    ]
   },
   {
+   "id": "xmas",
+   "name": "クリスマスの色",
+   "nameEn": "Christmas Colors",
+   "icon": "🎄",
+   "addedAt": "2026-11-28",
+   "chunks": [
+    {
+     "no": 1,
+     "name": "クリスマスの定番",
+     "nameEn": "Christmas Classics",
+     "free": true,
+     "colors": [
+      {
+       "hex": "#C8102E",
+       "name": "サンタの赤",
+       "nameEn": "Santa Red"
+      },
+      {
+       "hex": "#1E6B3A",
+       "name": "ヒイラギの緑",
+       "nameEn": "Holly Green"
+      },
+      {
+       "hex": "#F7F9FB",
+       "name": "雪の白",
+       "nameEn": "Snow White"
+      },
+      {
+       "hex": "#D4A017",
+       "name": "オーナメントゴールド",
+       "nameEn": "Ornament Gold"
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "name": "飾りと光",
+     "nameEn": "Ornaments & Lights",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#C0C5CC",
+       "name": "ジングルベルの銀",
+       "nameEn": "Silver Bell"
+      },
+      {
+       "hex": "#FFD84D",
+       "name": "星飾りの黄",
+       "nameEn": "Star Yellow"
+      },
+      {
+       "hex": "#2F5FA8",
+       "name": "青いボール",
+       "nameEn": "Blue Bauble"
+      },
+      {
+       "hex": "#FFE8A8",
+       "name": "電球の暖色",
+       "nameEn": "Warm Bulb"
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "name": "ごちそう",
+     "nameEn": "Feast",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#A8622B",
+       "name": "ジンジャークッキー",
+       "nameEn": "Gingerbread"
+      },
+      {
+       "hex": "#BF7B33",
+       "name": "ローストチキン",
+       "nameEn": "Roast Chicken"
+      },
+      {
+       "hex": "#4A2A1A",
+       "name": "ブッシュドノエル",
+       "nameEn": "Yule Log"
+      },
+      {
+       "hex": "#9E1B3A",
+       "name": "クランベリーソース",
+       "nameEn": "Cranberry Sauce"
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "name": "聖夜",
+     "nameEn": "Holy Night",
+     "free": false,
+     "colors": [
+      {
+       "hex": "#14224A",
+       "name": "夜空の群青",
+       "nameEn": "Night Sky"
+      },
+      {
+       "hex": "#7A5238",
+       "name": "トナカイの茶",
+       "nameEn": "Reindeer Brown"
+      },
+      {
+       "hex": "#8FB66B",
+       "name": "ヤドリギ",
+       "nameEn": "Mistletoe"
+      },
+      {
+       "hex": "#FF8A2E",
+       "name": "ロウソクの炎",
+       "nameEn": "Candle Flame"
+      }
+     ]
+    }
+   ]
+  },
+  {
    "id": "fuyu",
    "name": "冬景色の色",
    "nameEn": "Winter Landscape Colors",
    "icon": "⛄",
-   "addedAt": "2026-11-13",
+   "addedAt": "2026-11-28",
    "chunks": [
     {
      "no": 1,
@@ -5373,7 +5615,7 @@
    "name": "ワインの色",
    "nameEn": "Wine Colors",
    "icon": "🍷",
-   "addedAt": "2026-11-13",
+   "addedAt": "2026-11-28",
    "chunks": [
     {
      "no": 1,
@@ -5494,7 +5736,7 @@
    "name": "サンクスギビングの色",
    "nameEn": "Thanksgiving Colors",
    "icon": "🦃",
-   "addedAt": "2026-11-19",
+   "addedAt": "2026-11-28",
    "chunks": [
     {
      "no": 1,
